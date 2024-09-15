@@ -1,0 +1,62 @@
+optimal_raid=1
+default_actions=1
+
+# TWW_Death_Knight_Blood.simc
+TWW_Death_Knight_Frost.simc
+TWW_Death_Knight_Unholy.simc
+
+TWW_Demon_Hunter_Havoc.simc
+# TWW_Demon_Hunter_Havoc_SD.simc
+TWW_Demon_Hunter_Vengeance.simc
+TWW_Demon_Hunter_Vengeance_Fel.simc
+
+TWW_Druid_Balance.simc
+TWW_Druid_Feral.simc
+TWW_Druid_Feral_Wildstalker.simc
+TWW_Druid_Guardian.simc
+
+TWW_Evoker_Devastation.simc
+
+# TWW_Hunter_Beast_Mastery.simc
+# TWW_Hunter_Marksmanship.simc
+# TWW_Hunter_Survival.simc
+
+TWW_Mage_Fire.simc
+TWW_Mage_Frost.simc
+TWW_Mage_Frost_FrostfireNoDC.simc
+TWW_Mage_Frost_Frostfire.simc
+TWW_Mage_Arcane.simc
+
+# TWW_Monk_Brewmaster.simc
+# TWW_Monk_Brewmaster_Niuzao.simc
+TWW_Monk_Windwalker.simc
+
+TWW_Paladin_Protection.simc
+TWW_Paladin_Retribution.simc
+TWW_Paladin_Retribution_Templar.simc
+
+TWW_Priest_Shadow.simc
+
+TWW_Rogue_Assassinatio
+TWW_Rogue_Outlaw.simc
+TWW_Rogue_Outlaw_HO.simc
+TWW_Rogue_Subtlety.simc
+
+TWW_Shaman_Elemental.simc
+TWW_Shaman_Elemental_Storm.simc
+TWW_Shaman_Enhancement.simc
+TWW_Shaman_Enhancement_Storm.simc
+
+TWW_Warlock_Affliction_Hellcaller.simc
+TWW_Warlock_Affliction.simc
+TWW_Warlock_Demonology_Diabolist.simc
+TWW_Warlock_Demonology.simc
+TWW_Warlock_Destruction.simc
+TWW_Warlock_Destruction_Hellcaller.simc
+
+TWW_Warrior_Arms.simc
+TWW_Warrior_Arms_Juggernaut.simc
+TWW_Warrior_Fury.simc
+TWW_Warrior_Fury_Mountain.simc
+TWW_Warrior_Protection.simc
+TWW_Warrior_Protection_Colossus.simc
