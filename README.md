@@ -22,7 +22,7 @@ You can run SimulationCraft with these profiles via Docker for a streamlined set
    docker run baluzs/simc:latest
    ```
 2. **Mapped Volume::**
-   - The output files will be saved to a volume mapped to /opt/outside on your machine.
+   - The output files will be saved to `/opt/outside` inside the container, which will be automatically mapped to the host machine.
      
 3. **What does it auto generate**
    ```
