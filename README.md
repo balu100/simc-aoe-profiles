@@ -17,3 +17,4 @@ Just overwrite the files and run
 #./simc TWW1_Raid.simc html=20Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=20 target_error=1.0
 #./simc TWW1_Raid.simc html=20Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=20 target_error=1.0
 ```
+#Docker
