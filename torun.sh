@@ -1,7 +1,7 @@
 #!/bin/sh
 
-apk add nano
-apk add git
+apk update
+apk add --no-cache nano git
 rm -rf /opt/simc-aoe-profiles
 git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
 cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
