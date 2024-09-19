@@ -1,2 +1,3 @@
-echo hello
-echo 123a
+./simc TWW1_Raid_NW_10.simc html=/opt/outside/TWW1_Raid_NW_10.html target_error=1.0 ptr=0
+echo done
+echo done
