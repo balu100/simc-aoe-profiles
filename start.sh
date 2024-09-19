@@ -1,10 +1,10 @@
 #!/bin/ash
 
 # Define the URL of the toruncommands file
-TORUN_URL="http://example.com/toruncommands"  # Replace with the actual URL
+TORUN_URL="https://raw.githubusercontent.com/balu100/simc-aoe-profiles/main/torun"  # Replace with the actual URL
 
 # Define the path where the toruncommands file will be saved
-TORUN_FILE="/app/SimulationCraft/toruncommands"
+TORUN_FILE="/app/SimulationCraft/torun"
 
 # Download the toruncommands file using wget
 wget -O "$TORUN_FILE" "$TORUN_URL"
