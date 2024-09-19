@@ -1,0 +1,92 @@
+fight_style=DungeonRoute
+override.bloodlust=0
+override.arcane_intellect=0
+override.power_word_fortitude=0
+override.battle_shout=0
+override.mystic_touch=0
+override.chaos_brand=0
+override.bleeding=0
+single_actor_batch=1
+max_time=1800
+enemy="Raider.IO Weekly Route - Bunten"
+enemy_health=999999
+keystone_level=15
+raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+raid_events+=/pull,pull=01,bloodlust=0,delay=024,enemies="starved-crawler_1":4922103|"starved-crawler_2":4922103|"starved-crawler_3":4922103|"starved-crawler_4":4922103|"starved-crawler_5":4922103|"starved-crawler_6":4922103|"starved-crawler_7":4922103|"starved-crawler_8":4922103|"starved-crawler_9":4922103|"jabbing-flyer_1":4614471|"jabbing-flyer_2":4614471|"jabbing-flyer_3":4614471|"engorged-crawler_1":21149661|"engorged-crawler_2":21149661|"engorged-crawler_3":21149661|"engorged-crawler_4":21149661
+raid_events+=/pull,pull=02,bloodlust=0,delay=021,enemies="starved-crawler_1":4922103|"starved-crawler_2":4922103|"starved-crawler_3":4922103|"starved-crawler_4":4922103|"starved-crawler_5":4922103|"starved-crawler_6":4922103|"jabbing-flyer_1":4614471|"jabbing-flyer_2":4614471|"jabbing-flyer_3":4614471|"jabbing-flyer_4":4614471|"trilling-attendant_1":15381571|"ixin_1":30763143
+raid_events+=/pull,pull=03,bloodlust=0,delay=014,enemies="starved-crawler_1":4922103|"starved-crawler_2":4922103|"starved-crawler_3":4922103|"starved-crawler_4":4922103|"jabbing-flyer_1":4614471|"jabbing-flyer_2":4614471|"jabbing-flyer_3":4614471|"jabbing-flyer_4":4614471|"jabbing-flyer_5":4614471|"jabbing-flyer_6":4614471|"trilling-attendant_1":15381571|"trilling-attendant_2":15381571|"engorged-crawler_1":21149661|"engorged-crawler_2":21149661|"engorged-crawler_3":21149661|"engorged-crawler_4":21149661|"engorged-crawler_5":21149661|"nakt_1":30763143
+raid_events+=/pull,pull=04,bloodlust=0,delay=021,enemies="starved-crawler_1":4922103|"starved-crawler_2":4922103|"starved-crawler_3":4922103|"jabbing-flyer_1":4614471|"jabbing-flyer_2":4614471|"jabbing-flyer_3":4614471|"trilling-attendant_1":15381571|"atik_1":30763143
+raid_events+=/pull,pull=05,bloodlust=0,delay=022,enemies="starved-crawler_1":4922103|"starved-crawler_2":4922103|"starved-crawler_3":4922103|"jabbing-flyer_1":4614471|"jabbing-flyer_2":4614471|"jabbing-flyer_3":4614471|"engorged-crawler_1":21149661|"engorged-crawler_2":21149661|"BOSS_avanoxx_1":96027408
+raid_events+=/pull,pull=06,bloodlust=0,delay=019,enemies="starved-crawler_1":4922103|"bloodworker_1":3845392|"bloodworker_2":3845392|"bloodworker_3":3845392|"bloodworker_4":3845392|"bloodworker_5":3845392|"bloodstained-assistant_1":17304268|"bloodstained-assistant_2":17304268|"bloodstained-webmage_1":17304268
+raid_events+=/pull,pull=07,bloodlust=0,delay=010,enemies="hulking-bloodguard_1":30763143|"bloodworker_1":3845392|"bloodworker_2":3845392
+raid_events+=/pull,pull=08,bloodlust=0,delay=005,enemies="sentry-stagshell_1":7690785|"bloodworker_1":3845392|"bloodworker_2":3845392|"bloodworker_3":3845392|"bloodworker_4":3845392
+raid_events+=/pull,pull=09,bloodlust=0,delay=006,enemies="bloodworker_1":3845392|"bloodworker_2":3845392|"bloodworker_3":3845392|"bloodworker_4":3845392|"bloodstained-assistant_1":17304268|"bloodstained-assistant_2":17304268|"bloodstained-webmage_1":17304268|"hulking-bloodguard_1":30763143
+raid_events+=/pull,pull=10,bloodlust=0,delay=006,enemies="bloodworker_1":3845392|"bloodworker_2":3845392|"bloodworker_3":3845392|"bloodworker_4":3845392|"bloodworker_5":3845392|"bloodworker_6":3845392|"bloodworker_7":3845392|"bloodstained-webmage_1":17304268|"bloodstained-webmage_2":17304268|"sentry-stagshell_1":7690785|"sentry-stagshell_2":7690785
+raid_events+=/pull,pull=11,bloodlust=0,delay=010,enemies="bloodworker_1":3845392|"bloodworker_2":3845392|"bloodstained-assistant_1":17304268|"bloodstained-webmage_1":17304268|"bloodstained-webmage_2":17304268|"hulking-bloodguard_1":30763143|"sentry-stagshell_1":7690785|"sentry-stagshell_2":7690785
+raid_events+=/pull,pull=12,bloodlust=0,delay=002,enemies="bloodworker_1":3845392|"bloodworker_2":3845392|"bloodworker_3":3845392|"bloodworker_4":3845392|"bloodworker_5":3845392|"bloodworker_6":3845392
+raid_events+=/pull,pull=13,bloodlust=0,delay=009,enemies="hulking-bloodguard_1":30763143
+raid_events+=/pull,pull=14,bloodlust=0,delay=010,enemies="BOSS_anubzekt_1":112031976|"bloodstained-webmage_1":6921706
+raid_events+=/pull,pull=15,bloodlust=0,delay=045,enemies="blood-overseer_1":34608536|"winged-carrier_1":13458875|"winged-carrier_2":13458875|"winged-carrier_3":13458875|"winged-carrier_4":13458875|"winged-carrier_5":13458875
+raid_events+=/pull,pull=16,bloodlust=0,delay=008,enemies="nerubian-hauler_1":61526286|"winged-carrier_1":13458875|"winged-carrier_2":13458875|"winged-carrier_3":13458875|"winged-carrier_4":13458875|"winged-carrier_5":13458875
+raid_events+=/pull,pull=17,bloodlust=0,delay=009,enemies="blood-overseer_1":34608536|"blood-overseer_2":34608536
+raid_events+=/pull,pull=18,bloodlust=0,delay=006,enemies="BOSS_kikatal-the-harvester_1":128036545
+
+# TWW1_Death_Knight_Blood.simc
+TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Unholy.simc
+
+TWW1_Demon_Hunter_Havoc.simc
+# TWW1_Demon_Hunter_Havoc_SD.simc
+TWW1_Demon_Hunter_Vengeance.simc
+TWW1_Demon_Hunter_Vengeance_Fel.simc
+
+TWW1_Druid_Balance.simc
+TWW1_Druid_Feral.simc
+TWW1_Druid_Feral_Wildstalker.simc
+TWW1_Druid_Guardian.simc
+
+# TWW1_Evoker_Devastation.simc
+
+# TWW1_Hunter_Beast_Mastery.simc
+# TWW1_Hunter_Marksmanship.simc
+# TWW1_Hunter_Survival.simc
+
+TWW1_Mage_Fire.simc
+TWW1_Mage_Frost.simc
+TWW1_Mage_Frost_FrostfireNoDC.simc
+TWW1_Mage_Frost_Frostfire.simc
+TWW1_Mage_Arcane.simc
+
+# TWW1_Monk_Brewmaster.simc
+# TWW1_Monk_Brewmaster_Niuzao.simc
+TWW1_Monk_Windwalker.simc
+
+TWW1_Paladin_Protection.simc
+TWW1_Paladin_Retribution.simc
+TWW1_Paladin_Retribution_Templar.simc
+
+TWW1_Priest_Shadow.simc
+
+TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Outlaw.simc
+TWW1_Rogue_Outlaw_HO.simc
+TWW1_Rogue_Subtlety.simc
+
+TWW1_Shaman_Elemental.simc
+TWW1_Shaman_Elemental_Storm.simc
+TWW1_Shaman_Enhancement.simc
+TWW1_Shaman_Enhancement_Storm.simc
+
+TWW1_Warlock_Affliction_Hellcaller.simc
+TWW1_Warlock_Affliction.simc
+TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Destruction.simc
+TWW1_Warlock_Destruction_Hellcaller.simc
+
+# TWW1_Warrior_Arms.simc
+# TWW1_Warrior_Arms_Juggernaut.simc
+TWW1_Warrior_Fury.simc
+TWW1_Warrior_Fury_Mountain.simc
+TWW1_Warrior_Protection.simc
+TWW1_Warrior_Protection_Colossus.simc
