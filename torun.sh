@@ -62,6 +62,19 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_TS_20.simc html=/opt/outside/TWW1_Raid_TS_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TS_20.simc html=/opt/outside/TWW1_Raid_TS_20_PTR.html target_error=1.0 ptr=1
 
+echo "done"
+echo "done 10%"
+echo "done 20%"
+echo "done 30%"
+echo "done 40%"
+echo "done 50%"
+echo "done 60%"
+echo "done 70%"
+echo "done 80%"
+echo "done 90%"
+echo "done 100%"
+
+
 # Run an infinite loop with no task
 while true; do
   # Just sleep to keep the script running
