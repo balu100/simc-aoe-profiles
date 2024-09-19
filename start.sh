@@ -17,7 +17,7 @@ fi
 
 # Make sure the file is executable
 chmod +x "$TORUN_FILE"
-
+echo 123
 # Read commands from the toruncommands file and execute them
 while IFS= read -r line; do
     # Skip empty lines or lines starting with '#' (comments)
