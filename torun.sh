@@ -6,15 +6,16 @@ rm -rf /opt/simc-aoe-profiles
 git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
 cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 
-#siege-of-boralus
+echo "siege-of-boralus"
 ./simc TWW1_Raid_SoB_10.simc html=/opt/outside/TWW1_Raid_SoB_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_SoB_10.simc html=/opt/outside/TWW1_Raid_SoB_10_PTR.html target_error=1.0 ptr=1
+echo "Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end Test end "
 ./simc TWW1_Raid_SoB_15.simc html=/opt/outside/TWW1_Raid_SoB_15.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_SoB_15.simc html=/opt/outside/TWW1_Raid_SoB_15_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_SoB_20.simc html=/opt/outside/TWW1_Raid_SoB_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_SoB_20.simc html=/opt/outside/TWW1_Raid_SoB_20_PTR.html target_error=1.0 ptr=1
 
-#mists-of-tirna-scithe
+echo "mists-of-tirna-scithe"
 ./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15.html target_error=1.0 ptr=0
@@ -22,7 +23,7 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_MoTS_20.simc html=/opt/outside/TWW1_Raid_MoTS_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_MoTS_20.simc html=/opt/outside/TWW1_Raid_MoTS_20_PTR.html target_error=1.0 ptr=1
 
-#the-necrotic-wake
+echo "the-necrotic-wake"
 ./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15.html target_error=1.0 ptr=0
@@ -30,7 +31,7 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_TNW_20.simc html=/opt/outside/TWW1_Raid_TNW_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TNW_20.simc html=/opt/outside/TWW1_Raid_TNW_20_PTR.html target_error=1.0 ptr=1
 
-#ara-kara-city-of-echoes
+echo "ara-kara-city-of-echoes"
 ./simc TWW1_Raid_AKCoE_10.simc html=/opt/outside/TWW1_Raid_AKCoE_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_AKCoE_10.simc html=/opt/outside/TWW1_Raid_AKCoE_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_AKCoE_15.simc html=/opt/outside/TWW1_Raid_AKCoE_15.html target_error=1.0 ptr=0
@@ -38,7 +39,7 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_AKCoE_20.simc html=/opt/outside/TWW1_Raid_AKCoE_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_AKCoE_20.simc html=/opt/outside/TWW1_Raid_AKCoE_20_PTR.html target_error=1.0 ptr=1
 
-#city-of-threads
+echo "city-of-threads"
 ./simc TWW1_Raid_CoT_10.simc html=/opt/outside/TWW1_Raid_CoT_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_CoT_10.simc html=/opt/outside/TWW1_Raid_CoT_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_CoT_15.simc html=/opt/outside/TWW1_Raid_CoT_15.html target_error=1.0 ptr=0
@@ -46,7 +47,7 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_CoT_20.simc html=/opt/outside/TWW1_Raid_CoT_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_CoT_20.simc html=/opt/outside/TWW1_Raid_CoT_20_PTR.html target_error=1.0 ptr=1
 
-#the-dawnbreaker
+echo "the-dawnbreaker"
 ./simc TWW1_Raid_TD_10.simc html=/opt/outside/TWW1_Raid_TD_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TD_10.simc html=/opt/outside/TWW1_Raid_TD_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_TD_15.simc html=/opt/outside/TWW1_Raid_TD_15.html target_error=1.0 ptr=0
@@ -54,7 +55,7 @@ cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 ./simc TWW1_Raid_TD_20.simc html=/opt/outside/TWW1_Raid_TD_20.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TD_20.simc html=/opt/outside/TWW1_Raid_TD_20_PTR.html target_error=1.0 ptr=1
 
-#the-stonevault
+echo "the-stonevault"
 ./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10_PTR.html target_error=1.0 ptr=1
 ./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15.html target_error=1.0 ptr=0
