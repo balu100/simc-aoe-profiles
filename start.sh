@@ -1,28 +1,18 @@
-#!/bin/ash
+#!/bin/sh
 
-# Define the URL of the toruncommands file
-TORUN_URL="https://raw.githubusercontent.com/balu100/simc-aoe-profiles/main/torun"  # Replace with the actual URL
+# URL of the script to download
+SCRIPT_URL="https://raw.githubusercontent.com/balu100/simc-aoe-profiles/main/torun.sh"
 
-# Define the path where the toruncommands file will be saved
-TORUN_FILE="/app/SimulationCraft/torun"
+# Path where the script will be saved
+SCRIPT_PATH="/app/SimulationCraft/torun.sh"
 
-# Download the toruncommands file using wget
-wget -O "$TORUN_FILE" "$TORUN_URL"
+# Download the latest version of the script with a timestamp to avoid caching
+echo "Downloading the latest script from $SCRIPT_URL..."
+curl -fsSL "$SCRIPT_URL?$(date +%s)" -o "$SCRIPT_PATH"
 
-# Check if the file was downloaded successfully
-if [ ! -f "$TORUN_FILE" ]; then
-    echo "Failed to download $TORUN_URL"
-    exit 1
-fi
+# Make the script executable
+chmod +x "$SCRIPT_PATH"
 
-# Make sure the file is executable
-chmod +x "$TORUN_FILE"
-
-# Read commands from the toruncommands file and execute them
-while IFS= read -r line; do
-    # Skip empty lines or lines starting with '#' (comments)
-    [ -z "$line" ] || [ "${line#\#}" != "$line" ] || continue
-    # Execute the command
-    echo "Running: $line"
-    $line
-done < "$TORUN_FILE"
+# Run the script
+echo "Running the script..."
+exec "$SCRIPT_PATH"
