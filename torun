@@ -1,3 +1,5 @@
-./simc TWW1_Raid_NW_10.simc html=/opt/outside/TWW1_Raid_NW_10.html target_error=1.0 ptr=0
-echo done
-echo done
+apk add nano
+apk add git
+rm -rf /opt/simc-aoe-profiles
+git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
+cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
