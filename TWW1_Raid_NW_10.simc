@@ -1,0 +1,98 @@
+fight_style=DungeonRoute
+override.bloodlust=0
+override.arcane_intellect=0
+override.power_word_fortitude=0
+override.battle_shout=0
+override.mystic_touch=0
+override.chaos_brand=0
+override.bleeding=0
+single_actor_batch=1
+max_time=1920
+enemy="Raider.IO Weekly Route - Bunten"
+enemy_health=999999
+keystone_level=10
+raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+raid_events+=/pull,pull=01,bloodlust=0,delay=004,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"patchwerk-soldier_3":35327011|"patchwerk-soldier_4":35327011|"patchwerk-soldier_5":35327011|"blight-bag_1":17663505|"blight-bag_2":17663505|"blight-bag_3":17663505|"blight-bag_4":17663505|"blight-bag_5":17663505|"blight-bag_6":17663505|"blight-bag_7":17663505|"corpse-harvester_1":44158764|"stitched-vanguard_1":52990516
+raid_events+=/pull,pull=02,bloodlust=0,delay=010,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"patchwerk-soldier_3":35327011|"patchwerk-soldier_4":35327011|"patchwerk-soldier_5":35327011|"corpse-harvester_1":44158764|"corpse-harvester_2":44158764|"stitched-vanguard_1":52990516
+raid_events+=/pull,pull=03,bloodlust=0,delay=008,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"corpse-harvester_1":44158764|"stitched-vanguard_1":52990516|"stitched-vanguard_2":52990516
+raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"patchwerk-soldier_3":35327011|"corpse-harvester_1":44158764|"corpse-harvester_2":44158764
+raid_events+=/pull,pull=05,bloodlust=0,delay=007,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"blight-bag_1":17663505|"blight-bag_2":17663505|"blight-bag_3":17663505|"blight-bag_4":17663505|"blight-bag_5":17663505|"blight-bag_6":17663505|"blight-bag_7":17663505|"BOSS_blightbone_1":257592788
+raid_events+=/pull,pull=06,bloodlust=0,delay=024,enemies="zolramus-sorcerer_1":39742888|"zolramus-bonecarver_1":44158764|"zolramus-necromancer_1":61822269|"brittlebone-mage_1":13247630|"brittlebone-warrior_1":22079383|"brittlebone-warrior_2":22079383
+raid_events+=/pull,pull=07,bloodlust=0,delay=007,enemies="blight-bag_1":17663505|"blight-bag_2":17663505|"blight-bag_3":17663505|"skeletal-marauder_1":88317527|"zolramus-bonemender_1":44158764|"zolramus-sorcerer_1":39742888
+raid_events+=/pull,pull=08,bloodlust=0,delay=006,enemies="zolramus-sorcerer_1":39742888|"zolramus-sorcerer_2":39742888|"narzudah_1":96873172|"zolramus-bonecarver_1":44158764
+raid_events+=/pull,pull=09,bloodlust=0,delay=015,enemies="skeletal-marauder_1":88317527|"skeletal-marauder_2":88317527
+raid_events+=/pull,pull=10,bloodlust=0,delay=007,enemies="brittlebone-mage_1":13247630|"brittlebone-warrior_1":22079383|"brittlebone-warrior_2":22079383|"brittlebone-warrior_3":22079383|"zolramus-necromancer_1":61822269
+raid_events+=/pull,pull=11,bloodlust=0,delay=006,enemies="brittlebone-mage_1":13247630|"brittlebone-mage_2":13247630|"brittlebone-warrior_1":22079383|"brittlebone-warrior_2":22079383|"brittlebone-crossbowman_1":22079383|"brittlebone-crossbowman_2":22079383|"zolramus-necromancer_1":61822269
+raid_events+=/pull,pull=12,bloodlust=0,delay=011,enemies="zolramus-sorcerer_1":39742888|"zolramus-bonecarver_1":44158764|"zolramus-bonecarver_2":44158764|"zolramus-bonecarver_3":44158764|"skeletal-marauder_1":88317527|"zolramus-bonemender_1":44158764
+raid_events+=/pull,pull=13,bloodlust=0,delay=006,enemies="zolramus-sorcerer_1":39742888|"zolramus-bonecarver_1":44158764|"skeletal-marauder_1":88317527|"shuffling-corpse_1":14530974|"shuffling-corpse_2":14530974|"shuffling-corpse_3":14530974|"shuffling-corpse_4":14530974|"shuffling-corpse_5":14530974|"shuffling-corpse_6":14530974|"shuffling-corpse_7":14530974|"shuffling-corpse_8":14530974
+raid_events+=/pull,pull=14,bloodlust=0,delay=015,enemies="skeletal-monstrosity_1":105981033
+raid_events+=/pull,pull=15,bloodlust=0,delay=010,enemies="BOSS_amarth_1":220793819
+raid_events+=/pull,pull=16,bloodlust=0,delay=005,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"spare-parts_1":4415877|"spare-parts_2":4415877|"spare-parts_3":4415877|"spare-parts_4":4415877|"spare-parts_5":4415877|"spare-parts_6":4415877|"corpse-collector_1":44158764
+raid_events+=/pull,pull=17,bloodlust=0,delay=005,enemies="patchwerk-soldier_1":35327011|"spare-parts_1":4415877|"spare-parts_2":4415877|"spare-parts_3":4415877|"corpse-collector_1":44158764|"kyrian-stitchwerk_1":79485775
+raid_events+=/pull,pull=18,bloodlust=0,delay=001,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"flesh-crafter_1":48574641|"corpse-collector_1":44158764|"loyal-creation_1":57406394
+raid_events+=/pull,pull=19,bloodlust=0,delay=003,enemies="patchwerk-soldier_1":35327011|"patchwerk-soldier_2":35327011|"flesh-crafter_1":48574641|"corpse-collector_1":44158764|"kyrian-stitchwerk_1":79485775|"loyal-creation_1":57406394
+raid_events+=/pull,pull=20,bloodlust=0,delay=006,enemies="goregrind_1":123644538|"goregrind-bits_1":44158764|"goregrind-bits_2":44158764|"goregrind-bits_3":44158764
+raid_events+=/pull,pull=21,bloodlust=0,delay=002,enemies="rotspew-leftovers_1":35327011|"rotspew-leftovers_2":35327011|"rotspew-leftovers_3":35327011|"rotspew_1":105981033
+raid_events+=/pull,pull=22,bloodlust=0,delay=007,enemies="stitching-assistant_1":88317527|"separation-assistant_1":88317527
+raid_events+=/pull,pull=23,bloodlust=0,delay=007,enemies="BOSS_surgeon-stitchflesh_1":158971553|"stitchfleshs-creation_1":105981033
+raid_events+=/pull,pull=24,bloodlust=0,delay=026,enemies="nalthor-the-rimebinder_1":235513406
+
+# TWW1_Death_Knight_Blood.simc
+TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Unholy.simc
+
+TWW1_Demon_Hunter_Havoc.simc
+# TWW1_Demon_Hunter_Havoc_SD.simc
+TWW1_Demon_Hunter_Vengeance.simc
+TWW1_Demon_Hunter_Vengeance_Fel.simc
+
+TWW1_Druid_Balance.simc
+TWW1_Druid_Feral.simc
+TWW1_Druid_Feral_Wildstalker.simc
+TWW1_Druid_Guardian.simc
+
+# TWW1_Evoker_Devastation.simc
+
+# TWW1_Hunter_Beast_Mastery.simc
+# TWW1_Hunter_Marksmanship.simc
+# TWW1_Hunter_Survival.simc
+
+TWW1_Mage_Fire.simc
+TWW1_Mage_Frost.simc
+TWW1_Mage_Frost_FrostfireNoDC.simc
+TWW1_Mage_Frost_Frostfire.simc
+TWW1_Mage_Arcane.simc
+
+# TWW1_Monk_Brewmaster.simc
+# TWW1_Monk_Brewmaster_Niuzao.simc
+TWW1_Monk_Windwalker.simc
+
+TWW1_Paladin_Protection.simc
+TWW1_Paladin_Retribution.simc
+TWW1_Paladin_Retribution_Templar.simc
+
+TWW1_Priest_Shadow.simc
+
+TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Outlaw.simc
+TWW1_Rogue_Outlaw_HO.simc
+TWW1_Rogue_Subtlety.simc
+
+TWW1_Shaman_Elemental.simc
+TWW1_Shaman_Elemental_Storm.simc
+TWW1_Shaman_Enhancement.simc
+TWW1_Shaman_Enhancement_Storm.simc
+
+TWW1_Warlock_Affliction_Hellcaller.simc
+TWW1_Warlock_Affliction.simc
+TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Destruction.simc
+TWW1_Warlock_Destruction_Hellcaller.simc
+
+# TWW1_Warrior_Arms.simc
+# TWW1_Warrior_Arms_Juggernaut.simc
+TWW1_Warrior_Fury.simc
+TWW1_Warrior_Fury_Mountain.simc
+TWW1_Warrior_Protection.simc
+TWW1_Warrior_Protection_Colossus.simc

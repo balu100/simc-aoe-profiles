@@ -1,3 +1,10 @@
+./simc TWW1_Raid_NW_10.simc html=/opt/outside/TWW1_Raid_NW_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_NW_10.simc html=/opt/outside/TWW1_Raid_NW_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_NW_15.simc html=/opt/outside/TWW1_Raid_NW_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_NW_15.simc html=/opt/outside/TWW1_Raid_NW_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_NW_20.simc html=/opt/outside/TWW1_Raid_NW_20.html target_error=1.0 ptr=0
+./simc TWW1_Raid_NW_20.simc html=/opt/outside/TWW1_Raid_NW_20_PTR.html target_error=1.0 ptr=1
+
 ./simc TWW1_Raid.simc html=/opt/outside/6Target_LightMovement.html fight_style=LightMovement desired_targets=6 target_error=1.0
 ./simc TWW1_Raid.simc html=/opt/outside/6Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=6 target_error=1.0
 ./simc TWW1_Raid.simc html=/opt/outside/6Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=6 target_error=1.0
