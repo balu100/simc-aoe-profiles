@@ -1,19 +1,28 @@
 #!/bin/ash
 
-# Remove the existing directory if it exists
-rm -rf /opt/simc-aoe-profiles
+# Define the URL of the toruncommands file
+TORUN_URL="http://example.com/toruncommands"  # Replace with the actual URL
 
-# Clone the repository
-git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
+# Define the path where the toruncommands file will be saved
+TORUN_FILE="/app/SimulationCraft/toruncommands"
 
-# Copy files to the destination directory
-cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
+# Download the toruncommands file using wget
+wget -O "$TORUN_FILE" "$TORUN_URL"
 
-# Change directory to /app/SimulationCraft
-cd /app/SimulationCraft || exit 1  # Exit if the directory doesn't exist
+# Check if the file was downloaded successfully
+if [ ! -f "$TORUN_FILE" ]; then
+    echo "Failed to download $TORUN_URL"
+    exit 1
+fi
 
-# Read commands from the /app/SimulationCraft/profiles/torun file and execute them
+# Make sure the file is executable
+chmod +x "$TORUN_FILE"
+
+# Read commands from the toruncommands file and execute them
 while IFS= read -r line; do
-    # Execute the command using ash
-    /bin/ash -c "$line"
-done < /app/SimulationCraft/profiles/torun
+    # Skip empty lines or lines starting with '#' (comments)
+    [ -z "$line" ] || [ "${line#\#}" != "$line" ] || continue
+    # Execute the command
+    echo "Running: $line"
+    $line
+done < "$TORUN_FILE"
