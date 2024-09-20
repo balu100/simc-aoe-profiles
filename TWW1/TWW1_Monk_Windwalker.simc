@@ -7,6 +7,7 @@ role=attack
 position=back
 talents=C0QAAAAAAAAAAAAAAAAAAAAAAMzYmBDzMjZGYMAAAAAAAAAAAwyywMxMDjZALMjlZMDz2YmBLzEAALzMDzMzMbzAAYDAMbzSzMzsAA
 
+
 # Default consumables
 potion=tempered_potion_3
 flask=flask_of_alchemical_chaos_3
