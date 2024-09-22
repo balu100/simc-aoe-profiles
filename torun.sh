@@ -27,10 +27,10 @@ echo "the-necrotic-wake"
 
 
 echo "ara-kara-city-of-echoes"
-./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCoE_10.html target_error=1.0 ptr=0
-./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCoE_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCoE_15.html target_error=1.0 ptr=0
-./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCoE_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCOE_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCOE_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCOE_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCOE_15_PTR.html target_error=1.0 ptr=1
 
 
 echo "city-of-threads"
