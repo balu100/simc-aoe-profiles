@@ -95,7 +95,7 @@ actions.colossus_execute+=/avatar
 actions.colossus_execute+=/colossus_smash
 actions.colossus_execute+=/warbreaker
 actions.colossus_execute+=/demolish,if=debuff.colossus_smash.up
-actions.colossus_execute+=/mortal_strike,if=debuff.executioners_precision.stack=2&!dot.ravager.remains&(buff.lethal_blows.stack=2|!set_bonus.TWW_4pc)
+actions.colossus_execute+=/mortal_strike,if=debuff.executioners_precision.stack=2&!dot.ravager.remains&(buff.lethal_blows.stack=2|!set_bonus.tww1_4pc)
 actions.colossus_execute+=/execute,if=rage>=40
 actions.colossus_execute+=/skullsplitter
 actions.colossus_execute+=/overpower
