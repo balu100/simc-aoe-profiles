@@ -25,22 +25,64 @@ You can run SimulationCraft with these profiles via Docker for a streamlined set
    - The output files will be saved to `/opt/outside` inside the container, which will be automatically mapped to the host machine.
      
 3. **What does it auto generate**
-   ```
-   ./simc TWW1_Raid.simc html=/opt/outside/6Target_LightMovement.html fight_style=LightMovement desired_targets=6 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/6Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=6 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/6Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=6 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/8Target_LightMovement.html fight_style=LightMovement desired_targets=8 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/8Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=8 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/8Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=8 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/DungeonSlice.html fight_style=DungeonSlice target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/Patchwerk.html fight_style=Patchwerk target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/12Target_LightMovement.html fight_style=LightMovement desired_targets=12 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/12Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=12 target_error=1.0
-   ./simc TWW1_Raid.simc html=/opt/outside/12Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=12 target_error=1.0
-   #./simc TWW1_Raid.simc html=/opt/outside/20Target_LightMovement.html fight_style=LightMovement desired_targets=20 target_error=1.0
-   #./simc TWW1_Raid.simc html=/opt/outside/20Target_HeavyMovement.html fight_style=HeavyMovement desired_targets=20 target_error=1.0
-   #./simc TWW1_Raid.simc html=/opt/outside/20Target_HelterSkelter.html fight_style=HelterSkelter desired_targets=20 target_error=1.0
-    ```
+```
+echo "siege-of-boralu"
+./simc TWW1_Raid_SoB_10.simc html=/opt/outside/TWW1_Raid_SoB_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_SoB_10.simc html=/opt/outside/TWW1_Raid_SoB_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_SoB_15.simc html=/opt/outside/TWW1_Raid_SoB_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_SoB_15.simc html=/opt/outside/TWW1_Raid_SoB_15_PTR.html target_error=1.0 ptr=1
+
+echo "mists-of-tirna-scithe"
+./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15_PTR.html target_error=1.0 ptr=1
+
+
+echo "the-necrotic-wake"
+./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15_PTR.html target_error=1.0 ptr=1
+
+
+echo "ara-kara-city-of-echoes"
+./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCOE_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_AKCOE_10.simc html=/opt/outside/TWW1_Raid_AKCOE_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCOE_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_AKCOE_15.simc html=/opt/outside/TWW1_Raid_AKCOE_15_PTR.html target_error=1.0 ptr=1
+
+
+echo "city-of-threads"
+./simc TWW1_Raid_CoT_10.simc html=/opt/outside/TWW1_Raid_CoT_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_CoT_10.simc html=/opt/outside/TWW1_Raid_CoT_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_CoT_15.simc html=/opt/outside/TWW1_Raid_CoT_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_CoT_15.simc html=/opt/outside/TWW1_Raid_CoT_15_PTR.html target_error=1.0 ptr=1
+
+
+echo "the-dawnbreaker"
+./simc TWW1_Raid_TD_10.simc html=/opt/outside/TWW1_Raid_TD_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TD_10.simc html=/opt/outside/TWW1_Raid_TD_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TD_15.simc html=/opt/outside/TWW1_Raid_TD_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TD_15.simc html=/opt/outside/TWW1_Raid_TD_15_PTR.html target_error=1.0 ptr=1
+
+
+echo "the-stonevault"
+./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15_PTR.html target_error=1.0 ptr=1
+
+echo "grim-batol"
+./simc TWW1_Raid_GB_10.simc html=/opt/outside/TWW1_Raid_GB_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_GB_10.simc html=/opt/outside/TWW1_Raid_GB_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15_PTR.html target_error=1.0 ptr=1
+
+echo "single target with aoe"
+./simc TWW1_Raid.simc html=/opt/outside/TTWW1_Raid.html target_error=1.0 ptr=0
+./simc TWW1_Raid.simc html=/opt/outside/TWW1_Raid_PTR.html target_error=1.0 ptr=1
+```
 
 ### Contributions
 Contributions are welcome! If you have any suggestions for improvements or additional profiles, feel free to submit a pull request or open an issue.
