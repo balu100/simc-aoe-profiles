@@ -13,17 +13,17 @@ echo "siege-of-boralu"
 ./simc TWW1_Raid_SoB_15.simc html=/opt/outside/TWW1_Raid_SoB_15_PTR.html target_error=1.0 ptr=1
 
 echo "mists-of-tirna-scithe"
-#./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10_PTR.html target_error=1.0 ptr=1
-#./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_MoTS_10.simc html=/opt/outside/TWW1_Raid_MoTS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_MoTS_15.simc html=/opt/outside/TWW1_Raid_MoTS_15_PTR.html target_error=1.0 ptr=1
 
 
 echo "the-necrotic-wake"
-#./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10_PTR.html target_error=1.0 ptr=1
-#./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TNW_10.simc html=/opt/outside/TWW1_Raid_TNW_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TNW_15.simc html=/opt/outside/TWW1_Raid_TNW_15_PTR.html target_error=1.0 ptr=1
 
 
 echo "ara-kara-city-of-echoes"
@@ -48,16 +48,16 @@ echo "the-dawnbreaker"
 
 
 echo "the-stonevault"
-#./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10_PTR.html target_error=1.0 ptr=1
-#./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TS_10.simc html=/opt/outside/TWW1_Raid_TS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_TS_15.simc html=/opt/outside/TWW1_Raid_TS_15_PTR.html target_error=1.0 ptr=1
 
 echo "grim-batol"
 ./simc TWW1_Raid_GB_10.simc html=/opt/outside/TWW1_Raid_GB_10.html target_error=1.0 ptr=0
 ./simc TWW1_Raid_GB_10.simc html=/opt/outside/TWW1_Raid_GB_10_PTR.html target_error=1.0 ptr=1
-#./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15.html target_error=1.0 ptr=0
+./simc TWW1_Raid_GB_15.simc html=/opt/outside/TWW1_Raid_GB_15_PTR.html target_error=1.0 ptr=1
 
 echo "single target with aoe"
 ./simc TWW1_Raid.simc html=/opt/outside/TTWW1_Raid.html target_error=1.0 ptr=0

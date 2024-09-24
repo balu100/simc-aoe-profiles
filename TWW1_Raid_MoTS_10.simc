@@ -1,3 +1,35 @@
+fight_style=DungeonRoute
+override.bloodlust=0
+override.arcane_intellect=0
+override.power_word_fortitude=0
+override.battle_shout=0
+override.mystic_touch=0
+override.chaos_brand=0
+override.bleeding=0
+single_actor_batch=1
+max_time=1800
+enemy="Raider.IO Weekly Route - Bunten"
+enemy_health=999999
+keystone_level=10
+raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+raid_events+=/pull,pull=01,bloodlust=0,delay=008,enemies="drust-spiteclaw_1":8353761|"drust-spiteclaw_2":8353761|"drust-spiteclaw_3":8353761|"tirnenn-villager_1":33415046|"drust-soulcleaver_1":15315229|"drust-soulcleaver_2":15315229
+raid_events+=/pull,pull=02,bloodlust=0,delay=007,enemies="drust-spiteclaw_1":8353761|"drust-spiteclaw_2":8353761|"drust-spiteclaw_3":8353761|"drust-spiteclaw_4":8353761|"drust-spiteclaw_5":8353761
+raid_events+=/pull,pull=03,bloodlust=0,delay=006,enemies="tirnenn-villager_1":33415046|"drust-harvester_1":12530642|"drust-soulcleaver_1":15315229|"drust-soulcleaver_2":15315229
+raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="drust-soulcleaver_1":15315229|"drust-harvester_1":12530642|"drust-harvester_2":12530642|"drust-boughbreaker_1":30630459
+raid_events+=/pull,pull=05,bloodlust=0,delay=009,enemies="drust-soulcleaver_1":15315229|"drust-soulcleaver_2":15315229|"drust-harvester_1":12530642|"drust-harvester_2":12530642
+raid_events+=/pull,pull=06,bloodlust=0,delay=010,enemies="drust-boughbreaker_1":30630459|"drust-boughbreaker_2":30630459
+raid_events+=/pull,pull=07,bloodlust=0,delay=007,enemies="BOSS_ingra-maloch_1":169524715|"BOSS_droman-oulfarran_1":40811505
+raid_events+=/pull,pull=08,bloodlust=0,delay=022,enemies="mistveil-defender_1":21441320|"mistveil-defender_2":21441320
+raid_events+=/pull,pull=09,bloodlust=0,delay=024,enemies="mistveil-defender_1":21441320|"mistveil-defender_2":21441320|"mistveil-defender_3":21441320|"mistveil-defender_4":21441320|"mistveil-defender_5":21441320|"mistveil-defender_6":21441320|"mistveil-stalker_1":12530642|"mistveil-stalker_2":12530642|"mistveil-stinger_1":11138349|"mistveil-stinger_2":11138349|"mistveil-matriarch_1":41768808|"mistveil-guardian_1":25061284|"mistveil-guardian_2":25061284|"mistveil-guardian_3":25061284|"mistveil-tender_1":13226789|"mistveil-tender_2":13226789|"mistveil-tender_3":13226789|"mistveil-shaper_1":14619082|"mistveil-shaper_2":14619082|"mistveil-nightblossom_1":41768808
+raid_events+=/pull,pull=11,bloodlust=0,delay=018,enemies="BOSS_mistcaller_1":109877130
+raid_events+=/pull,pull=12,bloodlust=0,delay=026,enemies="spinemaw-staghorn_1":22276697|"spinemaw-acidgullet_1":13922935|"spinemaw-acidgullet_2":13922935
+raid_events+=/pull,pull=13,bloodlust=0,delay=013,enemies="spinemaw-gorger_1":13922935|"spinemaw-staghorn_1":22276697|"spinemaw-larva_1":2784587|"spinemaw-larva_2":2784587|"spinemaw-larva_3":2784587|"spinemaw-larva_4":2784587|"spinemaw-larva_5":2784587|"spinemaw-larva_6":2784587
+raid_events+=/pull,pull=14,bloodlust=0,delay=005,enemies="spinemaw-reaver_1":11138349|"spinemaw-reaver_2":11138349
+raid_events+=/pull,pull=15,bloodlust=0,delay=008,enemies="spinemaw-gorger_1":13922935|"spinemaw-staghorn_1":22276697|"spinemaw-acidgullet_1":13922935|"spinemaw-acidgullet_2":13922935
+raid_events+=/pull,pull=16,bloodlust=0,delay=007,enemies="spinemaw-larva_1":2784587|"spinemaw-larva_2":2784587|"spinemaw-larva_3":2784587|"spinemaw-larva_4":2784587|"spinemaw-larva_5":2784587|"spinemaw-larva_6":2784587|"spinemaw-acidgullet_1":13922935|"spinemaw-gorger_1":13922935
+raid_events+=/pull,pull=17,bloodlust=0,delay=006,enemies="spinemaw-acidgullet_1":13922935|"spinemaw-acidgullet_2":13922935|"spinemaw-gorger_1":13922935|"spinemaw-gorger_2":13922935
+raid_events+=/pull,pull=18,bloodlust=0,delay=019,enemies="tredova_1":125573863
+
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
 TWW1_Death_Knight_Unholy.simc

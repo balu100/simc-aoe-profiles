@@ -1,11 +1,11 @@
-shaman="TWW1_Shaman_Enhancement_Hybrid"
+shaman="TWW1_Shaman_Enhancement"
 source=default
 spec=enhancement
 level=80
 race=goblin
 role=attack
 position=back
-talents=CcQAAAAAAAAAAAAAAAAAAAAAAMzMz2MzMGjZYGmFsMjZAAAAAAAAAAsBwYGDDsAbDDNYBAzykBmFGzMjxMzsglZmJLsMWGzMAAzA
+talents=CcQAAAAAAAAAAAAAAAAAAAAAAMzMz2MzMGzMDzwsglZMAAAAAAAAAAsBwYGDDsAbDDNYBAzykBmFGzMjxMzsglZmJLsMWGzMAAzA
 
 # Default consumables
 potion=tempered_potion_3
