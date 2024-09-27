@@ -60,8 +60,8 @@ echo "grim-batol"
 ./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Raid_GB_15_PTR.json html=/opt/outside/TWW1_Raid_GB_15_PTR.html target_error=1.0 ptr=1
 
 echo "single target with aoe"
-./simc TWW1_Raid.simc json2=/opt/outside/TTWW1_Raid.json html=/opt/outside/TTWW1_Raid.html target_error=1.0 ptr=0
-./simc TWW1_Raid.simc json2=/opt/outside/TTWW1_Raid_PTR.json html=/opt/outside/TWW1_Raid_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Raid.json html=/opt/outside/TWW1_Raid.html target_error=1.0 ptr=0
+./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Raid_PTR.json html=/opt/outside/TWW1_Raid_PTR.html target_error=1.0 ptr=1
 
 
 echo "done"
