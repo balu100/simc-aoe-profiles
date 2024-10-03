@@ -11,20 +11,24 @@ echo ""
 echo ""
 echo ""
 
-# Array of colors for the rainbow effect
-colors=("\033[31m" "\033[33m" "\033[32m" "\033[36m" "\033[34m" "\033[35m")
+# Colors in a space-separated string (compatible with POSIX shell)
+colors="\033[31m \033[33m \033[32m \033[36m \033[34m \033[35m"
+color_list=$(echo $colors)
 
 # Displaying the message in rainbow colors with a larger font
 figlet -f big "Version 1.0" | while IFS= read -r line; do
-  # Pick a random color for each line
-  color=${colors[$((RANDOM % ${#colors[@]}))]}
+  # Cycle through the colors by selecting one based on the current index
+  color=$(echo $color_list | cut -d' ' -f$((i % 6 + 1)))
   echo -e "${color}${line}\033[0m"
+  i=$((i + 1))
 done
 
 # Adding more blank lines
 echo ""
 echo ""
 echo ""
+
+
 
 
 echo "siege-of-boralu"
