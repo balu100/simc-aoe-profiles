@@ -11,13 +11,21 @@ echo ""
 echo ""
 echo ""
 
-# Displaying the message in big and red
-echo -e "\033[31m$(figlet -f slant "Version 1.0" | sed 's/^/\033[31m/g')\033[0m"
+# Array of colors for the rainbow effect
+colors=("\033[31m" "\033[33m" "\033[32m" "\033[36m" "\033[34m" "\033[35m")
 
-# Adding more blank lines 
+# Displaying the message in rainbow colors with a larger font
+figlet -f big "Version 1.0" | while IFS= read -r line; do
+  # Pick a random color for each line
+  color=${colors[$((RANDOM % ${#colors[@]}))]}
+  echo -e "${color}${line}\033[0m"
+done
+
+# Adding more blank lines
 echo ""
 echo ""
 echo ""
+
 
 echo "siege-of-boralu"
 ./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Raid_SoB_10.json html=/opt/outside/TWW1_Raid_SoB_10.html target_error=1.0 ptr=0
