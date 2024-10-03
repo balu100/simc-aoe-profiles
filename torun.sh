@@ -12,9 +12,9 @@ echo ""
 echo ""
 
 # Displaying the message in big and red
-echo -e "\033[31m$(figlet -f slant "Version 1.0")\033[0m"
+echo -e "\033[31m$(figlet -f slant "Version 1.0" | sed 's/^/\033[31m/g')\033[0m"
 
-# Adding more blank lines
+# Adding more blank lines 
 echo ""
 echo ""
 echo ""
