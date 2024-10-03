@@ -8,16 +8,6 @@ role=tank
 position=front
 talents=CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZmMzMYYmZbMGjtZYmZMzwY2mZmtZmhZwAAAAAsMLmxwsw0AzMG2A
 
-demonhunter="TWW1_Demon_Hunter_Vengeance"
-source=default
-spec=vengeance
-level=80
-race=night_elf
-timeofday=night
-role=tank
-position=front
-talents=CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZmMzMYYmZbMGjtZYmZMzwY2mZmtZmhZwAAAAAsMLmxwsw0AzMG2A
-
 # Default consumables
 potion=tempered_potion_3
 flask=flask_of_alchemical_chaos_3
