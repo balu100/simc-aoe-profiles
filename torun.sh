@@ -6,6 +6,7 @@ rm -rf /opt/simc-aoe-profiles
 git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
 cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
 
+
 # Adding blank lines
 echo ""
 echo ""
@@ -15,19 +16,39 @@ echo ""
 colors="\033[31m \033[33m \033[32m \033[36m \033[34m \033[35m"
 color_list=$(echo $colors)
 
-# Displaying the message in rainbow colors with a larger font
+# Shuffle function to randomize the color order
+shuffle_colors() {
+  echo $color_list | tr ' ' '\n' | shuf | tr '\n' ' '
+}
+
+# Shuffle the colors initially
+shuffled_colors=$(shuffle_colors)
+
+# Counter to track which color we're on
+i=1
+
+# Displaying the message in shuffled rainbow colors with a larger font
 figlet -f big "Version 1.0" | while IFS= read -r line; do
-  # Cycle through the colors by selecting one based on the current index
-  color=$(echo $color_list | cut -d' ' -f$((i % 6 + 1)))
+  # Get the current color from the shuffled list
+  color=$(echo $shuffled_colors | cut -d' ' -f$i)
+  
+  # Display the line in the current color
   echo -e "${color}${line}\033[0m"
+  
+  # Move to the next color
   i=$((i + 1))
+  
+  # If we've used all colors, reshuffle them and reset the index
+  if [ $i -gt $(echo $shuffled_colors | wc -w) ]; then
+    shuffled_colors=$(shuffle_colors)
+    i=1
+  fi
 done
 
 # Adding more blank lines
 echo ""
 echo ""
 echo ""
-
 
 
 
