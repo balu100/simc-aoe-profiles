@@ -7,31 +7,32 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=21000
+max_time=18000
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=15
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
-raid_events+=/pull,pull=01,bloodlust=0,delay=008,enemies="drust-spiteclaw_1":13460478|"drust-spiteclaw_2":13460478|"drust-spiteclaw_3":13460478|"tirnenn-villager_1":53841912|"drust-soulcleaver_1":24677543|"drust-soulcleaver_2":24677543
-raid_events+=/pull,pull=02,bloodlust=0,delay=007,enemies="drust-spiteclaw_1":13460478|"drust-spiteclaw_2":13460478|"drust-spiteclaw_3":13460478|"drust-spiteclaw_4":13460478|"drust-spiteclaw_5":13460478
-raid_events+=/pull,pull=03,bloodlust=0,delay=006,enemies="tirnenn-villager_1":53841912|"drust-harvester_1":20190717|"drust-soulcleaver_1":24677543|"drust-soulcleaver_2":24677543
-raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="drust-soulcleaver_1":24677543|"drust-harvester_1":20190717|"drust-harvester_2":20190717|"drust-boughbreaker_1":49355086
-raid_events+=/pull,pull=05,bloodlust=0,delay=009,enemies="drust-soulcleaver_1":24677543|"drust-soulcleaver_2":24677543|"drust-harvester_1":20190717|"drust-harvester_2":20190717
-raid_events+=/pull,pull=06,bloodlust=0,delay=010,enemies="drust-boughbreaker_1":49355086|"drust-boughbreaker_2":49355086
-raid_events+=/pull,pull=07,bloodlust=0,delay=007,enemies="BOSS_ingra-maloch_1":272785698|"BOSS_droman-oulfarran_1":65670631
-raid_events+=/pull,pull=08,bloodlust=0,delay=022,enemies="mistveil-defender_1":34548559|"mistveil-defender_2":34548559
-raid_events+=/pull,pull=09,bloodlust=0,delay=024,enemies="mistveil-defender_1":34548559|"mistveil-defender_2":34548559|"mistveil-defender_3":34548559|"mistveil-defender_4":34548559|"mistveil-defender_5":34548559|"mistveil-defender_6":34548559|"mistveil-stalker_1":20190717|"mistveil-stalker_2":20190717|"mistveil-stinger_1":17947304|"mistveil-stinger_2":17947304|"mistveil-matriarch_1":67302390|"mistveil-guardian_1":40381434|"mistveil-guardian_2":40381434|"mistveil-guardian_3":40381434|"mistveil-tender_1":21312424|"mistveil-tender_2":21312424|"mistveil-tender_3":21312424|"mistveil-shaper_1":23555836|"mistveil-shaper_2":23555836|"mistveil-nightblossom_1":67302390
-raid_events+=/pull,pull=11,bloodlust=0,delay=018,enemies="BOSS_mistcaller_1":176805545
-raid_events+=/pull,pull=12,bloodlust=0,delay=026,enemies="spinemaw-staghorn_1":35894607|"spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129
-raid_events+=/pull,pull=13,bloodlust=0,delay=013,enemies="spinemaw-gorger_1":22434129|"spinemaw-staghorn_1":35894607|"spinemaw-larva_1":4486826|"spinemaw-larva_2":4486826|"spinemaw-larva_3":4486826|"spinemaw-larva_4":4486826|"spinemaw-larva_5":4486826|"spinemaw-larva_6":4486826
-raid_events+=/pull,pull=14,bloodlust=0,delay=005,enemies="spinemaw-reaver_1":17947304|"spinemaw-reaver_2":17947304
-raid_events+=/pull,pull=15,bloodlust=0,delay=008,enemies="spinemaw-gorger_1":22434129|"spinemaw-staghorn_1":35894607|"spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129
-raid_events+=/pull,pull=16,bloodlust=0,delay=007,enemies="spinemaw-larva_1":4486826|"spinemaw-larva_2":4486826|"spinemaw-larva_3":4486826|"spinemaw-larva_4":4486826|"spinemaw-larva_5":4486826|"spinemaw-larva_6":4486826|"spinemaw-acidgullet_1":22434129|"spinemaw-gorger_1":22434129
-raid_events+=/pull,pull=17,bloodlust=0,delay=006,enemies="spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129|"spinemaw-gorger_1":22434129|"spinemaw-gorger_2":22434129
-raid_events+=/pull,pull=18,bloodlust=0,delay=019,enemies="tredova_1":202063480
+raid_events+=/pull,pull=01,bloodlust=0,delay=014,enemies="drust-spiteclaw_1":13460478|"drust-spiteclaw_2":13460478|"drust-spiteclaw_3":13460478|"drust-spiteclaw_4":13460478|"drust-spiteclaw_5":13460478|"tirnenn-villager_1":53841912|"drust-soulcleaver_1":24677543|"drust-soulcleaver_2":24677543|"drust-harvester_1":20190717
+raid_events+=/pull,pull=02,bloodlust=0,delay=013,enemies="drust-soulcleaver_1":24677543|"drust-harvester_1":20190717|"drust-harvester_2":20190717|"drust-boughbreaker_1":49355086
+raid_events+=/pull,pull=03,bloodlust=0,delay=009,enemies="drust-soulcleaver_1":24677543|"drust-soulcleaver_2":24677543|"drust-harvester_1":20190717|"drust-harvester_2":20190717
+raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="drust-boughbreaker_1":49355086|"drust-boughbreaker_2":49355086
+raid_events+=/pull,pull=05,bloodlust=0,delay=007,enemies="BOSS_ingra-maloch_1":272785698|"BOSS_droman-oulfarran_1":65670631
+raid_events+=/pull,pull=06,bloodlust=0,delay=022,enemies="mistveil-defender_1":34548559|"mistveil-defender_2":34548559
+raid_events+=/pull,pull=07,bloodlust=0,delay=027,enemies="mistveil-defender_1":34548559|"mistveil-defender_2":34548559|"mistveil-defender_3":34548559|"mistveil-defender_4":34548559|"mistveil-defender_5":34548559|"mistveil-stalker_1":20190717|"mistveil-stalker_2":20190717|"mistveil-stalker_3":20190717|"mistveil-stinger_1":17947304|"mistveil-stinger_2":17947304|"mistveil-guardian_1":40381434|"mistveil-guardian_2":40381434|"mistveil-guardian_3":40381434|"mistveil-guardian_4":40381434|"mistveil-tender_1":21312424|"mistveil-tender_2":21312424|"mistveil-shaper_1":23555836|"mistveil-shaper_2":23555836|"mistveil-matriarch_1":67302390
+raid_events+=/pull,pull=08,bloodlust=0,delay=020,enemies="BOSS_mistcaller_1":176805545
+raid_events+=/pull,pull=09,bloodlust=0,delay=026,enemies="spinemaw-staghorn_1":35894607|"spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129
+raid_events+=/pull,pull=10,bloodlust=0,delay=013,enemies="spinemaw-gorger_1":22434129|"spinemaw-staghorn_1":35894607|"spinemaw-larva_1":4486826|"spinemaw-larva_2":4486826|"spinemaw-larva_3":4486826|"spinemaw-larva_4":4486826|"spinemaw-larva_5":4486826|"spinemaw-larva_6":4486826
+raid_events+=/pull,pull=11,bloodlust=0,delay=005,enemies="spinemaw-reaver_1":17947304|"spinemaw-reaver_2":17947304
+raid_events+=/pull,pull=12,bloodlust=0,delay=008,enemies="spinemaw-gorger_1":22434129|"spinemaw-staghorn_1":35894607|"spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129
+raid_events+=/pull,pull=13,bloodlust=0,delay=007,enemies="spinemaw-larva_1":4486826|"spinemaw-larva_2":4486826|"spinemaw-larva_3":4486826|"spinemaw-larva_4":4486826|"spinemaw-larva_5":4486826|"spinemaw-larva_6":4486826|"spinemaw-acidgullet_1":22434129|"spinemaw-gorger_1":22434129
+raid_events+=/pull,pull=14,bloodlust=0,delay=006,enemies="spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129|"spinemaw-gorger_1":22434129|"spinemaw-gorger_2":22434129
+raid_events+=/pull,pull=15,bloodlust=0,delay=023,enemies="spinemaw-staghorn_1":35894607|"spinemaw-gorger_1":22434129|"spinemaw-larva_1":4486826|"spinemaw-larva_2":4486826|"spinemaw-larva_3":4486826|"spinemaw-larva_4":4486826|"spinemaw-larva_5":4486826|"spinemaw-larva_6":4486826
+raid_events+=/pull,pull=16,bloodlust=0,delay=012,enemies="spinemaw-staghorn_1":35894607|"spinemaw-acidgullet_1":22434129|"spinemaw-acidgullet_2":22434129|"spinemaw-gorger_1":22434129
+raid_events+=/pull,pull=17,bloodlust=0,delay=026,enemies="tredova_1":202063480
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -64,6 +65,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc

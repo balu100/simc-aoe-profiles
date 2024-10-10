@@ -7,39 +7,41 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=21000
+max_time=19800
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=10
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
-raid_events+=/pull,pull=01,bloodlust=0,delay=008,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"cursedheart-invader_3":15198969|"cursedheart-invader_4":15198969|"cursedheart-invader_5":15198969|"cursedheart-invader_6":15198969|"earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"repurposed-loaderbot_1":15958917|"repurposed-loaderbot_2":15958917|"repurposed-loaderbot_3":15958917|"repurposed-loaderbot_4":15958917
-raid_events+=/pull,pull=02,bloodlust=0,delay=009,enemies="earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"ghastly-voidsoul_2":13679072|"repurposed-loaderbot_1":15958917
-raid_events+=/pull,pull=03,bloodlust=0,delay=004,enemies="earth-infused-golem_1":24318350|"earth-infused-golem_2":24318350
-raid_events+=/pull,pull=04,bloodlust=0,delay=003,enemies="cursedheart-invader_1":15198969|"earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"repurposed-loaderbot_1":15958917
-raid_events+=/pull,pull=05,bloodlust=0,delay=008,enemies="BOSS_edna_1":131903420
-raid_events+=/pull,pull=06,bloodlust=0,delay=005,enemies="void-bound-despoiler_1":24318350|"engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866
-raid_events+=/pull,pull=07,bloodlust=0,delay=014,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"void-bound-howler_1":14439020|"void-bound-howler_2":14439020|"void-bound-howler_3":14439020|"turned-speaker_1":15958917|"turned-speaker_2":15958917|"turned-speaker_3":15958917|"void-touched-elemental_1":16718866
-raid_events+=/pull,pull=08,bloodlust=0,delay=010,enemies="void-bound-despoiler_1":24318350|"void-bound-howler_1":14439020|"void-bound-howler_2":14439020
-raid_events+=/pull,pull=09,bloodlust=0,delay=005,enemies="cursedheart-invader_1":15198969|"turned-speaker_1":15958917|"turned-speaker_2":15958917|"void-touched-elemental_1":16718866|"void-bound-despoiler_1":24318350
-raid_events+=/pull,pull=10,bloodlust=0,delay=007,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"void-touched-elemental_1":16718866|"void-touched-elemental_2":16718866
-raid_events+=/pull,pull=11,bloodlust=0,delay=012,enemies="BOSS_skarmorak_1":115415493|"crystal-shard_1":1215917
-raid_events+=/pull,pull=12,bloodlust=0,delay=046,enemies="engine-speaker_1":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969
-raid_events+=/pull,pull=13,bloodlust=0,delay=010,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forge-loader_1":27358144|"repurposed-loaderbot_1":15958917|"forgebound-mender_1":13679072
-raid_events+=/pull,pull=14,bloodlust=0,delay=007,enemies="aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"aspiring-forgehand_4":9119381|"aspiring-forgehand_5":9119381
-raid_events+=/pull,pull=15,bloodlust=0,delay=004,enemies="forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"repurposed-loaderbot_1":15958917|"engine-speaker_1":16718866
-raid_events+=/pull,pull=16,bloodlust=0,delay=005,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072|"forgebound-mender_4":13679072|"forgebound-mender_5":13679072
-raid_events+=/pull,pull=17,bloodlust=0,delay=007,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381
-raid_events+=/pull,pull=18,bloodlust=0,delay=005,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381
-raid_events+=/pull,pull=19,bloodlust=0,delay=020,enemies="BOSS_speaker-brokk_1":74195674|"BOSS_speaker-dorlita_1":89034809
-raid_events+=/pull,pull=20,bloodlust=0,delay=049,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350|"rock-smasher_1":30397938
-raid_events+=/pull,pull=21,bloodlust=0,delay=008,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350|"cursedforge-mender_1":13679072|"cursedforge-mender_2":13679072
-raid_events+=/pull,pull=22,bloodlust=0,delay=005,enemies="cursedforge-mender_1":13679072|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
-raid_events+=/pull,pull=23,bloodlust=0,delay=007,enemies="rock-smasher_1":30397938|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
-raid_events+=/pull,pull=24,bloodlust=0,delay=004,enemies="rock-smasher_1":30397938|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
-raid_events+=/pull,pull=25,bloodlust=0,delay=010,enemies="BOSS_void-speaker-eirich_1":131903420
+raid_events+=/pull,pull=01,bloodlust=0,delay=006,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"cursedheart-invader_3":15198969|"earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"repurposed-loaderbot_1":15958917|"repurposed-loaderbot_2":15958917
+raid_events+=/pull,pull=02,bloodlust=0,delay=005,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"cursedheart-invader_3":15198969|"repurposed-loaderbot_1":15958917|"repurposed-loaderbot_2":15958917
+raid_events+=/pull,pull=03,bloodlust=0,delay=006,enemies="earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"ghastly-voidsoul_2":13679072|"repurposed-loaderbot_1":15958917
+raid_events+=/pull,pull=04,bloodlust=0,delay=004,enemies="earth-infused-golem_1":24318350|"earth-infused-golem_2":24318350
+raid_events+=/pull,pull=05,bloodlust=0,delay=003,enemies="cursedheart-invader_1":15198969|"earth-infused-golem_1":24318350|"ghastly-voidsoul_1":13679072|"repurposed-loaderbot_1":15958917
+raid_events+=/pull,pull=06,bloodlust=0,delay=008,enemies="BOSS_edna_1":131903420
+raid_events+=/pull,pull=07,bloodlust=0,delay=005,enemies="void-bound-despoiler_1":24318350|"engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866
+raid_events+=/pull,pull=08,bloodlust=0,delay=014,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"void-bound-howler_1":14439020|"void-bound-howler_2":14439020|"void-bound-howler_3":14439020|"turned-speaker_1":15958917|"turned-speaker_2":15958917|"turned-speaker_3":15958917|"void-touched-elemental_1":16718866
+raid_events+=/pull,pull=09,bloodlust=0,delay=010,enemies="void-bound-despoiler_1":24318350|"void-bound-howler_1":14439020|"void-bound-howler_2":14439020
+raid_events+=/pull,pull=10,bloodlust=0,delay=005,enemies="cursedheart-invader_1":15198969|"turned-speaker_1":15958917|"turned-speaker_2":15958917|"void-touched-elemental_1":16718866|"void-bound-despoiler_1":24318350
+raid_events+=/pull,pull=11,bloodlust=0,delay=007,enemies="cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969|"void-touched-elemental_1":16718866|"void-touched-elemental_2":16718866
+raid_events+=/pull,pull=12,bloodlust=0,delay=009,enemies="BOSS_skarmorak_1":115415493|"crystal-shard_1":1215917
+raid_events+=/pull,pull=13,bloodlust=0,delay=043,enemies="engine-speaker_1":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"cursedheart-invader_1":15198969|"cursedheart-invader_2":15198969
+raid_events+=/pull,pull=14,bloodlust=0,delay=011,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forge-loader_1":27358144|"repurposed-loaderbot_1":15958917|"forgebound-mender_1":13679072
+raid_events+=/pull,pull=15,bloodlust=0,delay=007,enemies="aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"aspiring-forgehand_4":9119381|"aspiring-forgehand_5":9119381
+raid_events+=/pull,pull=16,bloodlust=0,delay=004,enemies="forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"repurposed-loaderbot_1":15958917|"engine-speaker_1":16718866
+raid_events+=/pull,pull=17,bloodlust=0,delay=011,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381
+raid_events+=/pull,pull=18,bloodlust=0,delay=012,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072
+raid_events+=/pull,pull=19,bloodlust=0,delay=008,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072|"forgebound-mender_4":13679072|"aspiring-forgehand_1":9119381
+raid_events+=/pull,pull=20,bloodlust=0,delay=016,enemies="BOSS_speaker-brokk_1":74195674|"BOSS_speaker-dorlita_1":89034809
+raid_events+=/pull,pull=21,bloodlust=0,delay=050,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350
+raid_events+=/pull,pull=22,bloodlust=0,delay=010,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350|"rock-smasher_1":30397938|"cursedforge-mender_1":13679072|"cursedforge-mender_2":13679072
+raid_events+=/pull,pull=23,bloodlust=0,delay=005,enemies="cursedforge-mender_1":13679072|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
+raid_events+=/pull,pull=24,bloodlust=0,delay=007,enemies="rock-smasher_1":30397938|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
+raid_events+=/pull,pull=25,bloodlust=0,delay=004,enemies="rock-smasher_1":30397938|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
+raid_events+=/pull,pull=26,bloodlust=0,delay=008,enemies="BOSS_void-speaker-eirich_1":131903420
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -72,6 +74,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc

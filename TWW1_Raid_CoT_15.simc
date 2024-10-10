@@ -17,23 +17,25 @@ raid_events+=/pull,pull=02,bloodlust=0,delay=011,enemies="sureki-venomblade_1":2
 raid_events+=/pull,pull=03,bloodlust=0,delay=009,enemies="sureki-silkbinder_1":21061583|"sureki-silkbinder_2":21061583|"sureki-silkbinder_3":21061583|"herald-of-ansurek_1":39184338
 raid_events+=/pull,pull=04,bloodlust=0,delay=013,enemies="royal-swarmguard_1":44082381|"herald-of-ansurek_1":39184338|"battle-scarab_1":4898042|"battle-scarab_2":4898042|"battle-scarab_3":4898042|"battle-scarab_4":4898042|"battle-scarab_5":4898042|"battle-scarab_6":4898042|"battle-scarab_7":4898042
 raid_events+=/pull,pull=05,bloodlust=0,delay=008,enemies="battle-scarab_1":4898042|"battle-scarab_2":4898042|"battle-scarab_3":4898042|"battle-scarab_4":4898042|"battle-scarab_5":4898042|"battle-scarab_6":4898042|"battle-scarab_7":4898042|"battle-scarab_8":4898042|"battle-scarab_9":4898042|"BOSS_orator-krixvizk_1":185717438
-raid_events+=/pull,pull=06,bloodlust=0,delay=022,enemies="xephitik_1":36735318
-raid_events+=/pull,pull=07,bloodlust=0,delay=011,enemies="eye-of-the-queen_1":44082381
-raid_events+=/pull,pull=08,bloodlust=0,delay=009,enemies="eye-of-the-queen_1":44082381|"eye-of-the-queen_2":44082381|"eye-of-the-queen_3":44082381|"web-marauder_1":31837275|"web-marauder_2":31837275|"web-marauder_3":31837275|"agile-pursuer_1":24490211|"agile-pursuer_2":24490211|"covert-webmancer_1":24490211|"covert-webmancer_2":24490211
-raid_events+=/pull,pull=09,bloodlust=0,delay=028,enemies="BOSS_vx_1":291841688|"BOSS_nx_1":291841688
-raid_events+=/pull,pull=10,bloodlust=0,delay=023,enemies="sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"web-marauder_1":31837275
-raid_events+=/pull,pull=11,bloodlust=0,delay=009,enemies="agile-pursuer_1":24490211|"agile-pursuer_2":24490211|"sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"web-marauder_1":31837275
-raid_events+=/pull,pull=12,bloodlust=0,delay=012,enemies="sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"sureki-conscript_5":14694127|"sureki-conscript_6":14694127|"sureki-conscript_7":14694127|"sureki-conscript_8":14694127|"web-marauder_1":31837275|"covert-webmancer_1":24490211|"covert-webmancer_2":24490211
-raid_events+=/pull,pull=13,bloodlust=0,delay=007,enemies="royal-venomshell_1":48980423
-raid_events+=/pull,pull=14,bloodlust=0,delay=009,enemies="assistant-unnaturaler_1":9796084|"assistant-unnaturaler_2":9796084|"assistant-unnaturaler_3":9796084|"unstable-test-subject_1":39184338|"sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169
-raid_events+=/pull,pull=15,bloodlust=0,delay=009,enemies="sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169|"sureki-unnaturaler_3":19592169
-raid_events+=/pull,pull=16,bloodlust=0,delay=012,enemies="congealed-droplet_1":4898042|"congealed-droplet_2":4898042|"congealed-droplet_3":4898042|"congealed-droplet_4":4898042|"congealed-droplet_5":4898042|"congealed-droplet_6":4898042|"congealed-droplet_7":4898042|"congealed-droplet_8":4898042|"congealed-droplet_9":4898042
-raid_events+=/pull,pull=17,bloodlust=0,delay=005,enemies="BOSS_the-coaglamation_1":212248500
-raid_events+=/pull,pull=18,bloodlust=0,delay=007,enemies="sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169|"elder-shadeweaver_1":48980423|"hulking-warshell_1":68572592
-raid_events+=/pull,pull=19,bloodlust=0,delay=009,enemies="BOSS_izo-the-grand-splicer_1":212248500
+raid_events+=/pull,pull=06,bloodlust=0,delay=028,enemies="xephitik_1":36735318|"eye-of-the-queen_1":44082381
+raid_events+=/pull,pull=07,bloodlust=0,delay=015,enemies="eye-of-the-queen_1":44082381|"web-marauder_1":31837275|"agile-pursuer_1":24490211
+raid_events+=/pull,pull=08,bloodlust=0,delay=026,enemies="eye-of-the-queen_1":44082381|"web-marauder_1":31837275|"covert-webmancer_1":24490211
+raid_events+=/pull,pull=09,bloodlust=0,delay=040,enemies="eye-of-the-queen_1":44082381|"web-marauder_1":31837275|"agile-pursuer_1":24490211|"covert-webmancer_1":24490211
+raid_events+=/pull,pull=10,bloodlust=0,delay=034,enemies="BOSS_vx_1":291841688|"BOSS_nx_1":291841688
+raid_events+=/pull,pull=11,bloodlust=0,delay=023,enemies="sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"web-marauder_1":31837275
+raid_events+=/pull,pull=12,bloodlust=0,delay=009,enemies="agile-pursuer_1":24490211|"agile-pursuer_2":24490211|"sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"web-marauder_1":31837275
+raid_events+=/pull,pull=13,bloodlust=0,delay=012,enemies="sureki-conscript_1":14694127|"sureki-conscript_2":14694127|"sureki-conscript_3":14694127|"sureki-conscript_4":14694127|"sureki-conscript_5":14694127|"sureki-conscript_6":14694127|"sureki-conscript_7":14694127|"sureki-conscript_8":14694127|"web-marauder_1":31837275|"covert-webmancer_1":24490211|"covert-webmancer_2":24490211
+raid_events+=/pull,pull=14,bloodlust=0,delay=007,enemies="royal-venomshell_1":48980423
+raid_events+=/pull,pull=15,bloodlust=0,delay=009,enemies="assistant-unnaturaler_1":9796084|"assistant-unnaturaler_2":9796084|"assistant-unnaturaler_3":9796084|"unstable-test-subject_1":39184338|"sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169
+raid_events+=/pull,pull=16,bloodlust=0,delay=009,enemies="sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169|"sureki-unnaturaler_3":19592169
+raid_events+=/pull,pull=17,bloodlust=0,delay=012,enemies="congealed-droplet_1":4898042|"congealed-droplet_2":4898042|"congealed-droplet_3":4898042|"congealed-droplet_4":4898042|"congealed-droplet_5":4898042|"congealed-droplet_6":4898042|"congealed-droplet_7":4898042|"congealed-droplet_8":4898042|"congealed-droplet_9":4898042
+raid_events+=/pull,pull=18,bloodlust=0,delay=005,enemies="BOSS_the-coaglamation_1":212248500
+raid_events+=/pull,pull=19,bloodlust=0,delay=007,enemies="sureki-unnaturaler_1":19592169|"sureki-unnaturaler_2":19592169|"elder-shadeweaver_1":48980423|"hulking-warshell_1":68572592
+raid_events+=/pull,pull=20,bloodlust=0,delay=009,enemies="BOSS_izo-the-grand-splicer_1":212248500
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -66,6 +68,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc

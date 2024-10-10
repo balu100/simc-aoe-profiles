@@ -7,30 +7,34 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=21000
+max_time=18000
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=10
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
 raid_events+=/pull,pull=01,bloodlust=0,delay=019,enemies="nightfall-curseblade_1":15958917|"nightfall-curseblade_2":15958917|"nightfall-curseblade_3":15958917|"nightfall-shadowmage_1":13679072|"nightfall-shadowmage_2":13679072|"nightfall-ritualist_1":25838247
-raid_events+=/pull,pull=02,bloodlust=0,delay=135,enemies="nightfall-curseblade_1":15958917|"nightfall-curseblade_2":15958917|"nightfall-curseblade_3":15958917|"nightfall-shadowmage_1":13679072|"nightfall-ritualist_1":25838247|"nightfall-commander_1":25838247
-raid_events+=/pull,pull=03,bloodlust=0,delay=019,enemies="nightfall-curseblade_1":15958917|"nightfall-shadowmage_1":13679072|"nightfall-shadowmage_2":13679072|"sureki-webmage_1":30397938
-raid_events+=/pull,pull=04,bloodlust=0,delay=036,enemies="nightfall-curseblade_1":15958917|"nightfall-curseblade_2":15958917|"nightfall-shadowmage_1":13679072|"sureki-webmage_1":30397938
-raid_events+=/pull,pull=05,bloodlust=0,delay=022,enemies="BOSS_speaker-shadowcrown_1":115415493
-raid_events+=/pull,pull=06,bloodlust=0,delay=051,enemies="nightfall-tactician_1":25838247|"nightfall-tactician_2":25838247|"deathscreamer-ikentak_1":41037216
-raid_events+=/pull,pull=07,bloodlust=0,delay=038,enemies="nightfall-darkcaster_1":14439020|"nightfall-shadowalker_1":15198969|"manifested-shadow_1":21278556|"manifested-shadow_2":21278556|"manifested-shadow_3":21278556|"nightfall-tactician_1":25838247
-raid_events+=/pull,pull=08,bloodlust=0,delay=010,enemies="ascendant-viscoxria_1":43317062
-raid_events+=/pull,pull=09,bloodlust=0,delay=005,enemies="nightfall-darkcaster_1":14439020|"nightfall-darkcaster_2":14439020|"nightfall-shadowalker_1":15198969|"nightfall-shadowalker_2":15198969|"manifested-shadow_1":21278556|"nightfall-tactician_1":25838247
-raid_events+=/pull,pull=10,bloodlust=0,delay=054,enemies="nightfall-darkcaster_1":14439020|"nightfall-shadowalker_1":15198969|"nightfall-tactician_1":25838247|"ixkreten-the-unbreakable_1":50156598
-raid_events+=/pull,pull=11,bloodlust=0,delay=017,enemies="sureki-militant_1":25027479
-raid_events+=/pull,pull=12,bloodlust=0,delay=004,enemies="BOSS_anubikkaj_1":173123239
-raid_events+=/pull,pull=13,bloodlust=0,delay=015,enemies="nightfall-curseblade_1":15958917|"nightfall-darkcaster_1":14439020|"nightfall-darkcaster_2":14439020|"nightfall-tactician_1":25838247
-raid_events+=/pull,pull=14,bloodlust=0,delay=009,enemies="nightfall-curseblade_1":15958917|"nightfall-shadowalker_1":15198969|"nightfall-shadowalker_2":15198969|"nightfall-shadowalker_3":15198969|"nightfall-tactician_1":25838247
-raid_events+=/pull,pull=15,bloodlust=0,delay=037,enemies="nightfall-dark-architect_1":42557113
-raid_events+=/pull,pull=16,bloodlust=0,delay=009,enemies="BOSS_rashanan_1":1780049194
+raid_events+=/pull,pull=02,bloodlust=0,delay=132,enemies="nightfall-curseblade_1":15958917|"nightfall-shadowmage_1":13679072|"nightfall-commander_1":25838247
+raid_events+=/pull,pull=03,bloodlust=0,delay=007,enemies="nightfall-curseblade_1":15958917|"nightfall-curseblade_2":15958917|"nightfall-ritualist_1":25838247
+raid_events+=/pull,pull=04,bloodlust=0,delay=019,enemies="nightfall-curseblade_1":15958917|"nightfall-commander_1":25838247|"sureki-webmage_1":30397938
+raid_events+=/pull,pull=05,bloodlust=0,delay=037,enemies="nightfall-curseblade_1":15958917|"nightfall-curseblade_2":15958917|"nightfall-shadowmage_1":13679072|"sureki-webmage_1":30397938
+raid_events+=/pull,pull=06,bloodlust=0,delay=021,enemies="BOSS_speaker-shadowcrown_1":115415493
+raid_events+=/pull,pull=07,bloodlust=0,delay=106,enemies="nightfall-darkcaster_1":14439020|"nightfall-shadowalker_1":15198969|"manifested-shadow_1":21278556
+raid_events+=/pull,pull=08,bloodlust=0,delay=008,enemies="nightfall-darkcaster_1":14439020|"nightfall-darkcaster_2":14439020|"nightfall-shadowalker_1":15198969|"nightfall-shadowalker_2":15198969|"manifested-shadow_1":21278556|"nightfall-tactician_1":25838247
+raid_events+=/pull,pull=09,bloodlust=0,delay=009,enemies="nightfall-curseblade_1":15958917|"nightfall-shadowalker_1":15198969|"manifested-shadow_1":21278556
+raid_events+=/pull,pull=10,bloodlust=0,delay=011,enemies="nightfall-curseblade_1":15958917|"nightfall-darkcaster_1":14439020|"manifested-shadow_1":21278556
+raid_events+=/pull,pull=11,bloodlust=0,delay=012,enemies="ixkreten-the-unbreakable_1":50156598
+raid_events+=/pull,pull=12,bloodlust=0,delay=007,enemies="nightfall-shadowalker_1":15198969|"manifested-shadow_1":21278556|"manifested-shadow_2":21278556
+raid_events+=/pull,pull=13,bloodlust=0,delay=041,enemies="nightfall-tactician_1":25838247|"nightfall-tactician_2":25838247|"ascendant-viscoxria_1":43317062
+raid_events+=/pull,pull=14,bloodlust=0,delay=050,enemies="nightfall-darkcaster_1":14439020|"nightfall-shadowalker_1":15198969|"nightfall-tactician_1":25838247|"deathscreamer-ikentak_1":41037216
+raid_events+=/pull,pull=15,bloodlust=0,delay=008,enemies="nightfall-darkcaster_1":14439020|"nightfall-darkcaster_2":14439020|"nightfall-shadowalker_1":15198969
+raid_events+=/pull,pull=16,bloodlust=0,delay=011,enemies="sureki-militant_1":25027479
+raid_events+=/pull,pull=17,bloodlust=0,delay=004,enemies="BOSS_anubikkaj_1":173123239
+raid_events+=/pull,pull=18,bloodlust=0,delay=021,enemies="nightfall-dark-architect_1":42557113
+raid_events+=/pull,pull=19,bloodlust=0,delay=009,enemies="BOSS_rashanan_1":1780049194
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -63,6 +67,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc

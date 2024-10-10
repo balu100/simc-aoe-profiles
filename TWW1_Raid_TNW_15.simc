@@ -7,7 +7,7 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=21000
+max_time=19200
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=15
@@ -39,6 +39,7 @@ raid_events+=/pull,pull=24,bloodlust=0,delay=027,enemies="nalthor-the-rimebinder
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -71,6 +72,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc

@@ -7,33 +7,38 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=21000
+max_time=18000
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=10
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
-raid_events+=/pull,pull=01,bloodlust=0,delay=030,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"starved-crawler_4":3890936|"starved-crawler_5":3890936|"starved-crawler_6":3890936|"starved-crawler_7":3890936|"starved-crawler_8":3890936|"starved-crawler_9":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"jabbing-flyer_4":3647752|"jabbing-flyer_5":3647752|"jabbing-flyer_6":3647752|"jabbing-flyer_7":3647752|"trilling-attendant_1":12159175|"trilling-attendant_2":12159175|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866|"engorged-crawler_3":16718866|"engorged-crawler_4":16718866|"engorged-crawler_5":16718866|"engorged-crawler_6":16718866
-raid_events+=/pull,pull=02,bloodlust=0,delay=017,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"starved-crawler_4":3890936|"starved-crawler_5":3890936|"starved-crawler_6":3890936|"starved-crawler_7":3890936|"starved-crawler_8":3890936|"starved-crawler_9":3890936|"starved-crawler_10":3890936|"trilling-attendant_1":12159175|"ixin_1":24318350
-raid_events+=/pull,pull=03,bloodlust=0,delay=012,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"jabbing-flyer_4":3647752|"jabbing-flyer_5":3647752|"jabbing-flyer_6":3647752|"trilling-attendant_1":12159175|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866|"engorged-crawler_3":16718866|"engorged-crawler_4":16718866
-raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="starved-crawler_1":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"jabbing-flyer_4":3647752|"jabbing-flyer_5":3647752|"jabbing-flyer_6":3647752|"jabbing-flyer_7":3647752|"jabbing-flyer_8":3647752|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866|"engorged-crawler_3":16718866|"engorged-crawler_4":16718866
-raid_events+=/pull,pull=05,bloodlust=0,delay=013,enemies="jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"nakt_1":24318350
-raid_events+=/pull,pull=06,bloodlust=0,delay=012,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"trilling-attendant_1":12159175|"atik_1":24318350|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866
-raid_events+=/pull,pull=07,bloodlust=0,delay=018,enemies="BOSS_avanoxx_1":98927565
-raid_events+=/pull,pull=09,bloodlust=0,delay=022,enemies="starved-crawler_1":3890936|"bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodworker_5":3039793|"bloodstained-assistant_1":13679072|"bloodstained-assistant_2":13679072|"bloodstained-webmage_1":13679072
-raid_events+=/pull,pull=10,bloodlust=0,delay=011,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"hulking-bloodguard_1":24318350|"bloodstained-assistant_1":13679072
-raid_events+=/pull,pull=11,bloodlust=0,delay=005,enemies="sentry-stagshell_1":6079587|"bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793
-raid_events+=/pull,pull=12,bloodlust=0,delay=006,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodstained-assistant_1":13679072|"bloodstained-assistant_2":13679072|"bloodstained-webmage_1":13679072|"hulking-bloodguard_1":24318350
-raid_events+=/pull,pull=13,bloodlust=0,delay=007,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodworker_5":3039793|"bloodworker_6":3039793|"bloodworker_7":3039793|"bloodstained-webmage_1":13679072|"bloodstained-webmage_2":13679072|"sentry-stagshell_1":6079587|"sentry-stagshell_2":6079587
-raid_events+=/pull,pull=15,bloodlust=0,delay=012,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodstained-webmage_1":13679072|"sentry-stagshell_1":6079587|"sentry-stagshell_2":6079587
-raid_events+=/pull,pull=16,bloodlust=0,delay=005,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodworker_5":3039793|"bloodworker_6":3039793
-raid_events+=/pull,pull=17,bloodlust=0,delay=010,enemies="hulking-bloodguard_1":24318350
-raid_events+=/pull,pull=18,bloodlust=0,delay=011,enemies="BOSS_anubzekt_1":115415493|"bloodstained-webmage_1":5471628
-raid_events+=/pull,pull=19,bloodlust=0,delay=046,enemies="blood-overseer_1":27358144|"winged-carrier_1":10639278|"winged-carrier_2":10639278|"winged-carrier_3":10639278|"winged-carrier_4":10639278|"winged-carrier_5":10639278|"reinforced-drone_1":12159175|"reinforced-drone_2":12159175|"reinforced-drone_3":12159175|"reinforced-drone_4":12159175|"reinforced-drone_5":12159175|"reinforced-drone_6":12159175
-raid_events+=/pull,pull=20,bloodlust=0,delay=011,enemies="blood-overseer_1":27358144|"blood-overseer_2":27358144|"winged-carrier_1":10639278|"winged-carrier_2":10639278|"winged-carrier_3":10639278|"winged-carrier_4":10639278|"winged-carrier_5":10639278|"reinforced-drone_1":12159175|"reinforced-drone_2":12159175|"reinforced-drone_3":12159175|"reinforced-drone_4":12159175|"reinforced-drone_5":12159175
-raid_events+=/pull,pull=21,bloodlust=0,delay=018,enemies="BOSS_kikatal-the-harvester_1":131903420
+raid_events+=/pull,pull=01,bloodlust=0,delay=025,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"starved-crawler_4":3890936|"starved-crawler_5":3890936|"starved-crawler_6":3890936|"starved-crawler_7":3890936|"starved-crawler_8":3890936|"starved-crawler_9":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866
+raid_events+=/pull,pull=02,bloodlust=0,delay=018,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"jabbing-flyer_4":3647752|"trilling-attendant_1":12159175
+raid_events+=/pull,pull=03,bloodlust=0,delay=006,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"starved-crawler_4":3890936|"starved-crawler_5":3890936|"starved-crawler_6":3890936|"starved-crawler_7":3890936|"trilling-attendant_1":12159175|"ixin_1":24318350
+raid_events+=/pull,pull=04,bloodlust=0,delay=012,enemies="jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"jabbing-flyer_4":3647752|"jabbing-flyer_5":3647752|"jabbing-flyer_6":3647752|"trilling-attendant_1":12159175|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866
+raid_events+=/pull,pull=05,bloodlust=0,delay=007,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"engorged-crawler_1":16718866|"engorged-crawler_2":16718866
+raid_events+=/pull,pull=06,bloodlust=0,delay=009,enemies="engorged-crawler_1":16718866|"engorged-crawler_2":16718866|"engorged-crawler_3":16718866
+raid_events+=/pull,pull=07,bloodlust=0,delay=007,enemies="starved-crawler_1":3890936|"starved-crawler_2":3890936|"starved-crawler_3":3890936|"starved-crawler_4":3890936|"jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"engorged-crawler_1":16718866
+raid_events+=/pull,pull=08,bloodlust=0,delay=013,enemies="jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"nakt_1":24318350
+raid_events+=/pull,pull=09,bloodlust=0,delay=011,enemies="jabbing-flyer_1":3647752|"jabbing-flyer_2":3647752|"jabbing-flyer_3":3647752|"trilling-attendant_1":12159175|"atik_1":24318350
+raid_events+=/pull,pull=10,bloodlust=0,delay=017,enemies="BOSS_avanoxx_1":98927565
+raid_events+=/pull,pull=11,bloodlust=0,delay=022,enemies="starved-crawler_1":3890936|"bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodworker_5":3039793|"bloodstained-assistant_1":13679072|"bloodstained-assistant_2":13679072|"bloodstained-webmage_1":13679072
+raid_events+=/pull,pull=12,bloodlust=0,delay=011,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"hulking-bloodguard_1":24318350
+raid_events+=/pull,pull=13,bloodlust=0,delay=005,enemies="sentry-stagshell_1":6079587|"bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793
+raid_events+=/pull,pull=14,bloodlust=0,delay=004,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodstained-assistant_1":13679072|"hulking-bloodguard_1":24318350
+raid_events+=/pull,pull=15,bloodlust=0,delay=008,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodstained-webmage_1":13679072|"bloodstained-webmage_2":13679072|"bloodstained-assistant_1":13679072|"bloodstained-assistant_2":13679072|"sentry-stagshell_1":6079587
+raid_events+=/pull,pull=16,bloodlust=0,delay=009,enemies="bloodstained-assistant_1":13679072|"bloodstained-assistant_2":13679072|"bloodstained-assistant_3":13679072|"bloodstained-webmage_1":13679072|"bloodstained-webmage_2":13679072|"sentry-stagshell_1":6079587
+raid_events+=/pull,pull=17,bloodlust=0,delay=011,enemies="bloodstained-webmage_1":13679072|"sentry-stagshell_1":6079587|"sentry-stagshell_2":6079587
+raid_events+=/pull,pull=18,bloodlust=0,delay=014,enemies="bloodworker_1":3039793|"bloodworker_2":3039793|"bloodworker_3":3039793|"bloodworker_4":3039793|"bloodworker_5":3039793|"bloodworker_6":3039793|"hulking-bloodguard_1":24318350
+raid_events+=/pull,pull=19,bloodlust=0,delay=010,enemies="BOSS_anubzekt_1":115415493|"bloodstained-webmage_1":5471628
+raid_events+=/pull,pull=20,bloodlust=0,delay=046,enemies="blood-overseer_1":27358144|"reinforced-drone_1":12159175|"reinforced-drone_2":12159175|"reinforced-drone_3":12159175|"reinforced-drone_4":12159175
+raid_events+=/pull,pull=21,bloodlust=0,delay=010,enemies="winged-carrier_1":10639278|"winged-carrier_2":10639278|"winged-carrier_3":10639278|"winged-carrier_4":10639278|"winged-carrier_5":10639278|"reinforced-drone_1":12159175|"reinforced-drone_2":12159175|"reinforced-drone_3":12159175|"reinforced-drone_4":12159175|"reinforced-drone_5":12159175
+raid_events+=/pull,pull=22,bloodlust=0,delay=006,enemies="blood-overseer_1":27358144|"blood-overseer_2":27358144|"winged-carrier_1":10639278|"winged-carrier_2":10639278|"winged-carrier_3":10639278|"winged-carrier_4":10639278|"winged-carrier_5":10639278|"reinforced-drone_1":12159175|"reinforced-drone_2":12159175
+raid_events+=/pull,pull=23,bloodlust=0,delay=017,enemies="BOSS_kikatal-the-harvester_1":131903420
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Unholy.simc
 
 TWW1_Demon_Hunter_Havoc.simc
@@ -66,6 +71,7 @@ TWW1_Paladin_Retribution.simc
 TWW1_Paladin_Retribution_Templar.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Void.simc
 
 TWW1_Rogue_Assassination.simc
 TWW1_Rogue_Outlaw.simc
