@@ -50,6 +50,8 @@ echo ""
 echo ""
 echo ""
 
+echo "best-run-from-rio"
+./simc Bestrunfromraiderio.simc json2=/opt/outside/Bestrunfromraiderio.json html=/opt/outside/Bestrunfromraiderio.html target_error=1.0 ptr=0
 
 
 echo "siege-of-boralu"
