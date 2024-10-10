@@ -62,10 +62,10 @@ echo "SOB" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Raid_SoB_10.json html=/opt/outside/TWW1_Raid_SoB_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Raid_SoB_10_PTR.json html=/opt/outside/TWW1_Raid_SoB_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Raid_SoB_15.json html=/opt/outside/TWW1_Raid_SoB_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Raid_SoB_15_PTR.json html=/opt/outside/TWW1_Raid_SoB_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Mythic_SoB_10.json html=/opt/outside/TWW1_Mythic_SoB_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Mythic_SoB_10_PTR.json html=/opt/outside/TWW1_Mythic_SoB_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Mythic_SoB_15.json html=/opt/outside/TWW1_Mythic_SoB_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Mythic_SoB_15_PTR.json html=/opt/outside/TWW1_Mythic_SoB_15_PTR.html target_error=1.0 ptr=1
 
 echo ""
 echo ""
@@ -74,10 +74,10 @@ echo "MITS" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Raid_MoTS_10.json html=/opt/outside/TWW1_Raid_MoTS_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Raid_MoTS_10_PTR.json html=/opt/outside/TWW1_Raid_MoTS_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Raid_MoTS_15.json html=/opt/outside/TWW1_Raid_MoTS_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Raid_MoTS_15_PTR.json html=/opt/outside/TWW1_Raid_MoTS_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Mythic_MoTS_10.json html=/opt/outside/TWW1_Mythic_MoTS_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Mythic_MoTS_10_PTR.json html=/opt/outside/TWW1_Mythic_MoTS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Mythic_MoTS_15.json html=/opt/outside/TWW1_Mythic_MoTS_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Mythic_MoTS_15_PTR.json html=/opt/outside/TWW1_Mythic_MoTS_15_PTR.html target_error=1.0 ptr=1
 
 
 echo ""
@@ -87,10 +87,10 @@ echo "NW" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Raid_TNW_10.json html=/opt/outside/TWW1_Raid_TNW_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Raid_TNW_10_PTR.json html=/opt/outside/TWW1_Raid_TNW_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Raid_TNW_15.json html=/opt/outside/TWW1_Raid_TNW_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Raid_TNW_15_PTR.json html=/opt/outside/TWW1_Raid_TNW_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Mythic_TNW_10.json html=/opt/outside/TWW1_Mythic_TNW_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Mythic_TNW_10_PTR.json html=/opt/outside/TWW1_Mythic_TNW_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Mythic_TNW_15.json html=/opt/outside/TWW1_Mythic_TNW_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Mythic_TNW_15_PTR.json html=/opt/outside/TWW1_Mythic_TNW_15_PTR.html target_error=1.0 ptr=1
 
 
 echo ""
@@ -100,10 +100,10 @@ echo "COE" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Raid_AKCOE_10.json html=/opt/outside/TWW1_Raid_AKCOE_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Raid_AKCOE_10_PTR.json html=/opt/outside/TWW1_Raid_AKCOE_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Raid_AKCOE_15.json html=/opt/outside/TWW1_Raid_AKCOE_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Raid_AKCOE_15_PTR.json html=/opt/outside/TWW1_Raid_AKCOE_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Mythic_AKCOE_10.json html=/opt/outside/TWW1_Mythic_AKCOE_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Mythic_AKCOE_10_PTR.json html=/opt/outside/TWW1_Mythic_AKCOE_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Mythic_AKCOE_15.json html=/opt/outside/TWW1_Mythic_AKCOE_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Mythic_AKCOE_15_PTR.json html=/opt/outside/TWW1_Mythic_AKCOE_15_PTR.html target_error=1.0 ptr=1
 
 
 echo ""
@@ -113,10 +113,10 @@ echo "COT" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Raid_CoT_10.json html=/opt/outside/TWW1_Raid_CoT_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Raid_CoT_10_PTR.json html=/opt/outside/TWW1_Raid_CoT_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Raid_CoT_15.json html=/opt/outside/TWW1_Raid_CoT_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Raid_CoT_15_PTR.json html=/opt/outside/TWW1_Raid_CoT_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Mythic_CoT_10.json html=/opt/outside/TWW1_Mythic_CoT_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Mythic_CoT_10_PTR.json html=/opt/outside/TWW1_Mythic_CoT_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Mythic_CoT_15.json html=/opt/outside/TWW1_Mythic_CoT_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Mythic_CoT_15_PTR.json html=/opt/outside/TWW1_Mythic_CoT_15_PTR.html target_error=1.0 ptr=1
 
 
 echo ""
@@ -126,10 +126,10 @@ echo "TD" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Raid_TD_10.json html=/opt/outside/TWW1_Raid_TD_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Raid_TD_10_PTR.json html=/opt/outside/TWW1_Raid_TD_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Raid_TD_15.json html=/opt/outside/TWW1_Raid_TD_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Raid_TD_15_PTR.json html=/opt/outside/TWW1_Raid_TD_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Mythic_TD_10.json html=/opt/outside/TWW1_Mythic_TD_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Mythic_TD_10_PTR.json html=/opt/outside/TWW1_Mythic_TD_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Mythic_TD_15.json html=/opt/outside/TWW1_Mythic_TD_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Mythic_TD_15_PTR.json html=/opt/outside/TWW1_Mythic_TD_15_PTR.html target_error=1.0 ptr=1
 
 
 echo ""
@@ -139,10 +139,10 @@ echo "TS" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Raid_TS_10.json html=/opt/outside/TWW1_Raid_TS_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Raid_TS_10_PTR.json html=/opt/outside/TWW1_Raid_TS_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Raid_TS_15.json html=/opt/outside/TWW1_Raid_TS_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Raid_TS_15_PTR.json html=/opt/outside/TWW1_Raid_TS_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Mythic_TS_10.json html=/opt/outside/TWW1_Mythic_TS_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Mythic_TS_10_PTR.json html=/opt/outside/TWW1_Mythic_TS_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Mythic_TS_15.json html=/opt/outside/TWW1_Mythic_TS_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Mythic_TS_15_PTR.json html=/opt/outside/TWW1_Mythic_TS_15_PTR.html target_error=1.0 ptr=1
 
 echo ""
 echo ""
@@ -151,10 +151,10 @@ echo "GB" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Raid_GB_10.json html=/opt/outside/TWW1_Raid_GB_10.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Raid_GB_10_PTR.json html=/opt/outside/TWW1_Raid_GB_10_PTR.html target_error=1.0 ptr=1
-./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Raid_GB_15.json html=/opt/outside/TWW1_Raid_GB_15.html target_error=1.0 ptr=0
-#./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Raid_GB_15_PTR.json html=/opt/outside/TWW1_Raid_GB_15_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Mythic_GB_10.json html=/opt/outside/TWW1_Mythic_GB_10.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Mythic_GB_10_PTR.json html=/opt/outside/TWW1_Mythic_GB_10_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Mythic_GB_15.json html=/opt/outside/TWW1_Mythic_GB_15.html target_error=1.0 ptr=0
+#./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Mythic_GB_15_PTR.json html=/opt/outside/TWW1_Mythic_GB_15_PTR.html target_error=1.0 ptr=1
 
 echo ""
 echo ""
@@ -163,8 +163,8 @@ echo "ST" | figlet -f big
 echo ""
 echo ""
 echo ""
-./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Raid.json html=/opt/outside/TWW1_Raid.html target_error=1.0 ptr=0
-#./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Raid_PTR.json html=/opt/outside/TWW1_Raid_PTR.html target_error=1.0 ptr=1
+./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Mythic.json html=/opt/outside/TWW1_Mythic.html target_error=1.0 ptr=0
+#./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Mythic_PTR.json html=/opt/outside/TWW1_Mythic_PTR.html target_error=1.0 ptr=1
 
 echo ""
 echo ""
