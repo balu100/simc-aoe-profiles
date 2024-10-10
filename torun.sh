@@ -28,7 +28,7 @@ shuffled_colors=$(shuffle_colors)
 i=1
 
 # Displaying the message in shuffled rainbow colors with a larger font
-figlet -f big "Version 1.0" | while IFS= read -r line; do
+figlet -f big "Version 1.1" | while IFS= read -r line; do
   # Get the current color from the shuffled list
   color=$(echo $shuffled_colors | cut -d' ' -f$i)
   
