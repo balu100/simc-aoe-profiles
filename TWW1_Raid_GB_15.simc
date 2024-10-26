@@ -12,52 +12,51 @@ enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=15
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
-raid_events+=/pull,pull=01,bloodlust=0,delay=022,enemies="twilight-brute_1":22403868|"twilight-brute_2":22403868|"twilight-earthcaller_1":17923094|"twilight-destroyer_1":44807737
-raid_events+=/pull,pull=02,bloodlust=0,delay=008,enemies="twilight-brute_1":22403868|"twilight-earthcaller_1":17923094|"twilight-overseer_1":38086577
-raid_events+=/pull,pull=03,bloodlust=0,delay=008,enemies="twilight-brute_1":22403868|"twilight-brute_2":22403868|"twilight-earthcaller_1":17923094|"twilight-overseer_1":38086577
-raid_events+=/pull,pull=04,bloodlust=0,delay=005,enemies="twilight-brute_1":22403868|"twilight-brute_2":22403868|"twilight-brute_3":22403868|"twilight-earthcaller_1":17923094|"twilight-earthcaller_2":17923094|"twilight-earthcaller_3":17923094
-raid_events+=/pull,pull=05,bloodlust=0,delay=006,enemies="battered-red-drake_1":26883746|"battered-red-drake_2":26883746|"battered-red-drake_3":26883746|"battered-red-drake_4":26883746|"battered-red-drake_5":26883746
-raid_events+=/pull,pull=06,bloodlust=0,delay=018,enemies="twilight-brute_1":22403868|"twilight-brute_2":22403868|"twilight-brute_3":22403868|"twilight-brute_4":22403868|"twilight-earthcaller_1":17923094|"twilight-destroyer_1":44807737|"twilight-overseer_1":38086577
-raid_events+=/pull,pull=07,bloodlust=0,delay=010,enemies="twilight-brute_1":22403868|"twilight-earthcaller_1":17923094|"twilight-earthcaller_2":17923094|"twilight-earthcaller_3":17923094|"twilight-earthcaller_4":17923094|"twilight-overseer_1":38086577
-raid_events+=/pull,pull=08,bloodlust=0,delay=010,enemies="twilight-brute_1":22403868|"twilight-brute_2":22403868|"twilight-earthcaller_1":17923094|"twilight-earthcaller_2":17923094|"twilight-overseer_1":38086577
-raid_events+=/pull,pull=09,bloodlust=0,delay=007,enemies="twilight-earthcaller_1":17923094|"twilight-earthcaller_2":17923094|"twilight-earthcaller_3":17923094|"twilight-overseer_1":38086577|"twilight-overseer_2":38086577
-raid_events+=/pull,pull=10,bloodlust=0,delay=009,enemies="BOSS_general-umbriss_1":145158404
-raid_events+=/pull,pull=11,bloodlust=0,delay=026,enemies="molten-giant_1":42567350|"twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094|"twilight-beguiler_3":17923094
-raid_events+=/pull,pull=12,bloodlust=0,delay=009,enemies="molten-giant_1":42567350|"twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094|"twilight-beguiler_3":17923094
-raid_events+=/pull,pull=13,bloodlust=0,delay=007,enemies="twilight-earthcaller_1":17923094|"twilight-flamerender_1":20163481|"twilight-flamerender_2":20163481
-raid_events+=/pull,pull=14,bloodlust=0,delay=015,enemies="BOSS_forgemaster-throngus_1":169351472
-raid_events+=/pull,pull=15,bloodlust=0,delay=021,enemies="twilight-earthcaller_1":17923094|"twilight-flamerender_1":20163481|"twilight-flamerender_2":20163481
-raid_events+=/pull,pull=16,bloodlust=0,delay=007,enemies="twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094|"twilight-beguiler_3":17923094|"molten-giant_1":42567350
-raid_events+=/pull,pull=17,bloodlust=0,delay=023,enemies="twilight-enforcer_1":24644255|"twilight-flamerender_1":20163481|"twilight-lavabender_1":34501957
-raid_events+=/pull,pull=18,bloodlust=0,delay=006,enemies="twilight-enforcer_1":24644255|"twilight-warlock_1":22403868
-raid_events+=/pull,pull=19,bloodlust=0,delay=004,enemies="twilight-enforcer_1":24644255|"twilight-warlock_1":22403868|"twilight-flamerender_1":20163481|"twilight-beguiler_1":17923094
-raid_events+=/pull,pull=20,bloodlust=0,delay=006,enemies="twilight-lavabender_1":34501957
-raid_events+=/pull,pull=21,bloodlust=0,delay=004,enemies="twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094|"twilight-flamerender_1":20163481
-raid_events+=/pull,pull=22,bloodlust=0,delay=005,enemies="twilight-lavabender_1":34501957|"twilight-warlock_1":22403868
-raid_events+=/pull,pull=23,bloodlust=0,delay=006,enemies="twilight-enforcer_1":24644255|"twilight-warlock_1":22403868|"twilight-warlock_2":22403868|"twilight-warlock_3":22403868
-raid_events+=/pull,pull=24,bloodlust=0,delay=006,enemies="twilight-flamerender_1":20163481|"twilight-flamerender_2":20163481|"twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094
-raid_events+=/pull,pull=25,bloodlust=0,delay=005,enemies="twilight-lavabender_1":34501957|"twilight-lavabender_2":34501957
-raid_events+=/pull,pull=26,bloodlust=0,delay=010,enemies="BOSS_drahga-shadowburner_1":50805442|"BOSS_valiona_1":241930674
-raid_events+=/pull,pull=27,bloodlust=0,delay=016,enemies="twilight-enforcer_1":24644255|"twilight-warlock_1":22403868|"twilight-warlock_2":22403868|"twilight-flamerender_1":20163481|"twilight-beguiler_1":17923094|"twilight-beguiler_2":17923094
-raid_events+=/pull,pull=28,bloodlust=0,delay=008,enemies="twilight-destroyer_1":44807737|"mutated-hatchling_1":4480773|"mutated-hatchling_2":4480773|"mutated-hatchling_3":4480773|"mutated-hatchling_4":4480773|"mutated-hatchling_5":4480773|"mutated-hatchling_6":4480773|"mutated-hatchling_7":4480773|"mutated-hatchling_8":4480773
-raid_events+=/pull,pull=29,bloodlust=0,delay=006,enemies="mutated-hatchling_1":4480773|"mutated-hatchling_2":4480773|"mutated-hatchling_3":4480773|"mutated-hatchling_4":4480773|"mutated-hatchling_5":4480773|"mutated-hatchling_6":4480773|"mutated-hatchling_7":4480773|"mutated-hatchling_8":4480773|"faceless-corruptor_1":35846189
-raid_events+=/pull,pull=30,bloodlust=0,delay=007,enemies="faceless-corruptor_1":35846189|"mutated-hatchling_1":4480773|"mutated-hatchling_2":4480773|"mutated-hatchling_3":4480773|"mutated-hatchling_4":4480773|"mutated-hatchling_5":4480773|"mutated-hatchling_6":4480773|"mutated-hatchling_7":4480773|"mutated-hatchling_8":4480773
-raid_events+=/pull,pull=31,bloodlust=0,delay=011,enemies="faceless-corruptor_1":35846189|"faceless-corruptor_2":35846189|"mutated-hatchling_1":4480773|"mutated-hatchling_2":4480773|"mutated-hatchling_3":4480773|"mutated-hatchling_4":4480773|"mutated-hatchling_5":4480773|"mutated-hatchling_6":4480773|"mutated-hatchling_7":4480773|"mutated-hatchling_8":4480773|"mutated-hatchling_9":4480773|"mutated-hatchling_10":4480773|"mutated-hatchling_11":4480773|"mutated-hatchling_12":4480773
-raid_events+=/pull,pull=32,bloodlust=0,delay=017,enemies="mutated-hatchling_1":3573129|"BOSS_erudax_1":193544539
+raid_events+=/pull,pull=01,bloodlust=0,delay=022,enemies="twilight-brute_1":24490211|"twilight-brute_2":24490211|"twilight-earthcaller_1":19592169|"twilight-destroyer_1":48980423
+raid_events+=/pull,pull=02,bloodlust=0,delay=008,enemies="twilight-brute_1":24490211|"twilight-earthcaller_1":19592169|"twilight-overseer_1":41633360
+raid_events+=/pull,pull=03,bloodlust=0,delay=008,enemies="twilight-brute_1":24490211|"twilight-brute_2":24490211|"twilight-earthcaller_1":19592169|"twilight-overseer_1":41633360
+raid_events+=/pull,pull=04,bloodlust=0,delay=005,enemies="twilight-brute_1":24490211|"twilight-brute_2":24490211|"twilight-brute_3":24490211|"twilight-earthcaller_1":19592169|"twilight-earthcaller_2":19592169|"twilight-earthcaller_3":19592169
+raid_events+=/pull,pull=05,bloodlust=0,delay=006,enemies="battered_1":26883746|"battered_2":26883746|"battered_3":26883746|"battered_4":26883746|"battered_5":26883746
+raid_events+=/pull,pull=06,bloodlust=0,delay=018,enemies="twilight-brute_1":24490211|"twilight-brute_2":24490211|"twilight-brute_3":24490211|"twilight-brute_4":24490211|"twilight-earthcaller_1":19592169|"twilight-destroyer_1":48980423|"twilight-overseer_1":41633360
+raid_events+=/pull,pull=07,bloodlust=0,delay=008,enemies="twilight-earthcaller_1":19592169|"twilight-earthcaller_2":19592169|"twilight-earthcaller_3":19592169
+raid_events+=/pull,pull=08,bloodlust=0,delay=005,enemies="twilight-brute_1":24490211|"twilight-earthcaller_1":19592169|"twilight-overseer_1":41633360
+raid_events+=/pull,pull=09,bloodlust=0,delay=008,enemies="twilight-brute_1":24490211|"twilight-brute_2":24490211|"twilight-earthcaller_1":19592169|"twilight-earthcaller_2":19592169|"twilight-overseer_1":41633360
+raid_events+=/pull,pull=10,bloodlust=0,delay=007,enemies="twilight-earthcaller_1":19592169|"twilight-earthcaller_2":19592169|"twilight-earthcaller_3":19592169|"twilight-overseer_1":41633360|"twilight-overseer_2":41633360
+raid_events+=/pull,pull=11,bloodlust=0,delay=009,enemies="BOSS_general-umbriss_1":185717438
+raid_events+=/pull,pull=12,bloodlust=0,delay=026,enemies="molten-giant_1":46531402|"twilight-beguiler_1":19592169|"twilight-beguiler_2":19592169|"twilight-beguiler_3":19592169
+raid_events+=/pull,pull=13,bloodlust=0,delay=009,enemies="molten-giant_1":46531402|"twilight-beguiler_1":19592169|"twilight-beguiler_2":19592169|"twilight-beguiler_3":19592169
+raid_events+=/pull,pull=14,bloodlust=0,delay=000,enemies="twilight-earthcaller_1":19592169|"twilight-earthcaller_2":19592169|"twilight-flamerender_1":22041191|"twilight-flamerender_2":22041191|"twilight-flamerender_3":22041191|"twilight-flamerender_4":22041191
+raid_events+=/pull,pull=15,bloodlust=0,delay=017,enemies="BOSS_forgemaster-throngus_1":185717438
+raid_events+=/pull,pull=18,bloodlust=0,delay=029,enemies="twilight-lavabender_1":37714924
+raid_events+=/pull,pull=19,bloodlust=0,delay=002,enemies="twilight-beguiler_1":19592169|"twilight-enforcer_1":26939233|"twilight-warlock_1":24490211|"twilight-warlock_2":24490211|"twilight-flamerender_1":22041191
+raid_events+=/pull,pull=21,bloodlust=0,delay=008,enemies="twilight-beguiler_1":19592169|"twilight-enforcer_1":26939233|"twilight-enforcer_2":26939233|"twilight-warlock_1":24490211|"twilight-warlock_2":24490211|"twilight-flamerender_1":22041191
+raid_events+=/pull,pull=22,bloodlust=0,delay=007,enemies="twilight-warlock_1":24490211|"twilight-warlock_2":24490211|"twilight-lavabender_1":37714924
+raid_events+=/pull,pull=23,bloodlust=0,delay=008,enemies="twilight-beguiler_1":19592169|"twilight-beguiler_2":19592169|"twilight-flamerender_1":22041191
+raid_events+=/pull,pull=24,bloodlust=0,delay=005,enemies="twilight-lavabender_1":37714924|"twilight-warlock_1":24490211
+raid_events+=/pull,pull=25,bloodlust=0,delay=006,enemies="twilight-enforcer_1":26939233|"twilight-warlock_1":24490211|"twilight-warlock_2":24490211|"twilight-warlock_3":24490211
+raid_events+=/pull,pull=26,bloodlust=0,delay=006,enemies="twilight-flamerender_1":22041191|"twilight-flamerender_2":22041191|"twilight-beguiler_1":19592169|"twilight-beguiler_2":19592169
+raid_events+=/pull,pull=27,bloodlust=0,delay=005,enemies="twilight-lavabender_1":37714924|"twilight-lavabender_2":37714924
+raid_events+=/pull,pull=28,bloodlust=0,delay=010,enemies="BOSS_drahga-shadowburner_1":26531062|"BOSS_valiona_1":360822451
+raid_events+=/pull,pull=29,bloodlust=0,delay=016,enemies="twilight-enforcer_1":26939233|"twilight-warlock_1":24490211|"twilight-warlock_2":24490211|"twilight-flamerender_1":22041191|"twilight-beguiler_1":19592169|"twilight-beguiler_2":19592169
+raid_events+=/pull,pull=30,bloodlust=0,delay=006,enemies="twilight-destroyer_1":48980423
+raid_events+=/pull,pull=31,bloodlust=0,delay=005,enemies="mutated-hatchling_1":4898042|"mutated-hatchling_2":4898042|"mutated-hatchling_3":4898042|"mutated-hatchling_4":4898042|"mutated-hatchling_5":4898042|"mutated-hatchling_6":4898042|"mutated-hatchling_7":4898042|"mutated-hatchling_8":4898042
+raid_events+=/pull,pull=32,bloodlust=0,delay=006,enemies="mutated-hatchling_1":4898042|"mutated-hatchling_2":4898042|"mutated-hatchling_3":4898042|"mutated-hatchling_4":4898042|"mutated-hatchling_5":4898042|"mutated-hatchling_6":4898042|"mutated-hatchling_7":4898042|"mutated-hatchling_8":4898042|"faceless-corruptor_1":39184338
+raid_events+=/pull,pull=33,bloodlust=0,delay=007,enemies="faceless-corruptor_1":39184338|"mutated-hatchling_1":4898042|"mutated-hatchling_2":4898042|"mutated-hatchling_3":4898042|"mutated-hatchling_4":4898042|"mutated-hatchling_5":4898042|"mutated-hatchling_6":4898042|"mutated-hatchling_7":4898042|"mutated-hatchling_8":4898042
+raid_events+=/pull,pull=34,bloodlust=0,delay=011,enemies="faceless-corruptor_1":39184338|"faceless-corruptor_2":39184338|"mutated-hatchling_1":4898042|"mutated-hatchling_2":4898042|"mutated-hatchling_3":4898042|"mutated-hatchling_4":4898042|"mutated-hatchling_5":4898042|"mutated-hatchling_6":4898042|"mutated-hatchling_7":4898042|"mutated-hatchling_8":4898042|"mutated-hatchling_9":4898042|"mutated-hatchling_10":4898042|"mutated-hatchling_11":4898042|"mutated-hatchling_12":4898042
+raid_events+=/pull,pull=35,bloodlust=0,delay=017,enemies="mutated-hatchling_1":9796084|"BOSS_erudax_1":212248500
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
 TWW1_Death_Knight_Frost_Rider.simc
+TWW1_Death_Knight_Frost_Shattering_Deathbringer.simc
 TWW1_Death_Knight_Unholy.simc
+TWW1_Death_Knight_Unholy_San'layn.simc
 
 TWW1_Demon_Hunter_Havoc.simc
-# TWW1_Demon_Hunter_Havoc_SD.simc
 TWW1_Demon_Hunter_Vengeance.simc
-TWW1_Demon_Hunter_Vengeance_Fel.simc
 
 TWW1_Druid_Balance.simc
 TWW1_Druid_Feral.simc
-TWW1_Druid_Feral_Wildstalker.simc
 TWW1_Druid_Guardian.simc
 
 TWW1_Evoker_Devastation.simc
@@ -65,43 +64,43 @@ TWW1_Evoker_Devastation.simc
 TWW1_Hunter_Beast_Mastery.simc
 TWW1_Hunter_Marksmanship.simc
 TWW1_Hunter_Survival.simc
+TWW1_Hunter_Beast_Mastery_Pack_Leader.simc
+TWW1_Hunter_Marksmanship_Dark_Ranger.simc
+TWW1_Hunter_Survival_Pack_Leader.simc
 
+TWW1_Mage_Arcane.simc
 TWW1_Mage_Fire.simc
 TWW1_Mage_Frost.simc
-TWW1_Mage_Frost_FrostfireNoDC.simc
-TWW1_Mage_Frost_Frostfire.simc
-TWW1_Mage_Arcane.simc
 
 TWW1_Monk_Brewmaster.simc
 TWW1_Monk_Windwalker.simc
+TWW1_Monk_Windwalker_Celestial.simc
 
 TWW1_Paladin_Protection.simc
+TWW1_Paladin_Protection_Templar.simc
 TWW1_Paladin_Retribution.simc
-TWW1_Paladin_Retribution_Templar.simc
+TWW1_Paladin_Retribution_Herald.simc
 
 TWW1_Priest_Shadow.simc
-TWW1_Priest_Shadow_Void.simc
+TWW1_Priest_Shadow_Archon.simc
 
 TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Assassination_Fatebound.simc
 TWW1_Rogue_Outlaw.simc
 TWW1_Rogue_Outlaw_HO.simc
 TWW1_Rogue_Subtlety.simc
 
 TWW1_Shaman_Elemental.simc
-TWW1_Shaman_Elemental_Storm.simc
 TWW1_Shaman_Enhancement.simc
-TWW1_Shaman_Enhancement_Storm.simc
+TWW1_Shaman_Enhancement_Totemic.simc
 
-TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Affliction.simc
-TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Demonology_Diabolist.simc
 TWW1_Warlock_Destruction.simc
 TWW1_Warlock_Destruction_Hellcaller.simc
 
 TWW1_Warrior_Arms.simc
-TWW1_Warrior_Arms_Juggernaut.simc
 TWW1_Warrior_Fury.simc
-TWW1_Warrior_Fury_Mountain.simc
 TWW1_Warrior_Protection.simc
-TWW1_Warrior_Protection_Colossus.simc

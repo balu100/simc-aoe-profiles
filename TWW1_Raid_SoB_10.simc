@@ -20,12 +20,12 @@ raid_events+=/pull,pull=05,bloodlust=0,delay=008,enemies="irontide-raider_1":243
 raid_events+=/pull,pull=06,bloodlust=0,delay=010,enemies="scrimshaw-gutter_1":3039793|"scrimshaw-gutter_2":3039793|"scrimshaw-gutter_3":3039793|"blacktar-bomber_1":15198969|"irontide-waveshaper_1":12159176|"irontide-raider_1":24318350|"scrimshaw-gutter_1":3039793|"scrimshaw-gutter_2":3039793
 raid_events+=/pull,pull=07,bloodlust=0,delay=008,enemies="scrimshaw-gutter_1":3039793|"scrimshaw-gutter_2":3039793|"scrimshaw-gutter_3":3039793|"riptide-shredder_1":15198969|"irontide-waveshaper_1":12159176|"irontide-raider_1":24318350
 raid_events+=/pull,pull=08,bloodlust=0,delay=005,enemies="irontide-powdershot_1":3039793|"BOSS_chopper-redhook_1":92332394|"irontide-cleaver_1":15198969
-raid_events+=/pull,pull=09,bloodlust=0,delay=008,enemies="riptide-shredder_1":15198969|"riptide-shredder_2":15198969|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-powdershot_1":3039793|"irontide-powdershot_2":3039793|"ashvane-commander_1":24318350
+raid_events+=/pull,pull=09,bloodlust=0,delay=009,enemies="riptide-shredder_1":15198969|"riptide-shredder_2":15198969|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-curseblade_3":3039793|"irontide-powdershot_1":3039793|"irontide-powdershot_2":3039793|"ashvane-commander_1":24318350|"irontide-waveshaper_1":12159176
 raid_events+=/pull,pull=10,bloodlust=0,delay=009,enemies="irontide-raider_1":24318350|"irontide-powdershot_1":3039793|"irontide-waveshaper_1":12159176|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-curseblade_3":3039793
 raid_events+=/pull,pull=11,bloodlust=0,delay=014,enemies="ashvane-spotter_1":15198969|"irontide-powdershot_1":3039793|"irontide-powdershot_2":3039793|"irontide-powdershot_3":3039793|"irontide-powdershot_4":3039793
 raid_events+=/pull,pull=12,bloodlust=0,delay=019,enemies="irontide-waveshaper_1":12159176|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-powdershot_1":3039793|"ashvane-commander_1":24318350
-raid_events+=/pull,pull=13,bloodlust=0,delay=016,enemies="irontide-powdershot_1":3039793|"ashvane-commander_1":24318350|"ashvane-spotter_1":15198969|"ashvane-deckhand_1":7599484|"ashvane-deckhand_2":7599484|"ashvane-cannoneer_1":15198969|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-curseblade_3":3039793|"irontide-curseblade_4":3039793|"irontide-curseblade_5":3039793
-raid_events+=/pull,pull=14,bloodlust=0,delay=010,enemies="ashvane-cannoneer_1":15198969|"BOSS_dread-captain-lockwood_1":80790845|"ashvane-deckhand_1":7599484
+raid_events+=/pull,pull=13,bloodlust=0,delay=016,enemies="ashvane-spotter_1":15198969|"ashvane-deckhand_1":7599484|"ashvane-deckhand_2":7599484|"ashvane-cannoneer_1":15198969|"irontide-curseblade_1":3039793|"irontide-curseblade_2":3039793|"irontide-curseblade_3":3039793|"irontide-curseblade_4":3039793|"irontide-curseblade_5":3039793|"ashvane-commander_1":24318350
+raid_events+=/pull,pull=14,bloodlust=0,delay=009,enemies="ashvane-cannoneer_1":15198969|"BOSS_dread-captain-lockwood_1":80790845|"ashvane-deckhand_1":7599484
 raid_events+=/pull,pull=15,bloodlust=0,delay=018,enemies="bilge-rat-buccaneer_1":15198969|"bilge-rat-buccaneer_2":15198969|"bilge-rat-demolisher_1":30397938|"bilge-rat-pillager_1":15198969
 raid_events+=/pull,pull=16,bloodlust=0,delay=009,enemies="bilge-rat-buccaneer_1":15198969|"bilge-rat-buccaneer_2":15198969|"bilge-rat-demolisher_1":30397938|"bilge-rat-tempest_1":12159176
 raid_events+=/pull,pull=17,bloodlust=0,delay=006,enemies="bilge-rat-pillager_1":15198969|"bilge-rat-pillager_2":15198969|"bilge-rat-demolisher_1":30397938|"bilge-rat-tempest_1":12159176
@@ -34,23 +34,21 @@ raid_events+=/pull,pull=19,bloodlust=0,delay=010,enemies="ashvane-sniper_1":1519
 raid_events+=/pull,pull=20,bloodlust=0,delay=008,enemies="irontide-raider_1":24318350|"ashvane-commander_1":24318350
 raid_events+=/pull,pull=21,bloodlust=0,delay=007,enemies="ashvane-invader_1":15198969|"ashvane-destroyer_1":15198969|"ashvane-commander_1":24318350|"irontide-waveshaper_1":12159176
 raid_events+=/pull,pull=22,bloodlust=0,delay=011,enemies="ashvane-invader_1":15198969|"ashvane-invader_2":15198969|"ashvane-destroyer_1":15198969|"ashvane-commander_1":24318350|"irontide-waveshaper_1":12159176
-raid_events+=/pull,pull=23,bloodlust=0,delay=013,enemies="ashvane-sniper_1":15198969|"ashvane-sniper_2":15198969|"ashvane-invader_1":15198969
-raid_events+=/pull,pull=24,bloodlust=0,delay=007,enemies="BOSS_hadal-darkfathom_1":131903420
-raid_events+=/pull,pull=25,bloodlust=0,delay=014,enemies="viqgoth_1":412198189|"gripping-terror_1":18238762|"demolishing-terror_1":36477525
+raid_events+=/pull,pull=23,bloodlust=0,delay=008,enemies="BOSS_hadal-darkfathom_1":131903420
+raid_events+=/pull,pull=24,bloodlust=0,delay=014,enemies="viqgoth_1":412198189|"gripping-terror_1":18238762|"demolishing-terror_1":36477525
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
 TWW1_Death_Knight_Frost_Rider.simc
+TWW1_Death_Knight_Frost_Shattering_Deathbringer.simc
 TWW1_Death_Knight_Unholy.simc
+TWW1_Death_Knight_Unholy_San'layn.simc
 
 TWW1_Demon_Hunter_Havoc.simc
-# TWW1_Demon_Hunter_Havoc_SD.simc
 TWW1_Demon_Hunter_Vengeance.simc
-TWW1_Demon_Hunter_Vengeance_Fel.simc
 
 TWW1_Druid_Balance.simc
 TWW1_Druid_Feral.simc
-TWW1_Druid_Feral_Wildstalker.simc
 TWW1_Druid_Guardian.simc
 
 TWW1_Evoker_Devastation.simc
@@ -58,43 +56,43 @@ TWW1_Evoker_Devastation.simc
 TWW1_Hunter_Beast_Mastery.simc
 TWW1_Hunter_Marksmanship.simc
 TWW1_Hunter_Survival.simc
+TWW1_Hunter_Beast_Mastery_Pack_Leader.simc
+TWW1_Hunter_Marksmanship_Dark_Ranger.simc
+TWW1_Hunter_Survival_Pack_Leader.simc
 
+TWW1_Mage_Arcane.simc
 TWW1_Mage_Fire.simc
 TWW1_Mage_Frost.simc
-TWW1_Mage_Frost_FrostfireNoDC.simc
-TWW1_Mage_Frost_Frostfire.simc
-TWW1_Mage_Arcane.simc
 
 TWW1_Monk_Brewmaster.simc
 TWW1_Monk_Windwalker.simc
+TWW1_Monk_Windwalker_Celestial.simc
 
 TWW1_Paladin_Protection.simc
+TWW1_Paladin_Protection_Templar.simc
 TWW1_Paladin_Retribution.simc
-TWW1_Paladin_Retribution_Templar.simc
+TWW1_Paladin_Retribution_Herald.simc
 
 TWW1_Priest_Shadow.simc
-TWW1_Priest_Shadow_Void.simc
+TWW1_Priest_Shadow_Archon.simc
 
 TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Assassination_Fatebound.simc
 TWW1_Rogue_Outlaw.simc
 TWW1_Rogue_Outlaw_HO.simc
 TWW1_Rogue_Subtlety.simc
 
 TWW1_Shaman_Elemental.simc
-TWW1_Shaman_Elemental_Storm.simc
 TWW1_Shaman_Enhancement.simc
-TWW1_Shaman_Enhancement_Storm.simc
+TWW1_Shaman_Enhancement_Totemic.simc
 
-TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Affliction.simc
-TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Demonology_Diabolist.simc
 TWW1_Warlock_Destruction.simc
 TWW1_Warlock_Destruction_Hellcaller.simc
 
 TWW1_Warrior_Arms.simc
-TWW1_Warrior_Arms_Juggernaut.simc
 TWW1_Warrior_Fury.simc
-TWW1_Warrior_Fury_Mountain.simc
 TWW1_Warrior_Protection.simc
-TWW1_Warrior_Protection_Colossus.simc

@@ -1,11 +1,11 @@
-monk="TWW1_Monk_Brewmaster_Adv"
+monk="TWW1_Monk_Brewmaster"
 source=default
 spec=brewmaster
 level=80
 race=tauren
 role=tank
 position=front
-talents=CwQAAAAAAAAAAAAAAAAAAAAAAAAAAAzYMmBmlZegtZmZGDAAAAAAglFQMzAzwgZw2MzMMLDzYbWmptFb2mZGzsAAAbAAAAz2s0MzMLYwG
+talents=CwQAAAAAAAAAAAAAAAAAAAAAAAAAAAzYMmBmlZegtZmZGDAAAAAAwyCImZgZYwMYbmZGmlhZsNLz02iNbzMjZWAAgNAAAgZbWamZmFMYD
 
 # Default consumables
 potion=tempered_potion_3

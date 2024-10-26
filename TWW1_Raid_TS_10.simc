@@ -28,10 +28,9 @@ raid_events+=/pull,pull=13,bloodlust=0,delay=043,enemies="engine-speaker_1":1671
 raid_events+=/pull,pull=14,bloodlust=0,delay=011,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forge-loader_1":27358144|"repurposed-loaderbot_1":15958917|"forgebound-mender_1":13679072
 raid_events+=/pull,pull=15,bloodlust=0,delay=007,enemies="aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"aspiring-forgehand_4":9119381|"aspiring-forgehand_5":9119381
 raid_events+=/pull,pull=16,bloodlust=0,delay=004,enemies="forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"repurposed-loaderbot_1":15958917|"engine-speaker_1":16718866
-raid_events+=/pull,pull=17,bloodlust=0,delay=011,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381
-raid_events+=/pull,pull=18,bloodlust=0,delay=012,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072
-raid_events+=/pull,pull=19,bloodlust=0,delay=008,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072|"forgebound-mender_4":13679072|"aspiring-forgehand_1":9119381
-raid_events+=/pull,pull=20,bloodlust=0,delay=016,enemies="BOSS_speaker-brokk_1":74195674|"BOSS_speaker-dorlita_1":89034809
+raid_events+=/pull,pull=18,bloodlust=0,delay=006,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"aspiring-forgehand_1":9119381|"aspiring-forgehand_2":9119381|"aspiring-forgehand_3":9119381|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072
+raid_events+=/pull,pull=19,bloodlust=0,delay=008,enemies="engine-speaker_1":16718866|"engine-speaker_2":16718866|"engine-speaker_3":16718866|"aspiring-forgehand_1":9119381|"forgebound-mender_1":13679072|"forgebound-mender_2":13679072|"forgebound-mender_3":13679072|"forgebound-mender_4":13679072|"forge-loader_1":27358144
+raid_events+=/pull,pull=20,bloodlust=0,delay=017,enemies="BOSS_speaker-brokk_1":74195674|"BOSS_speaker-dorlita_1":89034809
 raid_events+=/pull,pull=21,bloodlust=0,delay=050,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350
 raid_events+=/pull,pull=22,bloodlust=0,delay=010,enemies="cursedforge-honor-guard_1":24318350|"cursedforge-honor-guard_2":24318350|"rock-smasher_1":30397938|"cursedforge-mender_1":13679072|"cursedforge-mender_2":13679072
 raid_events+=/pull,pull=23,bloodlust=0,delay=005,enemies="cursedforge-mender_1":13679072|"cursedforge-stoneshaper_1":14439020|"cursedforge-stoneshaper_2":14439020
@@ -42,16 +41,15 @@ raid_events+=/pull,pull=26,bloodlust=0,delay=008,enemies="BOSS_void-speaker-eiri
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
 TWW1_Death_Knight_Frost_Rider.simc
+TWW1_Death_Knight_Frost_Shattering_Deathbringer.simc
 TWW1_Death_Knight_Unholy.simc
+TWW1_Death_Knight_Unholy_San'layn.simc
 
 TWW1_Demon_Hunter_Havoc.simc
-# TWW1_Demon_Hunter_Havoc_SD.simc
 TWW1_Demon_Hunter_Vengeance.simc
-TWW1_Demon_Hunter_Vengeance_Fel.simc
 
 TWW1_Druid_Balance.simc
 TWW1_Druid_Feral.simc
-TWW1_Druid_Feral_Wildstalker.simc
 TWW1_Druid_Guardian.simc
 
 TWW1_Evoker_Devastation.simc
@@ -59,43 +57,43 @@ TWW1_Evoker_Devastation.simc
 TWW1_Hunter_Beast_Mastery.simc
 TWW1_Hunter_Marksmanship.simc
 TWW1_Hunter_Survival.simc
+TWW1_Hunter_Beast_Mastery_Pack_Leader.simc
+TWW1_Hunter_Marksmanship_Dark_Ranger.simc
+TWW1_Hunter_Survival_Pack_Leader.simc
 
+TWW1_Mage_Arcane.simc
 TWW1_Mage_Fire.simc
 TWW1_Mage_Frost.simc
-TWW1_Mage_Frost_FrostfireNoDC.simc
-TWW1_Mage_Frost_Frostfire.simc
-TWW1_Mage_Arcane.simc
 
 TWW1_Monk_Brewmaster.simc
 TWW1_Monk_Windwalker.simc
+TWW1_Monk_Windwalker_Celestial.simc
 
 TWW1_Paladin_Protection.simc
+TWW1_Paladin_Protection_Templar.simc
 TWW1_Paladin_Retribution.simc
-TWW1_Paladin_Retribution_Templar.simc
+TWW1_Paladin_Retribution_Herald.simc
 
 TWW1_Priest_Shadow.simc
-TWW1_Priest_Shadow_Void.simc
+TWW1_Priest_Shadow_Archon.simc
 
 TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Assassination_Fatebound.simc
 TWW1_Rogue_Outlaw.simc
 TWW1_Rogue_Outlaw_HO.simc
 TWW1_Rogue_Subtlety.simc
 
 TWW1_Shaman_Elemental.simc
-TWW1_Shaman_Elemental_Storm.simc
 TWW1_Shaman_Enhancement.simc
-TWW1_Shaman_Enhancement_Storm.simc
+TWW1_Shaman_Enhancement_Totemic.simc
 
-TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Affliction.simc
-TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Demonology_Diabolist.simc
 TWW1_Warlock_Destruction.simc
 TWW1_Warlock_Destruction_Hellcaller.simc
 
 TWW1_Warrior_Arms.simc
-TWW1_Warrior_Arms_Juggernaut.simc
 TWW1_Warrior_Fury.simc
-TWW1_Warrior_Fury_Mountain.simc
 TWW1_Warrior_Protection.simc
-TWW1_Warrior_Protection_Colossus.simc
