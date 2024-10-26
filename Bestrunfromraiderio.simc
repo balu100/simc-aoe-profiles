@@ -7,40 +7,39 @@ override.mystic_touch=0
 override.chaos_brand=0
 override.bleeding=0
 single_actor_batch=1
-max_time=18000
-enemy="Ara-Kara: City of Echoes"
+max_time=19200
+enemy="The Necrotic Wake"
 enemy_health=999999
 keystone_level=16
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
-raid_events+=/pull,pull=01,bloodlust=0,delay=035,enemies="starved-crawler_1":6888194|"starved-crawler_2":6888194|"starved-crawler_3":6888194|"starved-crawler_4":6888194|"starved-crawler_5":6888194|"starved-crawler_6":6888194|"starved-crawler_7":6888194|"starved-crawler_8":6888194|"starved-crawler_9":6888194|"starved-crawler_10":6888194|"starved-crawler_11":6888194|"starved-crawler_12":6888194|"starved-crawler_13":6888194|"starved-crawler_14":6888194|"starved-crawler_15":6888194|"starved-crawler_16":6888194|"starved-crawler_17":6888194|"starved-crawler_18":6888194|"starved-crawler_19":6888194|"jabbing-flyer_1":6457682|"jabbing-flyer_2":6457682|"jabbing-flyer_3":6457682|"jabbing-flyer_4":6457682|"jabbing-flyer_5":6457682|"jabbing-flyer_6":6457682|"jabbing-flyer_7":6457682|"ixin_1":43051214|"trilling-attendant_1":21525607|"trilling-attendant_2":21525607|"engorged-crawler_1":29597710|"engorged-crawler_2":29597710|"engorged-crawler_3":29597710
-raid_events+=/pull,pull=02,bloodlust=0,delay=016,enemies="jabbing-flyer_1":6457682|"jabbing-flyer_2":6457682|"jabbing-flyer_3":6457682|"jabbing-flyer_4":6457682|"jabbing-flyer_5":6457682|"jabbing-flyer_6":6457682|"starved-crawler_1":6888194|"starved-crawler_2":6888194|"starved-crawler_3":6888194|"trilling-attendant_1":21525607|"engorged-crawler_1":29597710|"engorged-crawler_2":29597710|"engorged-crawler_3":29597710|"engorged-crawler_4":29597710|"engorged-crawler_5":29597710|"engorged-crawler_6":29597710|"engorged-crawler_7":29597710
-raid_events+=/pull,pull=03,bloodlust=0,delay=012,enemies="jabbing-flyer_1":6457682|"jabbing-flyer_2":6457682|"jabbing-flyer_3":6457682|"jabbing-flyer_4":6457682|"jabbing-flyer_5":6457682|"jabbing-flyer_6":6457682|"jabbing-flyer_7":6457682|"jabbing-flyer_8":6457682|"starved-crawler_1":6888194|"starved-crawler_2":6888194|"starved-crawler_3":6888194|"starved-crawler_4":6888194|"nakt_1":43051214
-raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="jabbing-flyer_1":6457682|"jabbing-flyer_2":6457682|"jabbing-flyer_3":6457682|"atik_1":43051214|"trilling-attendant_1":21525607|"engorged-crawler_1":29597710|"engorged-crawler_2":29597710
-raid_events+=/pull,pull=05,bloodlust=0,delay=018,enemies="BOSS_avanoxx_1":174976117
-raid_events+=/pull,pull=06,bloodlust=0,delay=027,enemies="starved-crawler_1":6888194|"bloodworker_1":5381401|"bloodworker_2":5381401|"bloodworker_3":5381401|"bloodworker_4":5381401|"bloodworker_5":5381401|"bloodworker_6":5381401|"bloodworker_7":5381401|"bloodworker_8":5381401|"bloodworker_9":5381401|"bloodworker_10":5381401|"bloodworker_11":5381401|"hulking-bloodguard_1":43051214|"sentry-stagshell_1":10762803|"bloodstained-webmage_1":24216308|"bloodstained-assistant_1":24216308|"bloodstained-assistant_2":24216308
-raid_events+=/pull,pull=07,bloodlust=0,delay=012,enemies="bloodworker_1":5381401|"bloodworker_2":5381401|"bloodworker_3":5381401|"bloodworker_4":5381401|"bloodstained-assistant_1":24216308
-raid_events+=/pull,pull=08,bloodlust=0,delay=005,enemies="bloodworker_1":5381401|"bloodworker_2":5381401|"bloodworker_3":5381401|"bloodworker_4":5381401|"hulking-bloodguard_1":43051214|"sentry-stagshell_1":10762803|"bloodstained-webmage_1":24216308
-raid_events+=/pull,pull=09,bloodlust=0,delay=007,enemies="bloodworker_1":5381401|"bloodworker_2":5381401|"bloodworker_3":5381401|"sentry-stagshell_1":10762803|"bloodstained-webmage_1":24216308|"bloodstained-assistant_1":24216308
-raid_events+=/pull,pull=10,bloodlust=0,delay=012,enemies="sentry-stagshell_1":10762803|"sentry-stagshell_2":10762803|"bloodstained-webmage_1":24216308|"bloodworker_1":5381401|"bloodworker_2":5381401|"bloodworker_3":5381401|"bloodworker_4":5381401
-raid_events+=/pull,pull=11,bloodlust=0,delay=014,enemies="BOSS_anubzekt_1":204138803
-raid_events+=/pull,pull=12,bloodlust=0,delay=049,enemies="winged-carrier_1":18834906|"winged-carrier_2":18834906|"winged-carrier_3":18834906|"winged-carrier_4":18834906|"winged-carrier_5":18834906|"blood-overseer_1":48432615|"reinforced-drone_1":21525607|"reinforced-drone_2":21525607|"reinforced-drone_3":21525607|"reinforced-drone_4":21525607
-raid_events+=/pull,pull=13,bloodlust=0,delay=005,enemies="reinforced-drone_1":21525607|"reinforced-drone_2":21525607|"reinforced-drone_3":21525607|"reinforced-drone_4":21525607|"winged-carrier_1":18834906|"winged-carrier_2":18834906|"winged-carrier_3":18834906|"winged-carrier_4":18834906|"winged-carrier_5":18834906|"blood-overseer_1":48432615
-raid_events+=/pull,pull=14,bloodlust=0,delay=014,enemies="nerubian-hauler_1":86102428|"blood-overseer_1":48432615|"blood-overseer_2":48432615
-raid_events+=/pull,pull=15,bloodlust=0,delay=007,enemies="BOSS_kikatal-the-harvester_1":233301489
-raid_events+=/pull,pull=16,bloodlust=0,delay=017,enemies="reinforced-drone_1":21525607|"reinforced-drone_2":21525607|"reinforced-drone_3":21525607
+raid_events+=/pull,pull=01,bloodlust=0,delay=010,enemies="blight-bag_1":10762803|"blight-bag_2":10762803|"blight-bag_3":10762803|"blight-bag_4":10762803|"blight-bag_5":10762803|"blight-bag_6":10762803|"blight-bag_7":10762803|"blight-bag_8":10762803|"blight-bag_9":10762803|"patchwerk-soldier_1":21525607|"patchwerk-soldier_2":21525607|"patchwerk-soldier_3":21525607|"patchwerk-soldier_4":21525607|"patchwerk-soldier_5":21525607|"patchwerk-soldier_6":21525607|"patchwerk-soldier_7":21525607|"patchwerk-soldier_8":21525607|"patchwerk-soldier_9":21525607|"patchwerk-soldier_10":21525607|"patchwerk-soldier_11":21525607|"zolramus-gatekeeper_1":40360513|"stitched-vanguard_1":32288410|"stitched-vanguard_2":32288410|"stitched-vanguard_3":32288410|"corpse-harvester_1":26907008|"corpse-harvester_2":26907008|"flesh-crafter_1":29597710
+raid_events+=/pull,pull=02,bloodlust=0,delay=011,enemies="corpse-harvester_1":26907008|"zolramus-gatekeeper_1":40360513|"patchwerk-soldier_1":21525607|"flesh-crafter_1":29597710
+raid_events+=/pull,pull=03,bloodlust=0,delay=010,enemies="blight-bag_1":10762803|"blight-bag_2":10762803|"blight-bag_3":10762803|"blight-bag_4":10762803|"blight-bag_5":10762803|"BOSS_blightbone_1":204138803
+raid_events+=/pull,pull=04,bloodlust=0,delay=030,enemies="blight-bag_1":10762803|"blight-bag_2":10762803|"blight-bag_3":10762803|"zolramus-bonemender_1":26907008|"zolramus-sorcerer_1":24216308|"zolramus-sorcerer_2":24216308|"zolramus-sorcerer_3":24216308|"zolramus-bonecarver_1":26907008|"skeletal-marauder_1":53814017|"narzudah_1":59027180
+raid_events+=/pull,pull=05,bloodlust=0,delay=024,enemies="zolramus-necromancer_1":37669812|"brittlebone-warrior_1":13453505|"brittlebone-warrior_2":13453505|"brittlebone-warrior_3":13453505|"brittlebone-warrior_4":13453505|"brittlebone-mage_1":8072103|"skeletal-marauder_1":53814017|"skeletal-marauder_2":53814017
+raid_events+=/pull,pull=06,bloodlust=0,delay=013,enemies="shuffling-corpse_1":8854076|"shuffling-corpse_2":8854076|"shuffling-corpse_3":8854076|"shuffling-corpse_4":8854076|"shuffling-corpse_5":8854076|"shuffling-corpse_6":8854076|"shuffling-corpse_7":8854076|"shuffling-corpse_8":8854076|"zolramus-bonecarver_1":26907008|"zolramus-bonecarver_2":26907008|"zolramus-sorcerer_1":24216308|"zolramus-sorcerer_2":24216308|"skeletal-marauder_1":53814017
+raid_events+=/pull,pull=07,bloodlust=0,delay=011,enemies="BOSS_amarth_1":174976117|"zolramus-bonemender_1":26907008|"zolramus-bonecarver_1":26907008|"zolramus-sorcerer_1":24216308|"skeletal-marauder_1":53814017|"skeletal-monstrosity_1":64576821
+raid_events+=/pull,pull=08,bloodlust=0,delay=013,enemies="spare-parts_1":2690701|"spare-parts_2":2690701|"spare-parts_3":2690701|"corpse-collector_1":26907008|"corpse-collector_2":26907008|"patchwerk-soldier_1":21525607|"patchwerk-soldier_2":21525607|"patchwerk-soldier_3":21525607|"patchwerk-soldier_4":21525607|"patchwerk-soldier_5":21525607|"kyrian-stitchwerk_1":48432615|"loyal-creation_1":34979112|"flesh-crafter_1":29597710
+raid_events+=/pull,pull=09,bloodlust=0,delay=003,enemies="spare-parts_1":2690701|"spare-parts_2":2690701|"spare-parts_3":2690701|"spare-parts_4":2690701|"corpse-collector_1":26907008
+raid_events+=/pull,pull=10,bloodlust=0,delay=003,enemies="patchwerk-soldier_1":21525607|"patchwerk-soldier_2":21525607|"corpse-collector_1":26907008|"loyal-creation_1":34979112|"kyrian-stitchwerk_1":48432615|"flesh-crafter_1":29597710
+raid_events+=/pull,pull=11,bloodlust=0,delay=002,enemies="stitching-assistant_1":53814017|"separation-assistant_1":53814017
+raid_events+=/pull,pull=12,bloodlust=0,delay=008,enemies="goregrind-bits_1":26907008|"goregrind-bits_2":26907008|"goregrind-bits_3":26907008|"goregrind_1":75339624
+raid_events+=/pull,pull=13,bloodlust=0,delay=003,enemies="rotspew-leftovers_1":21525607|"rotspew-leftovers_2":21525607|"rotspew-leftovers_3":21525607|"rotspew_1":64576821
+raid_events+=/pull,pull=14,bloodlust=0,delay=001,enemies="BOSS_surgeon-stitchflesh_1":125982807
+raid_events+=/pull,pull=15,bloodlust=0,delay=027,enemies="nalthor-the-rimebinder_1":186641191
 
 # TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
+TWW1_Death_Knight_Frost_Rider.simc
+TWW1_Death_Knight_Frost_Shattering_Deathbringer.simc
 TWW1_Death_Knight_Unholy.simc
+TWW1_Death_Knight_Unholy_San'layn.simc
 
 TWW1_Demon_Hunter_Havoc.simc
-# TWW1_Demon_Hunter_Havoc_SD.simc
 TWW1_Demon_Hunter_Vengeance.simc
-TWW1_Demon_Hunter_Vengeance_Fel.simc
 
 TWW1_Druid_Balance.simc
 TWW1_Druid_Feral.simc
-TWW1_Druid_Feral_Wildstalker.simc
 TWW1_Druid_Guardian.simc
 
 TWW1_Evoker_Devastation.simc
@@ -48,42 +47,43 @@ TWW1_Evoker_Devastation.simc
 TWW1_Hunter_Beast_Mastery.simc
 TWW1_Hunter_Marksmanship.simc
 TWW1_Hunter_Survival.simc
+TWW1_Hunter_Beast_Mastery_Pack_Leader.simc
+TWW1_Hunter_Marksmanship_Dark_Ranger.simc
+TWW1_Hunter_Survival_Pack_Leader.simc
 
+TWW1_Mage_Arcane.simc
 TWW1_Mage_Fire.simc
 TWW1_Mage_Frost.simc
-TWW1_Mage_Frost_FrostfireNoDC.simc
-TWW1_Mage_Frost_Frostfire.simc
-TWW1_Mage_Arcane.simc
 
 TWW1_Monk_Brewmaster.simc
 TWW1_Monk_Windwalker.simc
+TWW1_Monk_Windwalker_Celestial.simc
 
 TWW1_Paladin_Protection.simc
+TWW1_Paladin_Protection_Templar.simc
 TWW1_Paladin_Retribution.simc
-TWW1_Paladin_Retribution_Templar.simc
+TWW1_Paladin_Retribution_Herald.simc
 
 TWW1_Priest_Shadow.simc
+TWW1_Priest_Shadow_Archon.simc
 
 TWW1_Rogue_Assassination.simc
+TWW1_Rogue_Assassination_Fatebound.simc
 TWW1_Rogue_Outlaw.simc
 TWW1_Rogue_Outlaw_HO.simc
 TWW1_Rogue_Subtlety.simc
 
 TWW1_Shaman_Elemental.simc
-TWW1_Shaman_Elemental_Storm.simc
 TWW1_Shaman_Enhancement.simc
-TWW1_Shaman_Enhancement_Storm.simc
+TWW1_Shaman_Enhancement_Totemic.simc
 
-TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Affliction.simc
-TWW1_Warlock_Demonology_Diabolist.simc
+TWW1_Warlock_Affliction_Hellcaller.simc
 TWW1_Warlock_Demonology.simc
+TWW1_Warlock_Demonology_Diabolist.simc
 TWW1_Warlock_Destruction.simc
 TWW1_Warlock_Destruction_Hellcaller.simc
 
 TWW1_Warrior_Arms.simc
-TWW1_Warrior_Arms_Juggernaut.simc
 TWW1_Warrior_Fury.simc
-TWW1_Warrior_Fury_Mountain.simc
 TWW1_Warrior_Protection.simc
-TWW1_Warrior_Protection_Colossus.simc
