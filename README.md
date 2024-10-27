@@ -2,6 +2,10 @@
 
 This repository contains profiles for Area of Effect (AOE) damage simulations in SimulationCraft. Follow the instructions below to use these profiles, either manually or via Docker.
 
+## [View online](https://dps.ebalazs.com/)
+
+
+
 ## Manual Installation
 
 1. **Download SimulationCraft:**
