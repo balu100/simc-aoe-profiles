@@ -65,17 +65,17 @@ run_simc_with_retry() {
     retry=false
     
     # Check if any error text is in the output
-# Check if any error text is in the output
-for error_text in $(echo "$error_texts" | tr '|' '\n'); do
-  if echo "$output" | grep -F -q "$error_text"; then
-    echo -e "Error detected: \e[31m$error_text\e[0m. Retrying..."  # Make the error text red
-    retry=true
-    sleep 2  # Add a short delay before retrying
-    break
-  fi
-done
-done
+    for error_text in $(echo "$error_texts" | tr '|' '\n'); do
+      if echo "$output" | grep -F -x -q "$error_text"; then
+        echo -e "Error detected: \e[31m$error_text\e[0m. Retrying..."  # Make the error text red
+        retry=true
+        sleep 2  # Add a short delay before retrying
+        break
+      fi
+    done
+  done
 }
+
 
 # Commands with retry logic
 
