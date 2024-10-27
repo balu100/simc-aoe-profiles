@@ -26,7 +26,7 @@ You can run SimulationCraft with these profiles via Docker for a streamlined set
      
 3. **What does it auto generate**
 ```
-[torun.sh](https://raw.githubusercontent.com/balu100/simc-aoe-profiles/refs/heads/main/torun.sh)
+https://raw.githubusercontent.com/balu100/simc-aoe-profiles/refs/heads/main/torun.sh
 ```
 
 ### Contributions
