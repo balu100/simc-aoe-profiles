@@ -77,7 +77,7 @@ run_simc_with_retry() {
     # If no errors were found, print a success message
     if ! $retry; then
       echo -e "Command executed successfully! \e[32m$command\e[0m"
-      echo "$output"  # Optionally print the output of the command
+      #echo "$output"  # Optionally print the output of the command
     fi
   done
 }
