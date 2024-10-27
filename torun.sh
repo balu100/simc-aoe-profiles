@@ -50,7 +50,7 @@ echo ""
 echo ""
 
 # Define error texts to look for
-error_texts="Simulation has been forcefully cancelled|Segmentation fault|Additional error text"
+error_texts="Simulation has been forcefully cancelled|Segmentation fault|An error occurred while running the simulation|Failed to open file|Invalid simulation configuration|Insufficient memory|No valid profiles found|Unsupported operation"
 
 # Function to run simc command with retry on specific errors
 run_simc_with_retry() {
