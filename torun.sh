@@ -68,7 +68,7 @@ run_simc_with_retry() {
 # Check if any error text is in the output
 for error_text in $(echo "$error_texts" | tr '|' '\n'); do
   if echo "$output" | grep -q "$error_text"; then
-    echo "Error detected: $error_text. Retrying..."
+    echo "Error detected: '$error_text'. Retrying..."
     retry=true
     sleep 2  # Add a short delay before retrying
     break
