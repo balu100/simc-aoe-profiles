@@ -50,7 +50,7 @@ echo ""
 echo ""
 
 # Define error texts to look for
-error_texts=("Simulation has been forcefully cancelled" "Another possible error text" "Additional error text")
+error_texts="Simulation has been forcefully cancelled|Another possible error text|Additional error text"
 
 # Function to run simc command with retry on specific errors
 run_simc_with_retry() {
@@ -65,15 +65,16 @@ run_simc_with_retry() {
     retry=false
     
     # Check if any error text is in the output
-    for error_text in "${error_texts[@]}"; do
-      if echo "$output" | grep -q "$error_text"; then
-        echo "Error detected: $error_text. Retrying..."
-        retry=true
-        sleep 2  # Add a short delay before retrying
-        break
-      fi
-    done
-  done
+# Check if any error text is in the output
+for error_text in $(echo "$error_texts" | tr '|' '\n'); do
+  if echo "$output" | grep -q "$error_text"; then
+    echo "Error detected: $error_text. Retrying..."
+    retry=true
+    sleep 2  # Add a short delay before retrying
+    break
+  fi
+done
+done
 }
 
 # Commands with retry logic
