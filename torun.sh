@@ -27,7 +27,7 @@ shuffled_colors=$(shuffle_colors)
 i=1
 
 # Displaying the message in shuffled rainbow colors with a larger font
-figlet -f big "Version 2.3" | while IFS= read -r line; do
+figlet -f big "Version 2.5" | while IFS= read -r line; do
   # Get the current color from the shuffled list
   color=$(echo $shuffled_colors | cut -d' ' -f$i)
   
@@ -62,7 +62,7 @@ run_simc_with_retry() {
     # Run the command and capture the output, appending to the log file
     output=$($command 2>&1 | tee -a "$log_file")
     
-    # Assume success unless an error is detected
+    # Assume success unless an error is detected or the output does not contain "html report took"
     retry=false
     
     # Check if any error text is in the output
@@ -75,7 +75,14 @@ run_simc_with_retry() {
       fi
     done
     
-    # If no errors were found, print a success message and log it
+    # Check if the output contains "html report took" to determine if the command succeeded
+    if ! echo "$output" | grep -q "html report took"; then
+      echo -e "Output did not contain 'html report took'. Retrying..." | tee -a "$log_file"
+      retry=true
+      sleep 2
+    fi
+    
+    # If no errors were found and the correct output was present, print a success message and log it
     if ! $retry; then
       echo -e "Command executed successfully! \e[32m$command\e[0m" | tee -a "$log_file"
       echo "$output" >> "$log_file"  # Append the output of the command to the log file
