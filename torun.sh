@@ -22,15 +22,16 @@ LOG_FILE="/var/log/simc_script.log"
 
 # Error patterns for retry logic
 error_patterns=(
-  "Simulation has been forcefully cancelled"
-  "Segmentation fault"
-  "An error occurred while running the simulation"
-  "Failed to open file"
-  "Invalid simulation configuration"
-  "Insufficient memory"
-  "No valid profiles found"
-  "Unsupported operation"
-  "Simulation has been canceled after"
+  ".*Simulation has been forcefully cancelled.*"
+  ".*Segmentation fault.*"
+  ".*An error occurred while running the simulation.*"
+  ".*Failed to open file.*"
+  ".*Invalid simulation configuration.*"
+  ".*Insufficient memory.*"
+  ".*No valid profiles found.*"
+  ".*Unsupported operation.*"
+  ".*Simulation has been canceled after.*"
+  ".*Simulation has been canceled after .* iterations.*"
 )
 
 # Colors for messages
@@ -78,7 +79,7 @@ run_simc_with_retry() {
 
     # Check for specific error patterns
     for error_pattern in "${error_patterns[@]}"; do
-      if grep -q "$error_pattern" "$log_file"; then
+      if grep -E -q "$error_pattern" "$log_file"; then
         log_message "Error detected: \e[31m$error_pattern\e[0m. Retrying..."
         sleep 2
         break
