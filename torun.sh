@@ -46,28 +46,23 @@ shuffle_colors() {
 display_colored_message() {
   local message="$1"
   local font="$2"
-  
+
+  # Shuffle colors for the entire message
+  shuffled_colors=($(shuffle_colors))
+
   # Generate the figlet ASCII art for the message
   figlet -f "$font" "$message" | while IFS= read -r line; do
-    # Shuffle colors for each line
-    local shuffled_colors=($(shuffle_colors))
+    # Get a random color from shuffled_colors
+    color="${shuffled_colors[RANDOM % ${#shuffled_colors[@]}]}"
     
-    # Loop over each character in the line, applying a color
-    local colored_line=""
-    local i=0
-    for (( j=0; j<${#line}; j++ )); do
-      char="${line:j:1}"
-      colored_line+="${shuffled_colors[i]}${char}\033[0m"
-      i=$(( (i + 1) % ${#shuffled_colors[@]} ))
-    done
-    
-    # Print the colored line
-    echo -e "$colored_line"
+    # Print the line in the chosen color
+    echo -e "${color}${line}\033[0m"
   done
-  
-  # Ensure any remaining formatting is reset
-  echo -e "\033[0m"
 }
+
+# Example usage
+display_colored_message "Version 3.0.5" "big"
+
 
 
 
