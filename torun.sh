@@ -42,7 +42,9 @@ log_message() {
 
 # Error patterns for retry logic
 error_patterns=(
-  "Simulation has been forcefully cancelled"
+  "Simulation.*has.*been.*cancelled"
+  "Simulation.*has.*been.*canceled"
+  "Simulation.*forcefully.*cancelled"
   "Segmentation fault"
   "An error occurred while running the simulation"
   "Failed to open file"
@@ -50,39 +52,39 @@ error_patterns=(
   "Insufficient memory"
   "No valid profiles found"
   "Unsupported operation"
-  "Simulation\s*has\s*been\s*canceled\s*after"
 )
 
-# Retry logic for simulations
+# Retry logic for running the simulation command
 run_simc_with_retry() {
   local command="$1"
   local log_file="$2"
   local max_retries=5
-  local attempt
 
   for attempt in $(seq 1 "$max_retries"); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
-    
-    # Run command and capture output
+
+    # Capture output of command
     command_output=$($command 2>&1 | tee -a "$log_file")
     command_status=$?
 
-    # Check error patterns
+    # Check for error patterns with extended, case-insensitive matching
+    error_found=false
     for error_pattern in "${error_patterns[@]}"; do
       if echo "$command_output" | grep -Eiq "$error_pattern"; then
         log_message "Error detected: $error_pattern. Retrying..."
+        error_found=true
         sleep 2
-        continue 2  # Retry from outer loop
+        break
       fi
     done
 
-    # Check for success if no error detected
-    if [ "$command_status" -eq 0 ] && echo "$command_output" | grep -iq "html report took"; then
+    # If no errors, check for successful completion
+    if ! $error_found && [ "$command_status" -eq 0 ] && echo "$command_output" | grep -iq "html report took"; then
       log_message "Command executed successfully! $command"
       return 0
     fi
 
-    # Final retry attempt reached
+    # Exit if max retries reached
     if [ "$attempt" -eq "$max_retries" ]; then
       log_message "Max retries reached. Exiting with failure."
       exit 1
@@ -92,7 +94,7 @@ run_simc_with_retry() {
 
 # Initial setup and display version info
 setup_repo
-display_colored_message "Version B3.0.5" "big"
+display_colored_message "Version B3.0.6" "big"
 
 # Simulation scenarios
 scenarios=(
