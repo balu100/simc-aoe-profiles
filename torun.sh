@@ -27,7 +27,7 @@ shuffled_colors=$(shuffle_colors)
 i=1
 
 # Displaying the message in shuffled rainbow colors with a larger font
-figlet -f big "Version 2.7" | while IFS= read -r line; do
+figlet -f big "Version 3.0" | while IFS= read -r line; do
   # Get the current color from the shuffled list
   color=$(echo $shuffled_colors | cut -d' ' -f$i)
   
@@ -50,7 +50,7 @@ echo ""
 echo ""
 
 # Define error texts to look for
-error_texts="Simulation has been forcefully cancelled|Segmentation fault|An error occurred while running the simulation|Failed to open file|Invalid simulation configuration|Insufficient memory|No valid profiles found|Unsupported operation"
+error_texts="Simulation has been forcefully cancelled|Segmentation fault|An error occurred while running the simulation|Failed to open file|Invalid simulation configuration|Insufficient memory|No valid profiles found|Unsupported operation|Simulation has been canceled after"
 
 # Function to run simc command with retry on specific errors
 run_simc_with_retry() {
