@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 # Update package list and install dependencies
@@ -106,7 +106,7 @@ run_simc_with_retry() {
 }
 
 # Display the version in rainbow colors
-display_colored_message "Version 3.0.1" "big"
+display_colored_message "Version 3.0.2" "big"
 
 # List of simulation scenarios
 scenarios=(
@@ -132,11 +132,12 @@ scenarios=(
 
 # Run simulations for each scenario
 for scenario in "${scenarios[@]}"; do
+  json_file="${OUTPUT_DIR}/${scenario%.simc}.json"
   html_file="${OUTPUT_DIR}/${scenario%.simc}.html"
   log_file="${OUTPUT_DIR}/${scenario%.simc}.log"
   
   display_colored_message "$(basename "$scenario" .simc)" "big"
-  run_simc_with_retry "$SIMC_COMMAND $scenario html=$html_file $TARGET_ERROR" "$log_file"
+  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $TARGET_ERROR" "$log_file"
 done
 
 # Final message in rainbow colors
