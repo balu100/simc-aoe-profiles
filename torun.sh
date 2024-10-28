@@ -60,12 +60,6 @@ display_colored_message() {
   done
 }
 
-# Example usage
-display_colored_message "Version 3.0.111" "big"
-
-
-
-
 # Log a message
 log_message() {
   local message="$1"
@@ -77,6 +71,7 @@ run_simc_with_retry() {
   local command="$1"
   local log_file="$2"
   local max_retries=5
+  local error_found=false
 
   for attempt in $(seq 1 $max_retries); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
@@ -88,16 +83,21 @@ run_simc_with_retry() {
     fi
 
     # Check for specific error patterns
+    error_found=false
     for error_pattern in "${error_patterns[@]}"; do
       if grep -E -q "$error_pattern" "$log_file"; then
         log_message "Error detected: \e[31m$error_pattern\e[0m. Retrying..."
+        error_found=true
         sleep 2
         break
       fi
     done
 
-    # If max retries reached, exit with an error
-    if [ "$attempt" -eq "$max_retries" ]; then
+    # Retry if an error pattern was found, or exit on the last attempt
+    if ! $error_found; then
+      log_message "No errors found in logs. Proceeding to next scenario."
+      return 0
+    elif [ "$attempt" -eq "$max_retries" ]; then
       log_message "Max retries reached. Exiting with failure."
       exit 1
     fi
@@ -105,8 +105,9 @@ run_simc_with_retry() {
 }
 
 
+
 # Display version info
-display_colored_message "Version 3.0.6" "big"
+display_colored_message "Version 3.0.0" "big"
 
 # Simulation scenarios
 scenarios=(
