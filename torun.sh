@@ -61,7 +61,7 @@ display_colored_message() {
 }
 
 # Example usage
-display_colored_message "Version 3.0.11" "big"
+display_colored_message "Version 3.0.111" "big"
 
 
 
