@@ -112,7 +112,6 @@ display_colored_message "Version B3.0.5" "big"
 
 # Simulation scenarios
 scenarios=(
-  "Bestrunfromraiderio.simc"
   "TWW1_Raid_SoB_10.simc"
   "TWW1_Raid_SoB_15.simc"
   "TWW1_Raid_MoTS_10.simc"
@@ -130,6 +129,7 @@ scenarios=(
   "TWW1_Raid_GB_10.simc"
   "TWW1_Raid_GB_15.simc"
   "TWW1_Raid.simc"
+  "Bestrunfromraiderio.simc"
 )
 
 # Run simulations
