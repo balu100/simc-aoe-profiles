@@ -101,7 +101,7 @@ run_simc_with_retry() {
 }
 
 # Display version info
-display_colored_message "Version B3.0" "big"
+display_colored_message "Version B3.0.1" "big"
 
 # Simulation scenarios
 scenarios=(
