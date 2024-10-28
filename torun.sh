@@ -58,7 +58,7 @@ error_patterns=(
 run_simc_with_retry() {
   local command="$1"
   local log_file="$2"
-  local max_retries=5
+  local max_retries=10
 
   for attempt in $(seq 1 "$max_retries"); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
