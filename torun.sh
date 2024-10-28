@@ -74,16 +74,16 @@ run_simc_with_retry() {
   for attempt in $(seq 1 $max_retries); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
 
-    # Capture the output of the command
-    command_output=$($command 2>&1 | tee -a "$log_file")
+    # Capture the output of the command, removing carriage returns for consistent matching
+    command_output=$($command 2>&1 | tr -d '\r' | tee -a "$log_file")
 
-    # Check for success first
+    # Check for success message
     if echo "$command_output" | grep -iq "html report took"; then
       log_message "Command executed successfully! \e[32m$command\e[0m"
       return 0
     fi
 
-    # Check for specific error patterns directly in output
+    # Check for specific error patterns directly in the normalized output
     error_found=false
     for error_pattern in "${error_patterns[@]}"; do
       if echo "$command_output" | grep -Eiq "$error_pattern"; then
@@ -94,7 +94,7 @@ run_simc_with_retry() {
       fi
     done
 
-    # If no error was detected, exit retry loop
+    # Exit retry loop if no errors were detected
     if ! $error_found; then
       log_message "No errors detected; moving to next scenario."
       return 0
