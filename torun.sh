@@ -46,15 +46,33 @@ shuffle_colors() {
 display_colored_message() {
   local message="$1"
   local font="$2"
-  local shuffled_colors
+  
+  # Shuffle the colors initially
   shuffled_colors=$(shuffle_colors)
-
+  i=1
+  
+  # Use figlet to generate the ASCII art message and process each line
   figlet -f "$font" "$message" | while IFS= read -r line; do
-    for color in $shuffled_colors; do
-      echo -e "${color}${line}\033[0m"
-    done
+    # Get the current color from the shuffled list
+    color=$(echo $shuffled_colors | cut -d' ' -f$i)
+    
+    # Display the line in the current color, followed by a color reset
+    echo -e "${color}${line}\033[0m"
+    
+    # Move to the next color
+    i=$((i + 1))
+    
+    # If we've used all colors, reshuffle them and reset the index
+    if [ $i -gt $(echo $shuffled_colors | wc -w) ]; then
+      shuffled_colors=$(shuffle_colors)
+      i=1
+    fi
   done
+  
+  # Ensure any remaining formatting is reset
+  echo -e "\033[0m"
 }
+
 
 # Log a message
 log_message() {
