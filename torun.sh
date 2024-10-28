@@ -55,11 +55,12 @@ error_texts="Simulation has been forcefully cancelled|Segmentation fault|An erro
 # Function to run simc command with retry on specific errors
 run_simc_with_retry() {
   local command="$1"
+  local log_file="$2"
   local retry=true
   
   while $retry; do
-    # Run the command and capture the output
-    output=$($command 2>&1)
+    # Run the command and capture the output, appending to the log file
+    output=$($command 2>&1 | tee -a "$log_file")
     
     # Assume success unless an error is detected
     retry=false
@@ -67,71 +68,69 @@ run_simc_with_retry() {
     # Check if any error text is in the output
     for error_text in $(echo "$error_texts" | tr '|' '\n'); do
       if echo "$output" | grep -F -x -q "$error_text"; then
-        echo -e "Error detected: \e[31m$error_text\e[0m. Retrying..."  # Make the error text red
+        echo -e "Error detected: \e[31m$error_text\e[0m. Retrying..." | tee -a "$log_file" # Make the error text red and log it
         retry=true
         sleep 2  # Add a short delay before retrying
         break
       fi
     done
     
-    # If no errors were found, print a success message
+    # If no errors were found, print a success message and log it
     if ! $retry; then
-      echo -e "Command executed successfully! \e[32m$command\e[0m"
-      #echo "$output"  # Optionally print the output of the command
+      echo -e "Command executed successfully! \e[32m$command\e[0m" | tee -a "$log_file"
+      echo "$output" >> "$log_file"  # Append the output of the command to the log file
     fi
   done
 }
 
-
 # Commands with retry logic
-
 echo "RIO" | figlet -f big
 echo ""
-run_simc_with_retry "./simc Bestrunfromraiderio.simc json2=/opt/outside/Bestrunfromraiderio.json html=/opt/outside/Bestrunfromraiderio.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc Bestrunfromraiderio.simc json2=/opt/outside/Bestrunfromraiderio.json html=/opt/outside/Bestrunfromraiderio.html target_error=1.0 ptr=0" "/opt/outside/Bestrunfromraiderio.log"
 
 echo "SOB" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Mythic_SoB_10.json html=/opt/outside/TWW1_Mythic_SoB_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Mythic_SoB_15.json html=/opt/outside/TWW1_Mythic_SoB_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_SoB_10.simc json2=/opt/outside/TWW1_Mythic_SoB_10.json html=/opt/outside/TWW1_Mythic_SoB_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_SoB_10.log"
+run_simc_with_retry "./simc TWW1_Raid_SoB_15.simc json2=/opt/outside/TWW1_Mythic_SoB_15.json html=/opt/outside/TWW1_Mythic_SoB_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_SoB_15.log"
 
 echo "MITS" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Mythic_MoTS_10.json html=/opt/outside/TWW1_Mythic_MoTS_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Mythic_MoTS_15.json html=/opt/outside/TWW1_Mythic_MoTS_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_MoTS_10.simc json2=/opt/outside/TWW1_Mythic_MoTS_10.json html=/opt/outside/TWW1_Mythic_MoTS_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_MoTS_10.log"
+run_simc_with_retry "./simc TWW1_Raid_MoTS_15.simc json2=/opt/outside/TWW1_Mythic_MoTS_15.json html=/opt/outside/TWW1_Mythic_MoTS_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_MoTS_15.log"
 
 echo "NW" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Mythic_TNW_10.json html=/opt/outside/TWW1_Mythic_TNW_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Mythic_TNW_15.json html=/opt/outside/TWW1_Mythic_TNW_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_TNW_10.simc json2=/opt/outside/TWW1_Mythic_TNW_10.json html=/opt/outside/TWW1_Mythic_TNW_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TNW_10.log"
+run_simc_with_retry "./simc TWW1_Raid_TNW_15.simc json2=/opt/outside/TWW1_Mythic_TNW_15.json html=/opt/outside/TWW1_Mythic_TNW_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TNW_15.log"
 
 echo "COE" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Mythic_AKCOE_10.json html=/opt/outside/TWW1_Mythic_AKCOE_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Mythic_AKCOE_15.json html=/opt/outside/TWW1_Mythic_AKCOE_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_AKCOE_10.simc json2=/opt/outside/TWW1_Mythic_AKCOE_10.json html=/opt/outside/TWW1_Mythic_AKCOE_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_AKCOE_10.log"
+run_simc_with_retry "./simc TWW1_Raid_AKCOE_15.simc json2=/opt/outside/TWW1_Mythic_AKCOE_15.json html=/opt/outside/TWW1_Mythic_AKCOE_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_AKCOE_15.log"
 
 echo "COT" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Mythic_CoT_10.json html=/opt/outside/TWW1_Mythic_CoT_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Mythic_CoT_15.json html=/opt/outside/TWW1_Mythic_CoT_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_CoT_10.simc json2=/opt/outside/TWW1_Mythic_CoT_10.json html=/opt/outside/TWW1_Mythic_CoT_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_CoT_10.log"
+run_simc_with_retry "./simc TWW1_Raid_CoT_15.simc json2=/opt/outside/TWW1_Mythic_CoT_15.json html=/opt/outside/TWW1_Mythic_CoT_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_CoT_15.log"
 
 echo "TD" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Mythic_TD_10.json html=/opt/outside/TWW1_Mythic_TD_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Mythic_TD_15.json html=/opt/outside/TWW1_Mythic_TD_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_TD_10.simc json2=/opt/outside/TWW1_Mythic_TD_10.json html=/opt/outside/TWW1_Mythic_TD_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TD_10.log"
+run_simc_with_retry "./simc TWW1_Raid_TD_15.simc json2=/opt/outside/TWW1_Mythic_TD_15.json html=/opt/outside/TWW1_Mythic_TD_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TD_15.log"
 
 echo "TS" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Mythic_TS_10.json html=/opt/outside/TWW1_Mythic_TS_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Mythic_TS_15.json html=/opt/outside/TWW1_Mythic_TS_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_TS_10.simc json2=/opt/outside/TWW1_Mythic_TS_10.json html=/opt/outside/TWW1_Mythic_TS_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TS_10.log"
+run_simc_with_retry "./simc TWW1_Raid_TS_15.simc json2=/opt/outside/TWW1_Mythic_TS_15.json html=/opt/outside/TWW1_Mythic_TS_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_TS_15.log"
 
 echo "GB" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Mythic_GB_10.json html=/opt/outside/TWW1_Mythic_GB_10.html target_error=1.0 ptr=0"
-run_simc_with_retry "./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Mythic_GB_15.json html=/opt/outside/TWW1_Mythic_GB_15.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid_GB_10.simc json2=/opt/outside/TWW1_Mythic_GB_10.json html=/opt/outside/TWW1_Mythic_GB_10.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_GB_10.log"
+run_simc_with_retry "./simc TWW1_Raid_GB_15.simc json2=/opt/outside/TWW1_Mythic_GB_15.json html=/opt/outside/TWW1_Mythic_GB_15.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic_GB_15.log"
 
 echo "ST" | figlet -f big
 echo ""
-run_simc_with_retry "./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Mythic.json html=/opt/outside/TWW1_Mythic.html target_error=1.0 ptr=0"
+run_simc_with_retry "./simc TWW1_Raid.simc json2=/opt/outside/TWW1_Mythic.json html=/opt/outside/TWW1_Mythic.html target_error=1.0 ptr=0" "/opt/outside/TWW1_Mythic.log"
 
 # Final message
 echo ""
