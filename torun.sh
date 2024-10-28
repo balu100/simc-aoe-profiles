@@ -31,7 +31,6 @@ error_patterns=(
   ".*No valid profiles found.*"
   ".*Unsupported operation.*"
   ".*Simulation has been canceled after.*"
-  ".*Simulation has been canceled after .* iterations.*"
 )
 
 # Colors for messages
@@ -71,40 +70,35 @@ run_simc_with_retry() {
   local command="$1"
   local log_file="$2"
   local max_retries=5
-  local error_found=false
 
   for attempt in $(seq 1 $max_retries); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
 
-    # Run the command and capture output
-    if $command 2>&1 | tee -a "$log_file" | grep -q "html report took"; then
+    # Capture the output of the command
+    command_output=$($command 2>&1 | tee -a "$log_file")
+
+    # Check for success first
+    if echo "$command_output" | grep -q "html report took"; then
       log_message "Command executed successfully! \e[32m$command\e[0m"
       return 0
     fi
 
-    # Check for specific error patterns
-    error_found=false
+    # Check for specific error patterns directly in output
     for error_pattern in "${error_patterns[@]}"; do
-      if grep -E -q "$error_pattern" "$log_file"; then
+      if echo "$command_output" | grep -E -q "$error_pattern"; then
         log_message "Error detected: \e[31m$error_pattern\e[0m. Retrying..."
-        error_found=true
         sleep 2
         break
       fi
     done
 
-    # Retry if an error pattern was found, or exit on the last attempt
-    if ! $error_found; then
-      log_message "No errors found in logs. Proceeding to next scenario."
-      return 0
-    elif [ "$attempt" -eq "$max_retries" ]; then
+    # If max retries reached, exit with an error
+    if [ "$attempt" -eq "$max_retries" ]; then
       log_message "Max retries reached. Exiting with failure."
       exit 1
     fi
   done
 }
-
-
 
 # Display version info
 display_colored_message "Version 3.0.0" "big"
