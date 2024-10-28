@@ -101,7 +101,7 @@ run_simc_with_retry() {
 }
 
 # Display version info
-display_colored_message "Version 3.0.0" "big"
+display_colored_message "Version B3.0" "big"
 
 # Simulation scenarios
 scenarios=(
@@ -132,7 +132,7 @@ for scenario in "${scenarios[@]}"; do
   html_file="${OUTPUT_DIR}/${scenario_base}.html"
   log_file="${OUTPUT_DIR}/${scenario_base}.log"
 
-  display_colored_message "$scenario_base" "big"
+  display_colored_message "$scenario_base"
   run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $TARGET_ERROR" "$log_file"
 done
 
