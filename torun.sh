@@ -5,110 +5,99 @@ set -e
 apk update && apk add --no-cache nano git figlet
 
 # Clone and update the simulation profiles repository
-rm -rf /opt/simc-aoe-profiles
+REPO_DIR="/opt/simc-aoe-profiles"
+SIMC_DIR="/app/SimulationCraft/profiles"
+rm -rf "$REPO_DIR"
 git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
-cp -r -f /opt/simc-aoe-profiles/* /app/SimulationCraft/profiles/
+cp -r -f "$REPO_DIR"/* "$SIMC_DIR"
 
-# Adding blank lines for formatting
-echo ""
-echo ""
-echo ""
+# Add blank lines for formatting
+echo -e "\n\n\n"
 
-# Define common variables
+# Common variables
 SIMC_COMMAND="./simc"
 TARGET_ERROR="target_error=0.2 ptr=0"
 OUTPUT_DIR="/opt/outside"
 LOG_FILE="/var/log/simc_script.log"
 
-# Define error texts to look for
-error_texts="Simulation has been forcefully cancelled|Segmentation fault|An error occurred while running the simulation|Failed to open file|Invalid simulation configuration|Insufficient memory|No valid profiles found|Unsupported operation|Simulation has been canceled after|Simulation has been forcefully cancelled at"
+# Error patterns for retry logic
+error_patterns=(
+  "Simulation has been forcefully cancelled"
+  "Segmentation fault"
+  "An error occurred while running the simulation"
+  "Failed to open file"
+  "Invalid simulation configuration"
+  "Insufficient memory"
+  "No valid profiles found"
+  "Unsupported operation"
+  "Simulation has been canceled after"
+)
 
-# Colors in a space-separated string (compatible with POSIX shell)
-colors="\033[31m \033[33m \033[32m \033[36m \033[34m \033[35m"
-color_list=$(echo $colors)
+# Colors for messages
+colors=("\033[31m" "\033[33m" "\033[32m" "\033[36m" "\033[34m" "\033[35m")
 
-# Shuffle function to randomize the color order
+# Shuffle function for randomizing color order
 shuffle_colors() {
-  echo $color_list | tr ' ' '\n' | shuf | tr '\n' ' '
+  echo "${colors[@]}" | tr ' ' '\n' | shuf | tr '\n' ' '
 }
 
-# Function to display a message with shuffled rainbow colors
+# Display a message with shuffled rainbow colors
 display_colored_message() {
   local message="$1"
   local font="$2"
-  
-  # Shuffle the colors initially
+  local shuffled_colors
   shuffled_colors=$(shuffle_colors)
-  i=1
-  
-  # Display the message in shuffled rainbow colors with a larger font
+
   figlet -f "$font" "$message" | while IFS= read -r line; do
-    # Get the current color from the shuffled list
-    color=$(echo $shuffled_colors | cut -d' ' -f$i)
-    
-    # Display the line in the current color
-    echo -e "${color}${line}\033[0m"
-    
-    # Move to the next color
-    i=$((i + 1))
-    
-    # If we've used all colors, reshuffle them and reset the index
-    if [ $i -gt $(echo $shuffled_colors | wc -w) ]; then
-      shuffled_colors=$(shuffle_colors)
-      i=1
-    fi
+    for color in $shuffled_colors; do
+      echo -e "${color}${line}\033[0m"
+    done
   done
 }
 
-# Function to log messages
+# Log a message
 log_message() {
   local message="$1"
   echo -e "$message" | tee -a "$LOG_FILE"
 }
 
-# Function to run simc command with retry on specific errors
+# Retry logic for running the simulation command
 run_simc_with_retry() {
   local command="$1"
   local log_file="$2"
   local max_retries=5
-  local attempt=0
-  
-  while [ $attempt -lt $max_retries ]; do
-    log_message "Attempt $((attempt + 1))/$max_retries for command: $command..."
-    
-    # Run the command and capture the output
-    output=$($command 2>&1 | tee -a "$log_file")
-    
-    # If the command succeeded, break the loop
-    if echo "$output" | grep -q "html report took"; then
+
+  for attempt in $(seq 1 $max_retries); do
+    log_message "Attempt $attempt/$max_retries for command: $command..."
+
+    # Run the command and capture output
+    if $command 2>&1 | tee -a "$log_file" | grep -q "html report took"; then
       log_message "Command executed successfully! \e[32m$command\e[0m"
-      break
+      return 0
     fi
-    
-    # Check for specific error messages
-    for error_text in $(echo "$error_texts" | tr '|' '\n'); do
-      if echo "$output" | grep -F -x -q "$error_text"; then
-        log_message "Error detected: \e[31m$error_text\e[0m. Retrying..."
+
+    # Check for specific error patterns
+    for error_pattern in "${error_patterns[@]}"; do
+      if grep -q "$error_pattern" "$log_file"; then
+        log_message "Error detected: \e[31m$error_pattern\e[0m. Retrying..."
         sleep 2
         break
       fi
     done
-    
-    # Increment the attempt counter
-    attempt=$((attempt + 1))
-    
-    # If we've reached max retries, exit with an error
-    if [ $attempt -eq $max_retries ]; then
+
+    # If max retries reached, exit with an error
+    if [ "$attempt" -eq "$max_retries" ]; then
       log_message "Max retries reached. Exiting with failure."
       exit 1
     fi
   done
 }
 
-# Display the version in rainbow colors
+
+# Display version info
 display_colored_message "Version 3.0.2" "big"
 
-# List of simulation scenarios
+# Simulation scenarios
 scenarios=(
   "Bestrunfromraiderio.simc"
   "TWW1_Raid_SoB_10.simc"
@@ -130,20 +119,21 @@ scenarios=(
   "TWW1_Raid.simc"
 )
 
-# Run simulations for each scenario
+# Run simulations
 for scenario in "${scenarios[@]}"; do
-  json_file="${OUTPUT_DIR}/${scenario%.simc}.json"
-  html_file="${OUTPUT_DIR}/${scenario%.simc}.html"
-  log_file="${OUTPUT_DIR}/${scenario%.simc}.log"
-  
-  display_colored_message "$(basename "$scenario" .simc)" "big"
+  scenario_base=$(basename "$scenario" .simc)
+  json_file="${OUTPUT_DIR}/${scenario_base}.json"
+  html_file="${OUTPUT_DIR}/${scenario_base}.html"
+  log_file="${OUTPUT_DIR}/${scenario_base}.log"
+
+  display_colored_message "$scenario_base" "big"
   run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $TARGET_ERROR" "$log_file"
 done
 
-# Final message in rainbow colors
+# Final message
 display_colored_message "DONE" "big"
 
-# Infinite loop to keep the script running (for container environment)
+# Keep script running in a container environment
 while true; do
   sleep 86400 # Sleep for 24 hours
 done
