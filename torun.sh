@@ -104,8 +104,6 @@ scenarios=(
   "TWW1_Raid_MoTS_15.simc"
   "TWW1_Raid_TNW_10.simc"
   "TWW1_Raid_TNW_15.simc"
-  "TWW1_Raid_AKCOE_10.simc"
-  "TWW1_Raid_AKCOE_15.simc"
   "TWW1_Raid_CoT_10.simc"
   "TWW1_Raid_CoT_15.simc"
   "TWW1_Raid_TD_10.simc"
@@ -115,6 +113,8 @@ scenarios=(
   "TWW1_Raid_GB_10.simc"
   "TWW1_Raid_GB_15.simc"
   "TWW1_Raid.simc"
+  "TWW1_Raid_AKCOE_10.simc"
+  "TWW1_Raid_AKCOE_15.simc"
   "Bestrunfromraiderio.simc"
 )
 
