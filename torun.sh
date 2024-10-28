@@ -30,7 +30,7 @@ error_patterns=(
   ".*Insufficient memory.*"
   ".*No valid profiles found.*"
   ".*Unsupported operation.*"
-  ".*Simulation has been canceled after.*"
+  ".*Simulation\s*has\s*been\s*canceled\s*after.*"
 )
 
 # Colors for messages
@@ -78,19 +78,27 @@ run_simc_with_retry() {
     command_output=$($command 2>&1 | tee -a "$log_file")
 
     # Check for success first
-    if echo "$command_output" | grep -q "html report took"; then
+    if echo "$command_output" | grep -iq "html report took"; then
       log_message "Command executed successfully! \e[32m$command\e[0m"
       return 0
     fi
 
     # Check for specific error patterns directly in output
+    error_found=false
     for error_pattern in "${error_patterns[@]}"; do
-      if echo "$command_output" | grep -E -q "$error_pattern"; then
+      if echo "$command_output" | grep -Eiq "$error_pattern"; then
         log_message "Error detected: \e[31m$error_pattern\e[0m. Retrying..."
+        error_found=true
         sleep 2
         break
       fi
     done
+
+    # If no error was detected, exit retry loop
+    if ! $error_found; then
+      log_message "No errors detected; moving to next scenario."
+      return 0
+    fi
 
     # If max retries reached, exit with an error
     if [ "$attempt" -eq "$max_retries" ]; then
