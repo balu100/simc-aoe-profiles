@@ -52,6 +52,8 @@ error_patterns=(
   "Insufficient memory"
   "No valid profiles found"
   "Unsupported operation"
+  "Simulation has been forcefully cancelled at 4080.000"
+  "Simulation has been forcefully cancelled at"
 )
 
 # Retry logic for running the simulation command
@@ -94,7 +96,7 @@ run_simc_with_retry() {
 
 # Initial setup and display version info
 setup_repo
-display_colored_message "Version 3.0.1" "big"
+display_colored_message "Version 3.0.5" "big"
 
 # Simulation scenarios
 scenarios=(
