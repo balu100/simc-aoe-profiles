@@ -2,12 +2,16 @@ fight_style=DungeonRoute
 override.bloodlust=0
 override.arcane_intellect=0
 override.power_word_fortitude=0
+override.mark_of_the_wild=0
 override.battle_shout=0
 override.mystic_touch=0
 override.chaos_brand=0
+override.skyfury=0
+override.hunters_mark=0
+override.power_infusion=0
 override.bleeding=0
 single_actor_batch=1
-max_time=18000
+max_time=1800
 enemy="Raider.IO Weekly Route - Bunten"
 enemy_health=999999
 keystone_level=10
@@ -18,8 +22,8 @@ raid_events+=/pull,pull=03,bloodlust=0,delay=009,enemies="drust-soulcleaver_1":1
 raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="drust-boughbreaker_1":33437732|"drust-boughbreaker_2":33437732
 raid_events+=/pull,pull=05,bloodlust=0,delay=007,enemies="BOSS_ingra-maloch_1":178069617|"BOSS_droman-oulfarran_1":42868611
 raid_events+=/pull,pull=06,bloodlust=0,delay=022,enemies="mistveil-defender_1":21441320|"mistveil-defender_2":21441320
-raid_events+=/pull,pull=07,bloodlust=0,delay=022,enemies="mistveil-defender_1":23406411|"mistveil-defender_2":23406411|"mistveil-defender_3":23406411|"mistveil-defender_4":23406411|"mistveil-stalker_1":13679072|"mistveil-stalker_2":13679072|"mistveil-stalker_3":13679072|"mistveil-stalker_4":13679072|"mistveil-stinger_1":12159175|"mistveil-stinger_2":12159175|"mistveil-guardian_1":27358144|"mistveil-guardian_2":27358144|"mistveil-guardian_3":27358144|"mistveil-guardian_4":27358144|"mistveil-tender_1":14439020|"mistveil-shaper_1":15958917|"mistveil-shaper_2":15958917|"mistveil-matriarch_1":45596907
-raid_events+=/pull,pull=08,bloodlust=0,delay=026,enemies="BOSS_mistcaller_1":115415493
+raid_events+=/pull,pull=07,bloodlust=0,delay=021,enemies="mistveil-defender_1":23406411|"mistveil-defender_2":23406411|"mistveil-defender_3":23406411|"mistveil-defender_4":23406411|"mistveil-stalker_1":13679072|"mistveil-stalker_2":13679072|"mistveil-stalker_3":13679072|"mistveil-stalker_4":13679072|"mistveil-stinger_1":12159175|"mistveil-stinger_2":12159175|"mistveil-guardian_1":27358144|"mistveil-guardian_2":27358144|"mistveil-guardian_3":27358144|"mistveil-guardian_4":27358144|"mistveil-tender_1":14439020|"mistveil-shaper_1":15958917|"mistveil-shaper_2":15958917|"mistveil-matriarch_1":45596907
+raid_events+=/pull,pull=08,bloodlust=0,delay=027,enemies="BOSS_mistcaller_1":115415493
 raid_events+=/pull,pull=09,bloodlust=0,delay=026,enemies="spinemaw-staghorn_1":24318350|"spinemaw-acidgullet_1":15198969|"spinemaw-acidgullet_2":15198969
 raid_events+=/pull,pull=10,bloodlust=0,delay=013,enemies="spinemaw-gorger_1":15198969|"spinemaw-staghorn_1":24318350|"spinemaw-larva_1":3039793|"spinemaw-larva_2":3039793|"spinemaw-larva_3":3039793|"spinemaw-larva_4":3039793|"spinemaw-larva_5":3039793|"spinemaw-larva_6":3039793
 raid_events+=/pull,pull=11,bloodlust=0,delay=014,enemies="spinemaw-acidgullet_1":15198969|"spinemaw-acidgullet_2":15198969|"spinemaw-gorger_1":15198969|"spinemaw-gorger_2":15198969
@@ -27,10 +31,11 @@ raid_events+=/pull,pull=12,bloodlust=0,delay=010,enemies="spinemaw-reaver_1":121
 raid_events+=/pull,pull=13,bloodlust=0,delay=008,enemies="spinemaw-gorger_1":15198969|"spinemaw-staghorn_1":24318350|"spinemaw-acidgullet_1":15198969|"spinemaw-acidgullet_2":15198969
 raid_events+=/pull,pull=14,bloodlust=0,delay=007,enemies="spinemaw-larva_1":3039793|"spinemaw-larva_2":3039793|"spinemaw-larva_3":3039793|"spinemaw-larva_4":3039793|"spinemaw-larva_5":3039793|"spinemaw-larva_6":3039793|"spinemaw-acidgullet_1":15198969|"spinemaw-gorger_1":15198969
 raid_events+=/pull,pull=15,bloodlust=0,delay=006,enemies="spinemaw-acidgullet_1":15198969|"spinemaw-acidgullet_2":15198969|"spinemaw-gorger_1":15198969|"spinemaw-gorger_2":15198969
-raid_events+=/pull,pull=16,bloodlust=0,delay=019,enemies="tredova_1":131903420
-raid_events+=/pull,pull=17,bloodlust=0,delay=017,enemies="spinemaw-staghorn_1":24318350|"spinemaw-gorger_1":15198969|"spinemaw-larva_1":3039793|"spinemaw-larva_2":3039793|"spinemaw-larva_3":3039793|"spinemaw-larva_4":3039793|"spinemaw-larva_5":3039793|"spinemaw-larva_6":3039793|"spinemaw-reaver_1":12159175|"spinemaw-reaver_2":12159175|"spinemaw-reaver_3":12159175
+raid_events+=/pull,pull=16,bloodlust=0,delay=023,enemies="spinemaw-staghorn_1":24318350|"spinemaw-gorger_1":15198969|"spinemaw-larva_1":3039793|"spinemaw-larva_2":3039793|"spinemaw-larva_3":3039793|"spinemaw-larva_4":3039793|"spinemaw-larva_5":3039793|"spinemaw-larva_6":3039793
+raid_events+=/pull,pull=17,bloodlust=0,delay=016,enemies="tredova_1":131903420
+raid_events+=/pull,pull=18,bloodlust=0,delay=025,enemies="spinemaw-acidgullet_1":15198969
 
-# TWW1_Death_Knight_Blood.simc
+TWW1_Death_Knight_Blood.simc
 TWW1_Death_Knight_Frost.simc
 TWW1_Death_Knight_Frost_Rider.simc
 TWW1_Death_Knight_Frost_Shattering_Deathbringer.simc
@@ -49,11 +54,12 @@ TWW1_Evoker_Devastation.simc
 TWW1_Hunter_Beast_Mastery.simc
 TWW1_Hunter_Marksmanship.simc
 TWW1_Hunter_Survival.simc
-TWW1_Hunter_Beast_Mastery_Pack_Leader.simc
+TWW1_Hunter_Beast_Mastery_Dark_Ranger.simc
 TWW1_Hunter_Marksmanship_Dark_Ranger.simc
-TWW1_Hunter_Survival_Pack_Leader.simc
+TWW1_Hunter_Survival_Sentinel.simc
 
 TWW1_Mage_Arcane.simc
+TWW1_Mage_Arcane_Sunfury.simc
 TWW1_Mage_Fire.simc
 TWW1_Mage_Frost.simc
 

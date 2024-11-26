@@ -1,11 +1,11 @@
-mage="TWW1_Mage_Arcane_Spellslinger"
+mage="TWW1_Mage_Arcane_Sunfury"
 source=default
 spec=arcane
 level=80
 race=mechagnome
 role=spell
 position=back
-talents=C4DAAAAAAAAAAAAAAAAAAAAAAMjhZbWwMjZmFgZmxYamxMAAAAAAMAAAwMz2yyyMTsAAAAAAwGALzYYmZmZYYmZGjZmZmZMMG
+talents=C4DAAAAAAAAAAAAAAAAAAAAAAMjhZbWwMjZmFgZmxYamxMAAAAAAMAgZmplZbZGAAbAAAAAAsBwyMGmZmZGzwMzMGzYmZGDjB
 
 # Default consumables
 potion=tempered_potion_3
