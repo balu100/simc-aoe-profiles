@@ -10,7 +10,7 @@ SIMC_DIR="/app/SimulationCraft/profiles"
 OUTPUT_DIR="/opt/outside"
 LOG_FILE="/var/log/simc_script.log" # This is the main script log file
 SIMC_COMMAND="./simc"
-TARGET_ERROR="target_error=1 ptr=0"
+TARGET_ERROR="target_error=0.2 ptr=0"
 
 # Clone and update the simulation profiles repository
 setup_repo() {
