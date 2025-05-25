@@ -15,7 +15,7 @@ TARGET_ERROR="target_error=1 ptr=0"
 # Clone and update the simulation profiles repository
 setup_repo() {
   rm -rf "$REPO_DIR"
-  git -C /opt clone https://github.com/balu100/simc-aoe-profiles.git
+  git -C /tmp clone https://github.com/balu100/simc-aoe-profiles.git
   cp -r -f "$REPO_DIR"/* "$SIMC_DIR"
 }
 
