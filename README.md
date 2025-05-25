@@ -6,18 +6,7 @@ This repository contains profiles for Area of Effect (AOE) damage simulations in
 Latest mythic dps charts
 
 
-## Manual Installation
-
-1. **Download SimulationCraft:**
-   - Get the latest SimulationCraft build from the [nightly builds page](http://downloads.simulationcraft.org/nightly/?C=M;O=D).
-
-2. **Overwrite Profile Files:**
-   - Replace the `TWW1_Raid.simc` file and the `TWW1` folder in the `profiles` directory of your SimulationCraft installation with the ones provided in this repository.
-
-3. **Usage:**
-   - Run SimulationCraft as usual. The new AOE profiles will be used automatically after the overwrite.
-
-## Docker Installation
+## Docker
 
 You can run SimulationCraft with these profiles via Docker for a streamlined setup:
 
