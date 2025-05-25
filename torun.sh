@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-# Update package list and install dependencies
-apk update && apk add --no-cache nano git figlet nano
-
 # Directories and file paths
 REPO_DIR="/tmp/simc-aoe-profiles"
 SIMC_DIR="/app/SimulationCraft/profiles"

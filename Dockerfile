@@ -2,7 +2,7 @@
 FROM simulationcraftorg/simc:latest
 
 # Install curl to download the script
-RUN apk add --no-cache curl bash
+RUN apk add --no-cache curl bash git figlet
 
 # Create directory
 WORKDIR /app/SimulationCraft
