@@ -1,11 +1,11 @@
-shaman="TWW2_Shaman_Enhancement_Stormbringer"
+shaman="TWW2_Shaman_Enhancement_Totemic"
 source=default
 spec=enhancement
 level=80
 race=maghar_orc
 role=attack
 position=back
-talents=CcQAAAAAAAAAAAAAAAAAAAAAAMzMDMzMDzMzMYbmxysNAAAAAAAAAAbA2MjhNYBmhhGsAALTzMDWWMzMzwYmZbYZmZCMMLzMAAjB
+talents=CcQAAAAAAAAAAAAAAAAAAAAAAMzMjZwMYmxMzMbmxyYGAAAAAAAAAAsAbwMW0YbAMDYDAzykZglFzMzMMjZ2GWmZmswywYmBAYGA
 
 # Default consumables
 potion=tempered_potion_3

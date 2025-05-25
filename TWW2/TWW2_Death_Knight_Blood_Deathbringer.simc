@@ -5,7 +5,7 @@ level=80
 race=mechagnome
 role=tank
 position=front
-talents=CoPAAAAAAAAAAAAAAAAAAAAAAghxMzYMzMmZYGzMz0MMMzYGDAAAAAmZmZmZmZmNzMjBAAAzMzMAAAAjttBGwCYZYCMsAwMYD
+talents=CoPAAAAAAAAAAAAAAAAAAAAAAghxYGjZmxMDzYmZmmZMMzYGDAAAAAmZmZmZmZmNzMjBAAAzMzMAAAAGYgZMassAYZAbAMD2A
 
 # Default consumables
 potion=tempered_potion_3
@@ -101,18 +101,18 @@ actions.sanlayn+=/heart_strike
 
 actions.variables=variable,name=rp_deficit_threshold,value=15+(10*talent.relish_in_blood.enabled)+(3*talent.runic_attenuation.enabled)+(spell_targets.heart_strike*talent.heartbreaker.enabled*2)
 
-head=apogee_inventors_goggles,id=235222,ilevel=678,gem_id=213467
-neck=flickering_glowtorc,id=221103,ilevel=678,gem_id=213467/213467
+head=cauldron_champions_crown,id=229253,ilevel=678,gem_id=213485
+neck=semicharmed_amulet,id=228841,ilevel=678,gem_id=213485/213485
 shoulders=cauldron_champions_screamplate,id=229251,ilevel=678
-back=consecrated_cloak,id=222817,ilevel=675,embellishment=elemental_focusing_lens,crafted_stats=32/40
+back=consecrated_cloak,id=222817,ilevel=675,embellishment=elemental_focusing_lens,crafted_stats=40/36
 chest=cauldron_champions_ribcage,id=229256,ilevel=678,enchant=crystalline_radiance_3
-wrists=everforged_vambraces,id=222435,ilevel=675,gem_id=213467,embellishment=elemental_focusing_lens,crafted_stats=32/40
-hands=cauldron_champions_fistguards,id=229254,ilevel=678
-waist=automatic_waist_tightener,id=168976,ilevel=678,gem_id=213467
+wrists=everforged_vambraces,id=222435,ilevel=675,gem_id=213485,embellishment=elemental_focusing_lens,crafted_stats=40/36
+hands=dumpmech_compactors,id=228849,ilevel=678
+waist=venture_contractors_floodlight,id=234505,ilevel=678,gem_id=213485
 legs=cauldron_champions_tattered_cuisses,id=229252,ilevel=678,enchant=stormbound_armor_kit_3
-feet=devoted_plate_walkers,id=221123,ilevel=678
-finger1=the_jastor_diamond,id=231265,ilevel=678,gem_id=213467/213467,enchant=radiant_versatility_3
-finger2=miniature_roulette_wheel,id=228843,ilevel=678,gem_id=213467/213467,enchant=radiant_versatility_3,crafted_stats=40/32
+feet=pyroclastic_greatboots,id=168972,ilevel=678
+finger1=the_jastor_diamond,id=231265,ilevel=678,gem_id=213485/213485,enchant=radiant_haste_3
+finger2=miniature_roulette_wheel,id=228843,ilevel=678,gem_id=213485/213485,enchant=radiant_haste_3,crafted_stats=40/32
 trinket1=tome_of_lights_devotion,id=219309,ilevel=678
 trinket2=viscera_of_coalesced_hatred,id=178808,ilevel=678
 main_hand=bestinslots,id=232526,ilevel=678,enchant=rune_of_sanguination
@@ -122,10 +122,10 @@ main_hand=bestinslots,id=232526,ilevel=678,enchant=rune_of_sanguination
 # gear_strength=51033
 # gear_stamina=391524
 # gear_attack_power=469
-# gear_crit_rating=12732
-# gear_haste_rating=3377
-# gear_mastery_rating=12941
-# gear_versatility_rating=13630
+# gear_crit_rating=7378
+# gear_haste_rating=16201
+# gear_mastery_rating=8591
+# gear_versatility_rating=10510
 # gear_armor=72548
 # set_bonus=thewarwithin_season_2_2pc=1
 # set_bonus=thewarwithin_season_2_4pc=1

@@ -1,11 +1,11 @@
-paladin="TWW2_Paladin_Protection_Lightsmith"
+paladin="TWW2_Paladin_Protection"
 source=default
 spec=protection
 level=80
 race=draenei
 role=tank
 position=front
-talents=CIEAAAAAAAAAAAAAAAAAAAAAAsNmZYWGLMzMzMLbzMzYGMjBAAYAAAAAAAotmZGGMDjZmZrNAYMwAYgtBAAYmptZZ2mBAYzMAGghhxA
+talents=CIEAAAAAAAAAAAAAAAAAAAAAAsNj5BYWGLjZMzMLbzMzYGjZMAAADAAAAAAAt1MzsYYmhxMs1GAMGYAMw2AAAMz02sMbzAAsZGAAYGGD
 
 # Default consumables
 potion=tempered_potion_3

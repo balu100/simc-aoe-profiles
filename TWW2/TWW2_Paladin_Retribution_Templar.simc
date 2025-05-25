@@ -1,11 +1,11 @@
-paladin="TWW2_Paladin_Retribution_Herald"
+paladin="TWW2_Paladin_Retribution_Templar"
 source=default
 spec=retribution
 level=80
 race=human
 role=attack
 position=back
-talents=CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAgRmltZmtltZGbGz2mZbAAAAAAY2aaGGmZsNDmthxsNzy2YGMDDLLsBAmlZbmZ2aAAAgFgBAMMMA
+talents=CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAgRmltZmtltZGbGz2mZbAAAAAAY2aaGGmZsNDmthxsNzy2YGMDDLLsBAAAzMtNLz2MAgNgBAMMMA
 
 # Default consumables
 potion=tempered_potion_3
