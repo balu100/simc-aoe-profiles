@@ -62,7 +62,7 @@ error_patterns=(
 run_simc_with_retry() {
   local command="$1"
   local scenario_log_file="$2" # Renamed for clarity: this is the scenario-specific log
-  local max_retries=1
+  local max_retries=10
   local command_output # To store output of the command
   local command_status # To store exit status of the command
 
