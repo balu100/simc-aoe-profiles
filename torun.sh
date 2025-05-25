@@ -8,7 +8,7 @@ apk update && apk add --no-cache nano git figlet
 REPO_DIR="/opt/simc-aoe-profiles"
 SIMC_DIR="/app/SimulationCraft/profiles"
 OUTPUT_DIR="/opt/outside"
-LOG_FILE="/var/log/simc_script.log"
+LOG_FILE="/var/log/simc_script.log" # This is the main script log file
 SIMC_COMMAND="./simc"
 TARGET_ERROR="target_error=0.2 ptr=0"
 
@@ -34,9 +34,11 @@ display_colored_message() {
   done
 }
 
-# Log messages to file
+# Log messages to file and console
 log_message() {
   local message="$1"
+  # Ensure multi-line messages are handled by echo correctly when passed to tee
+  # The -e allows interpretation of backslash escapes, $message should be quoted.
   echo -e "$message" | tee -a "$LOG_FILE"
 }
 
@@ -59,44 +61,58 @@ error_patterns=(
 # Retry logic for running the simulation command
 run_simc_with_retry() {
   local command="$1"
-  local log_file="$2"
-  local max_retries=10
+  local scenario_log_file="$2" # Renamed for clarity: this is the scenario-specific log
+  local max_retries=1
+  local command_output # To store output of the command
+  local command_status # To store exit status of the command
 
   for attempt in $(seq 1 "$max_retries"); do
     log_message "Attempt $attempt/$max_retries for command: $command..."
 
-    # Capture output of command
-    command_output=$($command 2>&1 | tee -a "$log_file")
-    command_status=$?
+    # Capture output of command. The output also goes to console and scenario_log_file due to tee.
+    command_output=$($command 2>&1 | tee -a "$scenario_log_file")
+    command_status=${PIPESTATUS[0]} # Get status of $command, not tee
 
     # Check for error patterns with extended, case-insensitive matching
-    error_found=false
+    local error_found=false # Use local for variables inside functions
     for error_pattern in "${error_patterns[@]}"; do
       if echo "$command_output" | grep -Eiq "$error_pattern"; then
-        log_message "Error detected: $error_pattern. Retrying..."
+        log_message "Error detected (matches pattern '$error_pattern'). Retrying..."
         error_found=true
         sleep 2
         break
       fi
     done
 
-    # If no errors, check for successful completion
+    # If no errors (based on patterns), check for successful completion
     if ! $error_found && [ "$command_status" -eq 0 ] && echo "$command_output" | grep -iq "html report took"; then
       log_message "Command executed successfully! $command"
       return 0
     fi
 
-    # Exit if max retries reached
+    # If this is the last attempt, and it wasn't successful, then exit.
     if [ "$attempt" -eq "$max_retries" ]; then
-      log_message "Max retries reached. Exiting with failure."
-      exit 1
+      log_message "Max retries reached for command: $command"
+      log_message "The command failed on the final attempt (Attempt $attempt/$max_retries)."
+      log_message "Exit status of last attempt: $command_status"
+      log_message "Full output of the last attempt was:"
+      # log_message will print command_output to console and main log file
+      # The command_output is already in the scenario_log_file
+      log_message "$command_output"
+      log_message "Exiting script due to persistent failure of this command."
+      exit 1 # Exit the entire script
     fi
+
+    # If not the last attempt, and an error occurred (either matched pattern or other failure),
+    # the loop will continue for the next attempt.
+    # A message for retrying due to a matched pattern was already logged.
+    # If it's an un-matched error, it will just loop to the next attempt message.
   done
 }
 
 # Initial setup and display version info
 setup_repo
-display_colored_message "Version 6.0.0" "big"
+display_colored_message "Version 5.0.0" "big"
 
 # Simulation scenarios
 scenarios=(
@@ -110,15 +126,26 @@ scenarios=(
   "AoeSingleTarget.simc"
 )
 
+# Create output directory if it doesn't exist
+mkdir -p "$OUTPUT_DIR"
+# Create main log file if it doesn't exist and ensure it's writable
+touch "$LOG_FILE" && chmod 644 "$LOG_FILE"
+
+
 # Run simulations
 for scenario in "${scenarios[@]}"; do
   scenario_base=$(basename "$scenario" .simc)
   json_file="${OUTPUT_DIR}/${scenario_base}.json"
   html_file="${OUTPUT_DIR}/${scenario_base}.html"
-  log_file="${OUTPUT_DIR}/${scenario_base}.log"
+  # This is the scenario-specific log file passed to run_simc_with_retry
+  scenario_specific_log_file="${OUTPUT_DIR}/${scenario_base}.log"
+  
+  # Ensure scenario-specific log file is fresh for each run or append as preferred
+  # For fresh log each time: > "$scenario_specific_log_file"
+  # Current script appends due to `tee -a`
 
   display_colored_message "$scenario_base" "small"
-  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $TARGET_ERROR" "$log_file"
+  run_simc_with_retry "$SIMC_COMMAND $scenario json2=\"$json_file\" html=\"$html_file\" $TARGET_ERROR" "$scenario_specific_log_file"
 done
 
 # Final completion message
