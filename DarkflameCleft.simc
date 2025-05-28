@@ -45,7 +45,7 @@ TWW2_Evoker_Devastation_Scalecommander.simc
 # TWW2_Hunter_Beast_Mastery_DarkRanger.simc
 # TWW2_Hunter_Beast_Mastery_PackLeader.simc
 TWW2_Hunter_Marksmanship_DarkRanger.simc
-# TWW2_Hunter_Marksmanship_Sentinel.simc
+TWW2_Hunter_Marksmanship_Sentinel.simc
 # TWW2_Hunter_Survival_PackLeader.simc
 # TWW2_Hunter_Survival_Sentinel.simc
 TWW2_Mage_Arcane_Spellslinger.simc
@@ -69,7 +69,7 @@ TWW2_Rogue_Subtlety_Deathstalker.simc
 TWW2_Rogue_Subtlety_Trickster.simc
 TWW2_Shaman_Elemental.simc
 TWW2_Shaman_Enhancement_Stormbringer.simc
-# TWW2_Shaman_Enhancement_Totemic.simc
+TWW2_Shaman_Enhancement_Totemic.simc
 TWW2_Warlock_Affliction_Hellcaller.simc
 TWW2_Warlock_Affliction_SoulHarvester.simc
 TWW2_Warlock_Demonology_Diabolist.simc
