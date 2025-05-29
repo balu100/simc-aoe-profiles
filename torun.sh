@@ -90,7 +90,7 @@ run_simc_with_retry() {
 
 # Initial setup and display version info
 setup_repo
-display_colored_message "Version 2.0.2" "big"
+display_colored_message "Version 2.0.5" "big"
 
 # Simulation scenarios
 scenarios=(
