@@ -7,7 +7,6 @@ SIMC_DIR="/app/SimulationCraft/profiles"
 OUTPUT_DIR="/opt/outside"
 LOG_FILE="/var/log/simc_script.log"
 SIMC_COMMAND="./simc"
-TARGET_ERROR="target_error=0.2 ptr=0"
 
 # Clone and update the simulation profiles repository
 setup_repo() {
@@ -113,7 +112,7 @@ for scenario in "${scenarios[@]}"; do
   log_file="${OUTPUT_DIR}/${scenario_base}.log"
 
   display_colored_message "$scenario_base" "small"
-  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $TARGET_ERROR" "$log_file"
+  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $VARS" "$log_file"
 done
 
 # Final completion message
