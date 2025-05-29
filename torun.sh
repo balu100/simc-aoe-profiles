@@ -112,7 +112,7 @@ for scenario in "${scenarios[@]}"; do
   log_file="${OUTPUT_DIR}/${scenario_base}.log"
 
   display_colored_message "$scenario_base" "small"
-  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $VARS" "$log_file"
+  run_simc_with_retry "$SIMC_COMMAND $scenario json2=$json_file html=$html_file $ARGS" "$log_file"
 done
 
 # Final completion message
