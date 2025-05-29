@@ -29,10 +29,10 @@ raid_events+=/movement,pull=02,first=20,cooldown=40,cooldown_stddev=10,duration=
 
 # --- PULL 03 (BOSS_brewmaster-aldryr) ---
 raid_events+=/pull,pull=03,bloodlust=0,delay=010,enemies="venture-co-patron_1":53864613|"venture-co-patron_2":53864613|"venture-co-patron_3":53864613|"venture-co-patron_4":53864613|"venture-co-patron_5":53864613|"venture-co-patron_6":53864613|"tasting-room-attendant_1":53864613|"venture-co-pyromaniac_1":53864613|"BOSS_brewmaster-aldryr_1":389197140
-raid_events+=/movement,pull=03,first=10,cooldown=30,cooldown_stddev=7,duration=1.5,duration_stddev=0.5,distance=10,players_only=1,description="Aldryr Active Dodge (BelchKeg)"
+raid_events+=/movement,pull=03,first=10,cooldown=30,cooldown_stddev=7,duration=1.5,duration_stddev=0.5,distance=10,players_only=1,description="Aldryr Active Dodge BelchKeg"
 raid_events+=/movement,pull=03,first=20,cooldown=40,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=15,players_only=1,description="Aldryr Active Cinder Brew Puddles"
-raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=68,last_pct=66,duration=25,players_only=1,description="Aldryr Happy Hour 1 (66%)"
-raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=35,last_pct=33,duration=25,players_only=1,description="Aldryr Happy Hour 2 (33%)"
+raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=68,last_pct=66,duration=25,cooldown=9999,players_only=1,description="Aldryr Happy Hour 1 66 percent"
+raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=35,last_pct=33,duration=25,cooldown=9999,players_only=1,description="Aldryr Happy Hour 2 33 percent"
 
 # --- PULL 04 ---
 raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-patron_1":53864613|"venture-co-patron_2":53864613
