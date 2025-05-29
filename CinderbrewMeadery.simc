@@ -11,77 +11,74 @@ override.hunters_mark=0
 override.power_infusion=0
 override.bleeding=0
 single_actor_batch=1
-max_time=2980 # You might need to increase this if total delays become very long
-enemy="Cinderbrew Meadery"
-enemy_health=999999
+max_time=2980
+enemy="Cinderbrew Meadery" # Fallback enemy, pulls define actual targets
+enemy_health=999999 # Fallback health
 keystone_level=15
 
-raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+# Invulnerable event for the main 'enemy' (not pull targets)
+raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1,description="Main target invulnerable, focus on pull adds"
 
 # --- PULL 01 ---
-# Delay for the first pull is from sim start. Keeping as 008.
 raid_events+=/pull,pull=01,bloodlust=0,delay=008,enemies="hired-muscle_1":95759313|"hired-muscle_2":95759313|"hired-muscle_3":95759313|"venture-co-patron_1":53864613|"venture-co-patron_2":53864613|"venture-co-patron_3":53864613|"venture-co-patron_4":53864613|"venture-co-patron_5":53864613|"venture-co-patron_6":53864613|"venture-co-patron_7":53864613|"venture-co-patron_8":53864613|"venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"venture-co-pyromaniac_3":53864613
-raid_events+=/movement,pull=01,first=8,cooldown=30,cooldown_stddev=10,duration=1.5,duration_stddev=0.5,distance=8,players_only=1
+raid_events+=/movement,pull=01,first=8,cooldown=30,cooldown_stddev=10,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 01 Generic Trash Dodge"
 
 # --- PULL 02 ---
-# Original delay=003, changed to 010 for 10s travel time
 raid_events+=/pull,pull=02,bloodlust=0,delay=010,enemies="venture-co-patron_1":53864613|"venture-co-patron_2":53864613|"venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"tasting-room-attendant_1":53864613|"tasting-room-attendant_2":53864613|"tasting-room-attendant_3":53864613|"chef-chewie_1":179548712
-raid_events+=/movement,pull=02,first=10,cooldown=25,cooldown_stddev=8,duration=1.5,duration_stddev=0.5,distance=8,players_only=1
-raid_events+=/movement,pull=02,first=20,cooldown=40,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=12,players_only=1
+raid_events+=/movement,pull=02,first=10,cooldown=25,cooldown_stddev=8,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 02 Trash Dodge"
+raid_events+=/movement,pull=02,first=20,cooldown=40,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Pull 02 Chef Chewie Mechanic"
 
 # --- PULL 03 (BOSS_brewmaster-aldryr) ---
-# Original delay=007, changed to 010
 raid_events+=/pull,pull=03,bloodlust=0,delay=010,enemies="venture-co-patron_1":53864613|"venture-co-patron_2":53864613|"venture-co-patron_3":53864613|"venture-co-patron_4":53864613|"venture-co-patron_5":53864613|"venture-co-patron_6":53864613|"tasting-room-attendant_1":53864613|"venture-co-pyromaniac_1":53864613|"BOSS_brewmaster-aldryr_1":389197140
-raid_events+=/movement,pull=03,first=12,cooldown=25,cooldown_stddev=5,duration=1.5,duration_stddev=0.5,distance=10,players_only=1
-raid_events+=/movement,pull=03,first=25,cooldown=45,cooldown_stddev=10,duration=3,duration_stddev=1,distance=20,players_only=1
+# Active phase dodges/mechanics
+raid_events+=/movement,pull=03,first=10,cooldown=30,cooldown_stddev=7,duration=1.5,duration_stddev=0.5,distance=10,players_only=1,description="Aldryr Active Dodge (Belch/Keg)"
+raid_events+=/movement,pull=03,first=20,cooldown=40,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=15,players_only=1,description="Aldryr Active Cinder Brew Puddles"
+# "Happy Hour" Intermissions (Boss immune, players do chores)
+raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=68,last_pct=66,duration=25,players_only=1,description="Aldryr Happy Hour 1 (66%)"
+raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=35,last_pct=33,duration=25,players_only=1,description="Aldryr Happy Hour 2 (33%)"
 
 # --- PULL 04 ---
-# Original delay=006, changed to 010
 raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-patron_1":53864613|"venture-co-patron_2":53864613
-raid_events+=/movement,pull=04,first=7,cooldown=30,cooldown_stddev=10,duration=1.5,duration_stddev=0.5,distance=8,players_only=1
+raid_events+=/movement,pull=04,first=7,cooldown=30,cooldown_stddev=10,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 04 Generic Trash Dodge"
 
-# --- PULL 05 ---
-# Original delay=023, already >= 010, kept as 023
+# --- PULL 05 (Bee Trash 1) ---
 raid_events+=/pull,pull=05,bloodlust=0,delay=023,enemies="bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"worker-bee_1":53864613|"worker-bee_2":53864613|"worker-bee_3":53864613|"worker-bee_4":53864613|"worker-bee_5":53864613|"worker-bee_6":53864613|"worker-bee_7":53864613|"royal-jelly-purveyor_1":59849571|"venture-co-honey-harvester_1":95759313|"bee-wrangler_1":56857093
-raid_events+=/movement,pull=05,first=5,cooldown=20,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1
+raid_events+=/movement,pull=05,first=5,cooldown=20,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 05 Bee Trash Movement"
 
-# --- PULL 06 ---
-# Original delay=006, changed to 010
+# --- PULL 06 (Bee Trash 2) ---
 raid_events+=/pull,pull=06,bloodlust=0,delay=010,enemies="bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"worker-bee_1":53864613|"worker-bee_2":53864613|"worker-bee_3":53864613|"venture-co-honey-harvester_1":95759313|"royal-jelly-purveyor_1":59849571|"royal-jelly-purveyor_2":59849571|"bee-wrangler_1":56857093
-raid_events+=/movement,pull=06,first=6,cooldown=22,cooldown_stddev=6,duration=1.8,duration_stddev=0.5,distance=10,players_only=1
+raid_events+=/movement,pull=06,first=6,cooldown=22,cooldown_stddev=6,duration=1.8,duration_stddev=0.5,distance=10,players_only=1,description="Pull 06 Bee Trash Movement"
 
-# --- PULL 07 ---
-# Original delay=003, changed to 010
+# --- PULL 07 (Single Bee-Let) ---
 raid_events+=/pull,pull=07,bloodlust=0,delay=010,enemies="bee-let_1":11969913
-raid_events+=/movement,pull=07,first=5,cooldown=40,duration=1,distance=5,players_only=1
+raid_events+=/movement,pull=07,first=5,cooldown=40,duration=1,distance=5,players_only=1,description="Pull 07 Light Movement"
 
-# --- PULL 08 ---
-# Original delay=042, already >= 010, kept as 042
+# --- PULL 08 (Hopgoblin Area Trash) ---
 raid_events+=/pull,pull=08,bloodlust=0,delay=042,enemies="flavor-scientist_1":53864613|"flavor-scientist_2":53864613|"flavor-scientist_3":53864613|"venture-co-pyromaniac_1":53864613|"careless-hopgoblin_1":113714184|"taste-tester_1":59849571|"taste-tester_2":59849571|"taste-tester_3":59849571
-raid_events+=/movement,pull=08,first=10,cooldown=28,cooldown_stddev=8,duration=1.5,duration_stddev=0.5,distance=8,players_only=1
+raid_events+=/movement,pull=08,first=10,cooldown=28,cooldown_stddev=8,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 08 Hopgoblin Area Dodge"
+raid_events+=/movement,pull=08,first=15,cooldown=35,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Pull 08 Hopgoblin Charge/AoE avoidance"
 
-# --- PULL 09 ---
-# Original delay=009, changed to 010
+
+# --- PULL 09 (Pre-I'pa Trash) ---
 raid_events+=/pull,pull=09,bloodlust=0,delay=010,enemies="brew-drop_1":20348853|"brew-drop_2":20348853|"brew-drop_3":20348853|"brew-drop_4":20348853|"brew-drop_5":20348853|"brew-drop_6":20348853|"taste-tester_1":59849571|"taste-tester_2":59849571|"taste-tester_3":59849571|"taste-tester_4":59849571|"taste-tester_5":59849571|"flavor-scientist_1":53864613|"flavor-scientist_2":53864613|"flavor-scientist_3":53864613|"careless-hopgoblin_1":113714184|"flavor-scientist_1":53864613
-raid_events+=/movement,pull=09,first=7,cooldown=20,cooldown_stddev=5,duration=1.5,duration_stddev=0.5,distance=8,players_only=1
+raid_events+=/movement,pull=09,first=7,cooldown=20,cooldown_stddev=5,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 09 Pre-Ipa Trash Dodge"
 
 # --- PULL 10 (BOSS_ipa) ---
-# Original delay=006, changed to 010
 raid_events+=/pull,pull=10,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"venture-co-pyromaniac_3":53864613|"venture-co-pyromaniac_4":53864613|"taste-tester_1":59849571|"taste-tester_2":59849571|"taste-tester_3":59849571|"brew-drop_1":20348853|"BOSS_ipa_1":389197140
-raid_events+=/movement,pull=10,first=10,cooldown=22,cooldown_stddev=5,duration=1.8,duration_stddev=0.5,distance=10,players_only=1
-raid_events+=/movement,pull=10,first=20,cooldown=35,cooldown_stddev=8,duration=3.5,duration_stddev=1,distance=20,players_only=1
+raid_events+=/movement,pull=10,first=10,cooldown=30,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Ipa Minor Dodge/Add Reposition"
+raid_events+=/movement,pull=10,first=22,cooldown=40,cooldown_stddev=8,duration=6,duration_stddev=1.5,distance=20,players_only=1,description="Ipa Spouting Stout Phase (8s of swirlies)"
 
 # --- PULL 11 (BOSS_benk-buzzbee + MANY adds) ---
-# Original delay=025, already >= 010, kept as 025
 raid_events+=/pull,pull=11,bloodlust=0,delay=025,enemies="bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"bee-let_6":11969913|"bee-let_7":11969913|"bee-let_8":11969913|"bee-let_9":11969913|"bee-let_10":11969913|"worker-bee_1":53864613|"worker-bee_2":53864613|"worker-bee_3":53864613|"worker-bee_4":53864613|"worker-bee_1":59849571|"worker-bee_2":59849571|"venture-co-honey-harvester_1":95759313|"venture-co-honey-harvester_2":95759313|"bee-wrangler_1":56857093|"bee-wrangler_2":56857093|"bee-wrangler_3":56857093|"bee-wrangler_4":56857093|"royal-jelly-purveyor_1":59849571|"royal-jelly-purveyor_2":59849571|"royal-jelly-purveyor_3":59849571|"bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"bee-let_6":11969913|"bee-let_7":11969913|"bee-let_8":11969913|"bee-let_9":11969913|"bee-let_10":11969913|"bee-let_11":11969913|"bee-let_12":11969913|"bee-let_13":11969913|"bee-let_14":11969913|"bee-let_15":11969913|"bee-let_16":11969913|"bee-let_17":11969913|"bee-let_18":11969913|"bee-let_19":11969913|"bee-let_20":11969913|"bee-let_21":11969913|"bee-let_22":11969913|"bee-let_23":11969913|"bee-let_24":11969913|"bee-let_25":11969913|"bee-let_26":11969913|"bee-let_27":11969913|"bee-let_28":11969913|"bee-let_29":11969913|"bee-let_30":11969913|"bee-let_31":11969913|"bee-let_32":11969913|"bee-let_33":11969913|"bee-let_34":11969913|"bee-let_35":11969913|"bee-let_36":11969913|"bee-let_37":11969913|"bee-let_38":11969913|"BOSS_benk-buzzbee_1":408656997|"yes-man_1":59849571|"yes-man_2":59849571|"yes-man_3":59849571|"yes-man_4":59849571|"flavor-scientist_1":53864613
-raid_events+=/movement,pull=11,first=8,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=12,players_only=1
-raid_events+=/movement,pull=11,first=18,cooldown=30,cooldown_stddev=7,duration=3,duration_stddev=1,distance=18,players_only=1
+# This fight is very chaotic with Snack Time (bee riding) and Honey Marinade (tank kiting puddles)
+raid_events+=/movement,pull=11,first=8,cooldown=15,cooldown_stddev=4,duration=2.5,duration_stddev=0.5,distance=12,players_only=1,description="Buzzbee Minor Dodge/Bee Kill/Honey Marinade"
+raid_events+=/movement,pull=11,first=20,cooldown=35,cooldown_stddev=7,duration=7,duration_stddev=1.5,distance=18,players_only=1,description="Buzzbee Snack Time Bee Riding Phase / Major Disruption"
 
 # --- PULL 12 (BOSS_goldie-baronbottom) ---
-# Original delay=020, already >= 010, kept as 020
 raid_events+=/pull,pull=12,bloodlust=0,delay=020,enemies="taste-tester_1":59849571|"taste-tester_2":59849571|"venture-co-pyromaniac_1":53864613|"BOSS_goldie-baronbottom_1":518929520
-raid_events+=/movement,pull=12,first=15,cooldown=25,cooldown_stddev=6,duration=2,duration_stddev=0.5,distance=10,players_only=1
-raid_events+=/movement,pull=12,first=30,cooldown=40,cooldown_stddev=10,duration=3.5,duration_stddev=1,distance=25,players_only=1
+# Constant barrel mechanics (Cash Cannon, Burning Ricochet) and Let It Hail!
+raid_events+=/movement,pull=12,first=12,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.5,distance=10,players_only=1,description="Goldie Barrel Dodge/Aim/Ricochet"
+raid_events+=/movement,pull=12,first=25,cooldown=35,cooldown_stddev=10,duration=5,duration_stddev=1,distance=25,players_only=1,description="Goldie Major Barrel Phase/Let It Hail Waves"
 
 TWW2_Death_Knight_Blood_Deathbringer.simc
 TWW2_Death_Knight_Blood_Sanlayn.simc
