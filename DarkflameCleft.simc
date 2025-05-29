@@ -15,17 +15,62 @@ max_time=2980
 enemy="Darkflame Cleft"
 enemy_health=999999
 keystone_level=15
+
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+
+# --- PULL 01 (Large initial trash pull) ---
 raid_events+=/pull,pull=01,bloodlust=0,delay=015,enemies="menial-laborer_1":11989443|"menial-laborer_2":11989443|"menial-laborer_3":11989443|"menial-laborer_4":11989443|"menial-laborer_5":11989443|"menial-laborer_6":11989443|"menial-laborer_7":11989443|"menial-laborer_8":11989443|"menial-laborer_9":11989443|"menial-laborer_10":11989443|"menial-laborer_11":11989443|"menial-laborer_12":11989443|"menial-laborer_13":11989443|"menial-laborer_14":11989443|"menial-laborer_15":11989443|"rank-overseer_1":95915558|"royal-wicklighter_1":53952501|"royal-wicklighter_2":53952501|"lowly-moleherd_1":56949863|"pack-mole_1":62944585|"pack-mole_2":62944585|"pack-mole_3":62944585
+raid_events+=/movement,pull=01,first=8,cooldown=25,cooldown_stddev=8,duration=1.5,duration_stddev=0.5,distance=8,players_only=1,description="Pull 01 Minor Trash Dodge"
+raid_events+=/movement,pull=01,first=15,cooldown=35,cooldown_stddev=10,duration=2,duration_stddev=0.7,distance=10,players_only=1,description="Pull 01 Wicklighter or Mole Mechanic"
+
+# --- PULL 02 (Another large trash pull) ---
 raid_events+=/pull,pull=02,bloodlust=0,delay=019,enemies="menial-laborer_1":11989443|"menial-laborer_2":11989443|"menial-laborer_3":11989443|"menial-laborer_4":11989443|"menial-laborer_5":11989443|"menial-laborer_6":11989443|"menial-laborer_7":11989443|"menial-laborer_8":11989443|"menial-laborer_9":11989443|"menial-laborer_10":11989443|"menial-laborer_11":11989443|"menial-laborer_12":11989443|"menial-laborer_13":11989443|"royal-wicklighter_1":53952501|"royal-wicklighter_2":53952501|"royal-wicklighter_3":53952501|"lowly-moleherd_1":56949863|"lowly-moleherd_2":56949863|"pack-mole_1":62944585|"pack-mole_2":62944585|"pack-mole_3":62944585|"pack-mole_4":62944585
+raid_events+=/movement,pull=02,first=7,cooldown=22,cooldown_stddev=7,duration=1.8,duration_stddev=0.6,distance=9,players_only=1,description="Pull 02 Frequent Minor Dodge"
+raid_events+=/movement,pull=02,first=18,cooldown=30,cooldown_stddev=9,duration=2.2,duration_stddev=0.7,distance=11,players_only=1,description="Pull 02 Multiple Wicklighters Mechanic"
+
+# --- PULL 03 (BOSS_ol-waxbeard) ---
 raid_events+=/pull,pull=03,bloodlust=0,delay=017,enemies="BOSS_ol-waxbeard_1":325157095
+raid_events+=/movement,pull=03,first=10,cooldown=20,cooldown_stddev=6,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Ol Waxbeard Targeted Wax Fire"
+raid_events+=/movement,pull=03,first=25,cooldown=35,cooldown_stddev=10,duration=3.5,duration_stddev=1,distance=15,players_only=1,description="Ol Waxbeard Major Wax AoE or Frontal"
+# If Ol Waxbeard has a distinct "chore" phase (e.g., at 50% health, lasts 15s)
+# raid_events+=/movement,pull=03,pull_target=BOSS_ol-waxbeard_1,first_pct=52,last_pct=50,cooldown=9999,duration=15,players_only=1,description="Ol Waxbeard Chore Phase"
+
+# --- PULL 04 (Fire-themed trash) ---
 raid_events+=/pull,pull=04,bloodlust=0,delay=027,enemies="blazing-fiend_1":47957778|"blazing-fiend_2":47957778|"wandering-candle_1":95915558|"wandering-candle_2":95915558|"wandering-candle_3":95915558|"kobold-taskworker_1":59947224|"kobold-taskworker_2":59947224|"kobold-taskworker_3":59947224|"kobold-taskworker_4":59947224|"kobold-taskworker_5":59947224|"kobold-taskworker_6":59947224|"kobold-taskworker_7":59947224|"kobold-taskworker_8":59947224
+raid_events+=/movement,pull=04,first=6,cooldown=18,cooldown_stddev=5,duration=1.8,duration_stddev=0.5,distance=10,players_only=1,description="Pull 04 Wandering Candle Fire Trail Dodge"
+raid_events+=/movement,pull=04,first=12,cooldown=25,cooldown_stddev=7,duration=2,duration_stddev=0.6,distance=12,players_only=1,description="Pull 04 Blazing Fiend Explosion Dodge"
+
+# --- PULL 05 (Many Blazing Fiends) ---
+# Note: You have multiple "blazing-fiend_1" - SimC will name them uniquely (blazing-fiend_1_0, blazing-fiend_1_1 etc.)
 raid_events+=/pull,pull=05,bloodlust=0,delay=018,enemies="blazing-fiend_1":47957778|"blazing-fiend_1":47957778|"wandering-candle_1":95915558|"blazing-fiend_1":47957778|"blazing-fiend_1":47957778|"blazing-fiend_1":47957778|"blazing-fiend_1":47957778|"blazing-fiend_1":47957778|"blazing-fiend_1":47957778
+raid_events+=/movement,pull=05,first=5,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 05 MANY Blazing Fiends Constant Dodging"
+
+# --- PULL 06 (BOSS_blazikon + adds) ---
 raid_events+=/pull,pull=06,bloodlust=0,delay=017,enemies="blazing-fiend_1":47957778|"blazing-fiend_2":47957778|"royal-wicklighter_1":53952501|"BOSS_blazikon_1":455219932
+raid_events+=/movement,pull=06,first=8,cooldown=18,cooldown_stddev=5,duration=2.2,duration_stddev=0.6,distance=12,players_only=1,description="Blazikon Add Mechanics Fire Dodge"
+raid_events+=/movement,pull=06,first=20,cooldown=30,cooldown_stddev=8,duration=4,duration_stddev=1.2,distance=18,players_only=1,description="Blazikon Major Fire AoE or Wave"
+raid_events+=/movement,pull=06,first=35,cooldown=40,cooldown_stddev=10,duration=3,duration_stddev=0.8,distance=15,players_only=1,description="Blazikon Secondary Boss Mechanic"
+
+# --- PULL 07 (Kobold Flametenders - gauntlet style?) ---
 raid_events+=/pull,pull=07,bloodlust=0,delay=035,enemies="kobold-flametender_1":11989443|"kobold-flametender_2":11989443|"kobold-flametender_3":11989443|"kobold-flametender_4":11989443|"kobold-flametender_5":11989443|"kobold-flametender_6":11989443|"kobold-flametender_7":11989443|"kobold-flametender_8":11989443|"kobold-flametender_9":11989443|"kobold-flametender_10":11989443|"kobold-flametender_11":11989443
+raid_events+=/movement,pull=07,first=4,cooldown=12,cooldown_stddev=3,duration=1.5,duration_stddev=0.4,distance=7,players_only=1,description="Pull 07 Flametender Swarm Constant Small Dodges"
+
+# --- PULL 08 (BOSS_the-candle-king) ---
 raid_events+=/pull,pull=08,bloodlust=0,delay=025,enemies="BOSS_the-candle-king_1":455219932
+raid_events+=/movement,pull=08,first=7,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Candle King Ambient Candle Fire"
+raid_events+=/movement,pull=08,first=20,cooldown=25,cooldown_stddev=7,duration=3.5,duration_stddev=1,distance=15,players_only=1,description="Candle King Summon Adds Wave Dodge"
+raid_events+=/movement,pull=08,first=40,cooldown=45,cooldown_stddev=12,duration=5,duration_stddev=1.5,distance=20,players_only=1,description="Candle King Massive Fire AoE Phase"
+# If Candle King has a major "chore" like extinguishing specific candles, or a dark/light phase
+# raid_events+=/movement,pull=08,pull_target=BOSS_the-candle-king_1,first_pct=52,last_pct=50,cooldown=9999,duration=20,players_only=1,description="Candle King Chore Phase"
+
+# --- PULL 09 (Darkness trash - very large pull) ---
 raid_events+=/pull,pull=09,bloodlust=0,delay=033,enemies="skittering-darkness_1":11989443|"skittering-darkness_2":11989443|"skittering-darkness_3":11989443|"skittering-darkness_4":11989443|"skittering-darkness_5":11989443|"skittering-darkness_6":11989443|"skittering-darkness_7":11989443|"skittering-darkness_8":11989443|"skittering-darkness_9":11989443|"skittering-darkness_10":11989443|"skittering-darkness_11":11989443|"skittering-darkness_12":11989443|"skittering-darkness_13":11989443|"skittering-darkness_14":11989443|"skittering-darkness_15":11989443|"skittering-darkness_16":11989443|"skittering-darkness_17":11989443|"skittering-darkness_18":11989443|"skittering-darkness_19":11989443|"skittering-darkness_20":11989443|"skittering-darkness_21":11989443|"skittering-darkness_22":11989443|"skittering-darkness_23":11989443|"skittering-darkness_24":11989443|"skittering-darkness_25":11989443|"skittering-darkness_26":11989443|"skittering-darkness_27":11989443|"skittering-darkness_28":11989443|"skittering-darkness_29":11989443|"skittering-darkness_30":11989443|"skittering-darkness_31":11989443|"skittering-darkness_32":11989443|"skittering-darkness_33":11989443|"skittering-darkness_34":11989443|"skittering-darkness_35":11989443|"corridor-creeper_1":80928753|"corridor-creeper_2":80928753|"corridor-creeper_3":80928753|"shuffling-horror_1":53952501|"shuffling-horror_2":53952501|"shuffling-horror_3":53952501|"shuffling-horror_4":53952501
+raid_events+=/movement,pull=09,first=10,cooldown=20,cooldown_stddev=6,duration=2,duration_stddev=0.6,distance=10,players_only=1,description="Pull 09 Darkness Trash Dodge"
+raid_events+=/movement,pull=09,first=25,cooldown=35,cooldown_stddev=10,duration=2.5,duration_stddev=0.8,distance=12,players_only=1,description="Pull 09 Horror or Creeper Mechanic"
+
+# --- PULL 10 (Final darkness trash - very long delay before this implies a long run or event) ---
 raid_events+=/pull,pull=10,bloodlust=0,delay=112,enemies="skittering-darkness_1":11989443|"skittering-darkness_2":11989443|"skittering-darkness_3":11989443|"skittering-darkness_4":11989443|"skittering-darkness_5":11989443|"skittering-darkness_6":11989443|"skittering-darkness_7":11989443|"skittering-darkness_8":11989443|"skittering-darkness_9":11989443|"skittering-darkness_10":11989443|"skittering-darkness_11":11989443|"skittering-darkness_12":11989443|"skittering-darkness_13":11989443|"skittering-darkness_14":11989443|"skittering-darkness_15":11989443|"skittering-darkness_16":11989443|"skittering-darkness_17":11989443|"corridor-sleeper_1":80928753|"corridor-creeper_1":80928753|"corridor-creeper_2":80928753|"corridor-creeper_3":80928753|"corridor-creeper_4":80928753
+raid_events+=/movement,pull=10,first=12,cooldown=22,cooldown_stddev=7,duration=1.8,duration_stddev=0.5,distance=9,players_only=1,description="Pull 10 Final Darkness Trash Dodge"
 
 TWW2_Death_Knight_Blood_Deathbringer.simc
 TWW2_Death_Knight_Blood_Sanlayn.simc

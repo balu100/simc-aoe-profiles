@@ -15,19 +15,75 @@ max_time=2920
 enemy="Operation Mechagon: Workshop"
 enemy_health=999999
 keystone_level=15
+
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+
+# --- PULL 01 (Tonk Mayhem) ---
 raid_events+=/pull,pull=01,bloodlust=0,delay=024,enemies="strider-tonk_1":45013624|"strider-tonk_2":45013624|"strider-tonk_3":45013624|"strider-tonk_4":45013624|"strider-tonk_5":45013624|"strider-tonk_6":45013624|"strider-tonk_7":45013624|"strider-tonk_8":45013624|"strider-tonk_9":45013624|"bomb-tonk_1":36010899|"bomb-tonk_2":36010899|"bomb-tonk_3":36010899|"bomb-tonk_4":36010899|"bomb-tonk_5":36010899|"bomb-tonk_6":36010899|"rocket-tonk_1":45013624|"rocket-tonk_2":45013624|"rocket-tonk_3":45013624|"rocket-tonk_4":45013624|"rocket-tonk_5":45013624|"rocket-tonk_6":45013624
+raid_events+=/movement,pull=01,first=5,cooldown=10,cooldown_stddev=3,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 01 Tonk Bombs Rockets Constant Dodge"
+raid_events+=/movement,pull=01,first=12,cooldown=25,cooldown_stddev=7,duration=3,duration_stddev=0.8,distance=12,players_only=1,description="Pull 01 Disarm Bomb or Major Rocket Barrage"
+
+# --- PULL 02 (BOSS_gnomercy-4u & BOSS_the-platinum-pummeler - Council) ---
+# Delay=001 implies immediate follow-up
 raid_events+=/pull,pull=02,bloodlust=0,delay=001,enemies="BOSS_gnomercy-4u_1":311918717|"BOSS_the-platinum-pummeler_1":389898396
+raid_events+=/movement,pull=02,first=6,cooldown=12,cooldown_stddev=3,duration=1.8,duration_stddev=0.5,distance=10,players_only=1,description="Gnomercy Pummeler Dodge Minor Spells"
+raid_events+=/movement,pull=02,first=15,cooldown=22,cooldown_stddev=6,duration=3.5,duration_stddev=1,distance=18,players_only=1,description="Gnomercy Pummeler Pummeler Charge Slam"
+raid_events+=/movement,pull=02,first=30,cooldown=40,cooldown_stddev=10,duration=5,duration_stddev=1.5,distance=20,players_only=1,description="Gnomercy Pummeler Arena Wide Mechanic"
+
+# --- PULL 03 (Slime Room) ---
+# Delay=000 implies starts immediately after previous pull dies
 raid_events+=/pull,pull=03,bloodlust=0,delay=000,enemies="living-waste_1":30009082|"living-waste_2":30009082|"living-waste_3":30009082|"living-waste_4":30009082|"living-waste_5":30009082|"living-waste_6":30009082|"living-waste_7":30009082|"living-waste_8":30009082|"living-waste_9":30009082|"living-waste_10":30009082|"living-waste_11":30009082|"living-waste_12":30009082|"living-waste_13":30009082|"living-waste_14":30009082|"living-waste_15":30009082|"waste-processing-unit_1":96029066|"metal-gunk_1":66019982|"metal-gunk_2":66019982|"metal-gunk_3":66019982|"metal-gunk_4":66019982|"metal-gunk_5":66019982
+raid_events+=/movement,pull=03,first=4,cooldown=10,cooldown_stddev=3,duration=1.5,duration_stddev=0.4,distance=8,players_only=1,description="Pull 03 Slime Puddle Dodging"
+raid_events+=/movement,pull=03,first=12,cooldown=25,cooldown_stddev=7,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Pull 03 Waste Processing Unit AoE"
+
+# --- PULL 04 (Junkyard Dogs) ---
 raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="junkyard-d0g_1":60018166|"junkyard-d0g_2":60018166|"junkyard-d0g_3":60018166|"junkyard-d0g_4":60018166|"junkyard-d0g_5":60018166|"junkyard-d0g_6":60018166|"junkyard-d0g_7":60018166|"junkyard-d0g_8":60018166|"junkyard-d0g_9":60018166|"junkyard-d0g_10":60018166
+raid_events+=/movement,pull=04,first=5,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 04 Junkyard Dog Leap Frontal"
+
+# --- PULL 05 (BOSS_ku-j0 + slimes) ---
 raid_events+=/pull,pull=05,bloodlust=0,delay=006,enemies="living-waste_1":30009082|"living-waste_2":30009082|"living-waste_3":30009082|"living-waste_4":30009082|"living-waste_5":30009082|"metal-gunk_1":66019982|"BOSS_ku-j0_1":409393316
+raid_events+=/movement,pull=05,first=8,cooldown=18,cooldown_stddev=5,duration=2.2,duration_stddev=0.6,distance=12,players_only=1,description="KU-J0 Junk Drop Slime Dodge"
+raid_events+=/movement,pull=05,first=20,cooldown=30,cooldown_stddev=8,duration=3.5,duration_stddev=1,distance=15,players_only=1,description="KU-J0 Incinerate Frontal or Charge"
+# If KU-J0 needs specific junk piles cleared as a "chore"
+# raid_events+=/movement,pull=05,pull_target=BOSS_ku-j0_1,first_pct=60,last_pct=58,cooldown=9999,duration=10,players_only=1,description="KU-J0 Junk Pile Clearing Chore"
+
+# --- PULL 06 (Guard pull - long delay before this) ---
 raid_events+=/pull,pull=06,bloodlust=0,delay=062,enemies="guard_1":60018166|"guard_2":60018166|"mechagon-tinkerer_1":60018166|"mechagon-tinkerer_2":60018166
+raid_events+=/movement,pull=06,first=7,cooldown=25,cooldown_stddev=7,duration=1.5,duration_stddev=0.4,distance=8,players_only=1,description="Pull 06 Guard Tinkerer Mechanics"
+
+# --- PULL 07 (Defense Bots) ---
 raid_events+=/pull,pull=07,bloodlust=0,delay=006,enemies="defense-bot-mk-i_1":63019075|"defense-bot-mk-i_2":63019075|"defense-bot-mk-iii_1":105631976
+raid_events+=/movement,pull=07,first=5,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 07 Defense Bot Barrage Dodge"
+
+# --- PULL 08 (Blastatron X-80 - mini boss) ---
 raid_events+=/pull,pull=08,bloodlust=0,delay=004,enemies="blastatron-x-80_1":150045416
+raid_events+=/movement,pull=08,first=6,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Blastatron Main Blast Ability"
+raid_events+=/movement,pull=08,first=15,cooldown=30,cooldown_stddev=8,duration=3,duration_stddev=0.8,distance=15,players_only=1,description="Blastatron Secondary Mechanic"
+
+# --- PULL 09 (BOSS_head-machinist-sparkflux + many adds) ---
 raid_events+=/pull,pull=09,bloodlust=0,delay=021,enemies="mechagon-mechanic_1":60018166|"mechagon-mechanic_2":60018166|"defense-bot-mk-i_1":63019075|"defense-bot-mk-i_2":63019075|"mechagon-tinkerer_1":60018166|"BOSS_head-machinist-sparkflux_1":389898396|"spider-tank_1":96029066|"spider-tank_2":96029066|"workshop-defender_1":54016350
+raid_events+=/movement,pull=09,first=5,cooldown=10,cooldown_stddev=3,duration=2.2,duration_stddev=0.6,distance=11,players_only=1,description="Sparkflux Add Chaos Dodge"
+raid_events+=/movement,pull=09,first=18,cooldown=25,cooldown_stddev=7,duration=3,duration_stddev=0.8,distance=14,players_only=1,description="Sparkflux Personal AoE or Gadget"
+raid_events+=/movement,pull=09,first=30,cooldown=35,cooldown_stddev=9,duration=2.5,duration_stddev=0.7,distance=13,players_only=1,description="Sparkflux Spider Tank Mechanic"
+
+# --- PULL 10 ---
 raid_events+=/pull,pull=10,bloodlust=0,delay=033,enemies="workshop-defender_1":54016350|"workshop-defender_2":54016350|"mechagon-tinkerer_1":60018166|"defense-bot-mk-iii_1":105631976|"defense-bot-mk-iii_2":105631976
+raid_events+=/movement,pull=10,first=7,cooldown=18,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Pull 10 Heavy Bot Barrage Dodge"
+
+# --- PULL 11 (BOSS_aerial-unit-r-21x - Flying Boss) ---
 raid_events+=/pull,pull=11,bloodlust=0,delay=012,enemies="BOSS_aerial-unit-r-21x_1":311918717
+raid_events+=/movement,pull=11,first=6,cooldown=12,cooldown_stddev=3,duration=2.5,duration_stddev=0.7,distance=15,players_only=1,description="Aerial Unit Bombing Run Ground Effects"
+raid_events+=/movement,pull=11,first=20,cooldown=35,cooldown_stddev=9,duration=3,duration_stddev=0.8,distance=12,players_only=1,description="Aerial Unit Targeted Attack"
+# If Aerial Unit has an "anti-air turret" phase (e.g., at 50% health, players busy for 15s)
+# raid_events+=/movement,pull=11,pull_target=BOSS_aerial-unit-r-21x_1,first_pct=52,last_pct=50,cooldown=9999,duration=15,players_only=1,description="Aerial Unit Turret Phase Chore"
+
+# --- PULL 12 (BOSS_omega-buster - Final Boss) ---
 raid_events+=/pull,pull=12,bloodlust=0,delay=004,enemies="BOSS_omega-buster_1":389898396
+raid_events+=/movement,pull=12,first=8,cooldown=15,cooldown_stddev=4,duration=3,duration_stddev=0.8,distance=18,players_only=1,description="Omega Buster Initial Phase AoE"
+raid_events+=/movement,pull=12,first=25,cooldown=25,cooldown_stddev=7,duration=4.5,duration_stddev=1.3,distance=22,players_only=1,description="Omega Buster Massive Destruction AoE"
+raid_events+=/movement,pull=12,first=45,cooldown=30,cooldown_stddev=8,duration=6,duration_stddev=1.8,distance=25,players_only=1,description="Omega Buster Final Phase Hide Add Chore"
+# If Omega Buster has a specific "destroy X part" or "hide behind Y" chore
+# raid_events+=/movement,pull=12,pull_target=BOSS_omega-buster_1,first_pct=52,last_pct=50,cooldown=9999,duration=20,players_only=1,description="Omega Buster Target Part Hide Chore"
 
 TWW2_Death_Knight_Blood_Deathbringer.simc
 TWW2_Death_Knight_Blood_Sanlayn.simc
