@@ -30,12 +30,12 @@ raid_events+=/movement,pull=02,first=18,cooldown=35,cooldown_stddev=10,duration=
 
 # --- PULL 03 (Bombshell Crabs!) ---
 raid_events+=/pull,pull=03,bloodlust=0,delay=011,enemies="bombshell-crab_1":60018166|"bombshell-crab_2":60018166|"bombshell-crab_3":60018166|"venture-co-diver_1":60018166|"venture-co-diver_2":60018166|"venture-co-architect_1":78023616|"venture-co-contractor_1":60018166|"venture-co-contractor_2":60018166
-raid_events+=/movement,pull=03,first=5,cooldown=15,cooldown_stddev=4,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Pull 03 Bombshell Crab Explosions" # Frequent due to multiple crabs
+raid_events+=/movement,pull=03,first=5,cooldown=15,cooldown_stddev=4,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Pull 03 Bombshell Crab Explosions"
 raid_events+=/movement,pull=03,first=12,cooldown=30,cooldown_stddev=8,duration=2,duration_stddev=0.6,distance=10,players_only=1,description="Pull 03 Diver Architect Mechanics"
 
 # --- PULL 04 (Two Shreddinators) ---
 raid_events+=/pull,pull=04,bloodlust=0,delay=013,enemies="venture-co-contractor_1":60018166|"venture-co-contractor_2":60018166|"venture-co-contractor_3":60018166|"venture-co-contractor_4":60018166|"venture-co-surveyor_1":60018166|"venture-co-surveyor_2":60018166|"shreddinator-3000_1":120036332|"shreddinator-3000_2":120036332
-raid_events+=/movement,pull=04,first=6,cooldown=20,cooldown_stddev=6,duration=3.5,duration_stddev=1,distance=18,players_only=1,description="Pull 04 Dual Shreddinator Chaos" # More impactful due to two
+raid_events+=/movement,pull=04,first=6,cooldown=20,cooldown_stddev=6,duration=3.5,duration_stddev=1,distance=18,players_only=1,description="Pull 04 Dual Shreddinator Chaos"
 
 # --- PULL 05 (BOSS_keeza-quickfuse & BOSS_bront - Council) ---
 raid_events+=/pull,pull=05,bloodlust=0,delay=010,enemies="BOSS_keeza-quickfuse_1":227440731|"BOSS_bront_1":292423797

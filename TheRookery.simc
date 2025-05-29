@@ -48,7 +48,7 @@ raid_events+=/movement,pull=06,first=7,cooldown=15,cooldown_stddev=4,duration=2.
 
 # --- PULL 07 (Void-Cursed Area 2 - many Crushers) ---
 raid_events+=/pull,pull=07,bloodlust=0,delay=014,enemies="corrupted-oracle_1":47987495|"corrupted-oracle_2":47987495|"coalescing-void-diffuser_1":89976551|"coalescing-void-diffuser_2":89976551|"cursed-rookguard_1":62983587|"void-cursed-crusher_1":71981241|"void-cursed-crusher_2":71981241|"void-cursed-crusher_3":71981241|"void-cursed-crusher_4":71981241
-raid_events+=/movement,pull=07,first=6,cooldown=12,cooldown_stddev=3,duration=2.8,duration_stddev=0.8,distance=14,players_only=1,description="Pull 07 Multiple Crusher Slams Void Zones" # More impactful due to many crushers
+raid_events+=/movement,pull=07,first=6,cooldown=12,cooldown_stddev=3,duration=2.8,duration_stddev=0.8,distance=14,players_only=1,description="Pull 07 Multiple Crusher Slams Void Zones"
 
 # --- PULL 08 (BOSS_stormguard-gorren + Civilians & Crushers) ---
 raid_events+=/pull,pull=08,bloodlust=0,delay=014,enemies="afflicted-civilian_1":11996873|"afflicted-civilian_2":11996873|"afflicted-civilian_3":11996873|"afflicted-civilian_4":11996873|"afflicted-civilian_5":11996873|"afflicted-civilian_6":11996873|"afflicted-civilian_7":11996873|"afflicted-civilian_8":11996873|"void-cursed-crusher_1":71981241|"void-cursed-crusher_2":71981241|"BOSS_stormguard-gorren_1":455253121

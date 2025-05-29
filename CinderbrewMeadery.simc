@@ -61,7 +61,7 @@ raid_events+=/movement,pull=09,first=7,cooldown=20,cooldown_stddev=5,duration=1.
 
 # --- PULL 10 (BOSS_ipa) ---
 raid_events+=/pull,pull=10,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"venture-co-pyromaniac_3":53864613|"venture-co-pyromaniac_4":53864613|"taste-tester_1":59849571|"taste-tester_2":59849571|"taste-tester_3":59849571|"brew-drop_1":20348853|"BOSS_ipa_1":389197140
-raid_events+=/movement,pull=10,first=10,cooldown=30,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Ipa Minor Dodge/Add Reposition"
+raid_events+=/movement,pull=10,first=10,cooldown=30,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Ipa Minor Dodge Add Reposition"
 raid_events+=/movement,pull=10,first=22,cooldown=40,cooldown_stddev=8,duration=6,duration_stddev=1.5,distance=20,players_only=1,description="Ipa Spouting Stout Phase (8s of swirlies)"
 
 # --- PULL 11 (BOSS_benk-buzzbee + MANY adds) ---
@@ -71,8 +71,8 @@ raid_events+=/movement,pull=11,first=20,cooldown=35,cooldown_stddev=7,duration=7
 
 # --- PULL 12 (BOSS_goldie-baronbottom) ---
 raid_events+=/pull,pull=12,bloodlust=0,delay=020,enemies="taste-tester_1":59849571|"taste-tester_2":59849571|"venture-co-pyromaniac_1":53864613|"BOSS_goldie-baronbottom_1":518929520
-raid_events+=/movement,pull=12,first=12,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.5,distance=10,players_only=1,description="Goldie Barrel Dodge/Aim/Ricochet"
-raid_events+=/movement,pull=12,first=25,cooldown=35,cooldown_stddev=10,duration=5,duration_stddev=1,distance=25,players_only=1,description="Goldie Major Barrel Phase/Let It Hail Waves"
+raid_events+=/movement,pull=12,first=12,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.5,distance=10,players_only=1,description="Goldie Barrel Dodge Aim Ricochet"
+raid_events+=/movement,pull=12,first=25,cooldown=35,cooldown_stddev=10,duration=5,duration_stddev=1,distance=25,players_only=1,description="Goldie Major Barrel Phase Let It Hail Waves"
 
 
 
