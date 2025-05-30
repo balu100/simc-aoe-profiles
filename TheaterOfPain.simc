@@ -18,10 +18,14 @@ keystone_level=15
 
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
 
+# --- Global "Bad Move" Event ---
+raid_events+=/movement,cooldown=28,cooldown_stddev=12,duration=0.3,duration_stddev=0.1,distance=1,players_only=1,player_chance=0.25,description="Global Player Fidget Stutterstep"
+
 # --- PULL 01 (COUNCIL: Dessia, Paceran + Bloodhorn) ---
 raid_events+=/pull,pull=01,bloodlust=0,delay=022,enemies="raging-bloodhorn_1":107971863|"BOSS_dessia-the-decapitator_1":286159104|"BOSS_paceran-the-virulent_1":260144641
 raid_events+=/movement,pull=01,first=7,cooldown=15,cooldown_stddev=4,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Council Dodge Paceran Puddles Dessia Charge"
 raid_events+=/movement,pull=01,first=18,cooldown=25,cooldown_stddev=7,duration=3,duration_stddev=0.8,distance=15,players_only=1,description="Council Major Ability Avoidance"
+raid_events+=/movement,pull=01,first=5,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Council Boss Panic Moment"
 
 # --- PULL 02 (Trash with Mini-Boss Dokigg) ---
 raid_events+=/pull,pull=02,bloodlust=0,delay=013,enemies="shambling-arbalest_1":50986714|"ossified-conscript_1":59984368|"ossified-conscript_2":59984368|"dokigg-the-brutalizer_1":191949977
@@ -36,6 +40,7 @@ raid_events+=/movement,pull=03,first=7,cooldown=22,cooldown_stddev=7,duration=1.
 raid_events+=/pull,pull=04,bloodlust=0,delay=011,enemies="BOSS_xav-the-unfallen_1":409727809
 raid_events+=/movement,pull=04,first=8,cooldown=18,cooldown_stddev=5,duration=2.2,duration_stddev=0.6,distance=12,players_only=1,description="Xav Banner Positioning Oppressive Atmosphere"
 raid_events+=/movement,pull=04,first=20,cooldown=30,cooldown_stddev=8,duration=3,duration_stddev=0.9,distance=15,players_only=1,description="Xav Might of Maldraxxus Dodge"
+raid_events+=/movement,pull=04,first=6,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Xav Panic Moment"
 # If Xav has a specific "banner interaction" chore
 # raid_events+=/movement,pull=04,pull_target=BOSS_xav-the-unfallen_1,first_pct=52,last_pct=50,cooldown=9999,duration=10,players_only=1,description="Xav Banner Chore Phase"
 
@@ -51,6 +56,7 @@ raid_events+=/movement,pull=06,first=6,cooldown=15,cooldown_stddev=4,duration=2.
 raid_events+=/pull,pull=07,bloodlust=0,delay=010,enemies="putrid-butcher_1":71981241|"diseased-horror_1":59984368|"BOSS_gorechop_1":455253121
 raid_events+=/movement,pull=07,first=8,cooldown=18,cooldown_stddev=5,duration=3,duration_stddev=0.8,distance=15,players_only=1,description="Gorechop Meat Hook Tenderize Dodge"
 raid_events+=/movement,pull=07,first=20,cooldown=25,cooldown_stddev=7,duration=2.5,duration_stddev=0.7,distance=12,players_only=1,description="Gorechop Oozing Detritus Add Management"
+raid_events+=/movement,pull=07,first=7,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Gorechop Panic Moment"
 
 # --- PULL 08 (Shackled Souls Gauntlet 1) ---
 raid_events+=/pull,pull=08,bloodlust=0,delay=040,enemies="shackled-soul_1":35990620|"shackled-soul_2":35990620|"shackled-soul_3":35990620|"shackled-soul_4":35990620|"shackled-soul_5":35990620|"shackled-soul_6":35990620|"shackled-soul_7":35990620|"shackled-soul_8":35990620|"shackled-soul_9":35990620|"shackled-soul_10":35990620|"shackled-soul_11":35990620|"shackled-soul_12":35990620|"portal-guardian_1":89976551
@@ -77,6 +83,7 @@ raid_events+=/movement,pull=12,first=7,cooldown=20,cooldown_stddev=6,duration=2,
 raid_events+=/pull,pull=13,bloodlust=0,delay=024,enemies="BOSS_kultharok_1":416231424
 raid_events+=/movement,pull=13,first=9,cooldown=18,cooldown_stddev=5,duration=2.5,duration_stddev=0.7,distance=13,players_only=1,description="Kultharok Phantasm Draw Soul Dodge"
 raid_events+=/movement,pull=13,first=22,cooldown=30,cooldown_stddev=8,duration=3.5,duration_stddev=1,distance=16,players_only=1,description="Kultharok Soul Echoes Grasping Hands"
+raid_events+=/movement,pull=13,first=8,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Kultharok Panic Moment"
 # If Kul'tharok has a specific "collect soul fragments" chore
 # raid_events+=/movement,pull=13,pull_target=BOSS_kultharok_1,first_pct=52,last_pct=50,cooldown=9999,duration=15,players_only=1,description="Kultharok Soul Fragment Collection Chore"
 
@@ -85,6 +92,7 @@ raid_events+=/pull,pull=14,bloodlust=0,delay=040,enemies="battlefield-ritualist_
 raid_events+=/movement,pull=14,first=7,cooldown=12,cooldown_stddev=3,duration=2.8,duration_stddev=0.7,distance=16,players_only=1,description="Mordretha Initial Phase Add Dodge"
 raid_events+=/movement,pull=14,first=20,cooldown=20,cooldown_stddev=6,duration=4,duration_stddev=1.2,distance=20,players_only=1,description="Mordretha Dark Devastation Grasping Rift"
 raid_events+=/movement,pull=14,first=40,cooldown=25,cooldown_stddev=7,duration=5.5,duration_stddev=1.5,distance=25,players_only=1,description="Mordretha Manifest Death Ghost Phase"
+raid_events+=/movement,pull=14,first=10,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Mordretha Panic Moment"
 
 TWW2_Death_Knight_Blood_Deathbringer.simc
 TWW2_Death_Knight_Blood_Sanlayn.simc

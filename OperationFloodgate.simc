@@ -18,6 +18,9 @@ keystone_level=15
 
 raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
 
+# --- Global "Bad Move" Event ---
+raid_events+=/movement,cooldown=28,cooldown_stddev=12,duration=0.3,duration_stddev=0.1,distance=1,players_only=1,player_chance=0.25,description="Global Player Fidget Stutterstep"
+
 # --- PULL 01 (Large opening pull with Shreddinator) ---
 raid_events+=/pull,pull=01,bloodlust=0,delay=017,enemies="venture-co-contractor_1":60018166|"venture-co-contractor_2":60018166|"venture-co-contractor_3":60018166|"venture-co-contractor_4":60018166|"venture-co-contractor_5":60018166|"venture-co-contractor_6":60018166|"venture-co-contractor_7":60018166|"loaderbot_1":48014533|"loaderbot_2":48014533|"loaderbot_3":48014533|"darkfuse-hyena_1":48014533|"darkfuse-hyena_2":48014533|"venture-co-surveyor_1":60018166|"venture-co-surveyor_2":60018166|"shreddinator-3000_1":120036332|"darkfuse-soldier_1":60018166|"darkfuse-soldier_2":60018166|"darkfuse-soldier_3":60018166|"darkfuse-soldier_4":60018166
 raid_events+=/movement,pull=01,first=8,cooldown=25,cooldown_stddev=7,duration=1.8,duration_stddev=0.5,distance=10,players_only=1,description="Pull 01 Generic Trash Dodge"
@@ -42,6 +45,7 @@ raid_events+=/pull,pull=05,bloodlust=0,delay=010,enemies="BOSS_keeza-quickfuse_1
 raid_events+=/movement,pull=05,first=7,cooldown=15,cooldown_stddev=4,duration=1.8,duration_stddev=0.5,distance=10,players_only=1,description="Keeza Bombs Gadgets Dodge"
 raid_events+=/movement,pull=05,first=12,cooldown=25,cooldown_stddev=7,duration=3,duration_stddev=0.8,distance=15,players_only=1,description="Bront Slam Charge Cleave"
 raid_events+=/movement,pull=05,first=25,cooldown=40,cooldown_stddev=10,duration=4,duration_stddev=1.2,distance=20,players_only=1,description="Council Combined Mechanic or Kiting Phase"
+raid_events+=/movement,pull=05,first=5,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Keeza Bront Panic Moment"
 
 # --- PULL 06 (Demolitionists, Snipers, Crabs - very busy pull) ---
 raid_events+=/pull,pull=06,bloodlust=0,delay=035,enemies="darkfuse-demolitionist_1":60018166|"darkfuse-demolitionist_2":60018166|"darkfuse-demolitionist_3":60018166|"mechadrone-sniper_1":60018166|"mechadrone-sniper_2":60018166|"mechadrone-sniper_3":60018166|"bombshell-crab_1":60018166|"darkfuse-soldier_1":60018166|"darkfuse-soldier_2":60018166|"darkfuse-soldier_3":60018166|"darkfuse-soldier_4":60018166|"darkfuse-soldier_5":60018166|"darkfuse-soldier_6":60018166|"darkfuse-inspector_1":60018166|"darkfuse-inspector_2":60018166
@@ -52,6 +56,7 @@ raid_events+=/movement,pull=06,first=18,cooldown=25,cooldown_stddev=7,duration=2
 raid_events+=/pull,pull=07,bloodlust=0,delay=011,enemies="darkfuse-hyena_1":48014533|"darkfuse-hyena_2":48014533|"darkfuse-soldier_1":60018166|"darkfuse-soldier_2":60018166|"darkfuse-soldier_3":60018166|"darkfuse-soldier_4":60018166|"venture-co-contractor_1":60018166|"venture-co-contractor_2":60018166|"BOSS_big-momma_1":714813726
 raid_events+=/movement,pull=07,first=10,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.7,distance=15,players_only=1,description="Big Momma Slam Water Jet Dodge"
 raid_events+=/movement,pull=07,first=22,cooldown=30,cooldown_stddev=8,duration=3,duration_stddev=0.9,distance=12,players_only=1,description="Big Momma Add Spawn Kiting"
+raid_events+=/movement,pull=07,first=8,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Big Momma Panic Moment"
 # If Big Momma has a "submerge" or "chore" phase (e.g., at 50% health, lasts 15s)
 # raid_events+=/movement,pull=07,pull_target=BOSS_big-momma_1,first_pct=52,last_pct=50,cooldown=9999,duration=15,players_only=1,description="Big Momma Submerge Add Phase"
 
@@ -68,6 +73,7 @@ raid_events+=/movement,pull=09,first=6,cooldown=18,cooldown_stddev=5,duration=2.
 raid_events+=/pull,pull=10,bloodlust=0,delay=006,enemies="venture-co-diver_1":60018166|"venture-co-diver_2":60018166|"venture-co-diver_3":60018166|"venture-co-diver_4":60018166|"venture-co-diver_5":60018166|"venture-co-diver_6":60018166|"BOSS_swampface_1":454881462
 raid_events+=/movement,pull=10,first=9,cooldown=18,cooldown_stddev=5,duration=2.2,duration_stddev=0.6,distance=13,players_only=1,description="Swampface Poison Puddle Dodge"
 raid_events+=/movement,pull=10,first=20,cooldown=30,cooldown_stddev=8,duration=3.5,duration_stddev=1,distance=16,players_only=1,description="Swampface Add Spawn Kiting or Flood Mechanic"
+raid_events+=/movement,pull=10,first=6,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Swampface Panic Moment"
 # If Swampface has a "room floods, move to high ground" phase
 # raid_events+=/movement,pull=10,pull_target=BOSS_swampface_1,first_pct=52,last_pct=50,cooldown=9999,duration=10,players_only=1,description="Swampface Flood Phase"
 
@@ -88,6 +94,7 @@ raid_events+=/pull,pull=14,bloodlust=0,delay=019,enemies="BOSS_geezle-gigazap_1"
 raid_events+=/movement,pull=14,first=6,cooldown=12,cooldown_stddev=3,duration=2.2,duration_stddev=0.6,distance=12,players_only=1,description="Geezle Ambient Electric Hazard Dodge"
 raid_events+=/movement,pull=14,first=18,cooldown=25,cooldown_stddev=7,duration=4,duration_stddev=1.2,distance=20,players_only=1,description="Geezle Major Electric AoE or Chain Lightning"
 raid_events+=/movement,pull=14,first=35,cooldown=30,cooldown_stddev=9,duration=5,duration_stddev=1.5,distance=25,players_only=1,description="Geezle Electrified Floor or Pylon Phase"
+raid_events+=/movement,pull=14,first=10,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Geezle Panic Moment"
 # If Geezle has a "pylon interaction" chore phase
 # raid_events+=/movement,pull=14,pull_target=BOSS_geezle-gigazap_1,first_pct=52,last_pct=50,cooldown=9999,duration=18,players_only=1,description="Geezle Pylon Chore Phase"
 

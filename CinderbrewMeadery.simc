@@ -16,7 +16,10 @@ enemy="Cinderbrew Meadery"
 enemy_health=999999
 keystone_level=15
 
-raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1"
+raid_events=/invulnerable,cooldown=5160,duration=5160,retarget=1
+
+# --- Global "Bad Move" Event ---
+raid_events+=/movement,cooldown=28,cooldown_stddev=12,duration=0.3,duration_stddev=0.1,distance=1,players_only=1,player_chance=0.25,description="Global Player Fidget Stutterstep"
 
 # --- PULL 01 ---
 raid_events+=/pull,pull=01,bloodlust=0,delay=008,enemies="hired-muscle_1":95759313|"hired-muscle_2":95759313|"hired-muscle_3":95759313|"venture-co-patron_1":53864613|"venture-co-patron_2":53864613|"venture-co-patron_3":53864613|"venture-co-patron_4":53864613|"venture-co-patron_5":53864613|"venture-co-patron_6":53864613|"venture-co-patron_7":53864613|"venture-co-patron_8":53864613|"venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"venture-co-pyromaniac_3":53864613
@@ -33,6 +36,7 @@ raid_events+=/movement,pull=03,first=10,cooldown=30,cooldown_stddev=7,duration=1
 raid_events+=/movement,pull=03,first=20,cooldown=40,cooldown_stddev=10,duration=2.5,duration_stddev=0.7,distance=15,players_only=1,description="Aldryr Active Cinder Brew Puddles"
 raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=68,last_pct=66,duration=25,cooldown=9999,players_only=1,description="Aldryr Happy Hour 1 66 percent"
 raid_events+=/movement,pull=03,pull_target=BOSS_brewmaster-aldryr_1,first_pct=35,last_pct=33,duration=25,cooldown=9999,players_only=1,description="Aldryr Happy Hour 2 33 percent"
+raid_events+=/movement,pull=03,first=5,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Aldryr Panic Moment"
 
 # --- PULL 04 ---
 raid_events+=/pull,pull=04,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-patron_1":53864613|"venture-co-patron_2":53864613
@@ -63,16 +67,19 @@ raid_events+=/movement,pull=09,first=7,cooldown=20,cooldown_stddev=5,duration=1.
 raid_events+=/pull,pull=10,bloodlust=0,delay=010,enemies="venture-co-pyromaniac_1":53864613|"venture-co-pyromaniac_2":53864613|"venture-co-pyromaniac_3":53864613|"venture-co-pyromaniac_4":53864613|"taste-tester_1":59849571|"taste-tester_2":59849571|"taste-tester_3":59849571|"brew-drop_1":20348853|"BOSS_ipa_1":389197140
 raid_events+=/movement,pull=10,first=10,cooldown=30,cooldown_stddev=5,duration=2,duration_stddev=0.5,distance=10,players_only=1,description="Ipa Minor Dodge Add Reposition"
 raid_events+=/movement,pull=10,first=22,cooldown=40,cooldown_stddev=8,duration=6,duration_stddev=1.5,distance=20,players_only=1,description="Ipa Spouting Stout Phase (8s of swirlies)"
+raid_events+=/movement,pull=10,first=7,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Ipa Panic Moment"
 
 # --- PULL 11 (BOSS_benk-buzzbee + MANY adds) ---
 raid_events+=/pull,pull=11,bloodlust=0,delay=025,enemies="bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"bee-let_6":11969913|"bee-let_7":11969913|"bee-let_8":11969913|"bee-let_9":11969913|"bee-let_10":11969913|"worker-bee_1":53864613|"worker-bee_2":53864613|"worker-bee_3":53864613|"worker-bee_4":53864613|"worker-bee_1":59849571|"worker-bee_2":59849571|"venture-co-honey-harvester_1":95759313|"venture-co-honey-harvester_2":95759313|"bee-wrangler_1":56857093|"bee-wrangler_2":56857093|"bee-wrangler_3":56857093|"bee-wrangler_4":56857093|"royal-jelly-purveyor_1":59849571|"royal-jelly-purveyor_2":59849571|"royal-jelly-purveyor_3":59849571|"bee-let_1":11969913|"bee-let_2":11969913|"bee-let_3":11969913|"bee-let_4":11969913|"bee-let_5":11969913|"bee-let_6":11969913|"bee-let_7":11969913|"bee-let_8":11969913|"bee-let_9":11969913|"bee-let_10":11969913|"bee-let_11":11969913|"bee-let_12":11969913|"bee-let_13":11969913|"bee-let_14":11969913|"bee-let_15":11969913|"bee-let_16":11969913|"bee-let_17":11969913|"bee-let_18":11969913|"bee-let_19":11969913|"bee-let_20":11969913|"bee-let_21":11969913|"bee-let_22":11969913|"bee-let_23":11969913|"bee-let_24":11969913|"bee-let_25":11969913|"bee-let_26":11969913|"bee-let_27":11969913|"bee-let_28":11969913|"bee-let_29":11969913|"bee-let_30":11969913|"bee-let_31":11969913|"bee-let_32":11969913|"bee-let_33":11969913|"bee-let_34":11969913|"bee-let_35":11969913|"bee-let_36":11969913|"bee-let_37":11969913|"bee-let_38":11969913|"BOSS_benk-buzzbee_1":408656997|"yes-man_1":59849571|"yes-man_2":59849571|"yes-man_3":59849571|"yes-man_4":59849571|"flavor-scientist_1":53864613
 raid_events+=/movement,pull=11,first=8,cooldown=15,cooldown_stddev=4,duration=2.5,duration_stddev=0.5,distance=12,players_only=1,description="Buzzbee Minor Dodge Bee Kill Honey Marinade"
 raid_events+=/movement,pull=11,first=20,cooldown=35,cooldown_stddev=7,duration=7,duration_stddev=1.5,distance=18,players_only=1,description="Buzzbee Snack Time Bee Riding Phase Major Disruption"
+raid_events+=/movement,pull=11,first=6,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Buzzbee Panic Moment"
 
 # --- PULL 12 (BOSS_goldie-baronbottom) ---
 raid_events+=/pull,pull=12,bloodlust=0,delay=020,enemies="taste-tester_1":59849571|"taste-tester_2":59849571|"venture-co-pyromaniac_1":53864613|"BOSS_goldie-baronbottom_1":518929520
 raid_events+=/movement,pull=12,first=12,cooldown=20,cooldown_stddev=6,duration=2.5,duration_stddev=0.5,distance=10,players_only=1,description="Goldie Barrel Dodge Aim Ricochet"
 raid_events+=/movement,pull=12,first=25,cooldown=35,cooldown_stddev=10,duration=5,duration_stddev=1,distance=25,players_only=1,description="Goldie Major Barrel Phase Let It Hail Waves"
+raid_events+=/movement,pull=12,first=8,cooldown=35,cooldown_stddev=15,duration=0.7,duration_stddev=0.2,distance=2,players_only=1,player_chance=0.15,description="Goldie Panic Moment"
 
 
 
