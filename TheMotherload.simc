@@ -1,4 +1,5 @@
 fight_style=DungeonRoute
+default_actions=1
 override.bloodlust=0
 override.arcane_intellect=0
 override.power_word_fortitude=0
